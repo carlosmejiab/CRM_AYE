@@ -1,0 +1,54 @@
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csproj.CoreCompileInputs.cache
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojResolveAssemblyReference.cache
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csproj.CoreCompileInputs.cache
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojAssemblyReference.cache
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csproj.CoreCompileInputs.cache
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojAssemblyReference.cache
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csproj.CoreCompileInputs.cache
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
