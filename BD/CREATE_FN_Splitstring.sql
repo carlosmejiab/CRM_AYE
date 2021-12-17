@@ -1,9 +1,14 @@
---Funcion que permite leer una cadena separada por comas y mostrarlo en una lista
-
-CREATE FUNCTION dbo.splitstring ( @stringToSplit VARCHAR(MAX) )
+USE [AyE_Services]
+GO
+/****** Object:  UserDefinedFunction [dbo].[splitstring]    Script Date: 6/11/2021 23:18:23 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE FUNCTION [dbo].[splitstring] ( @stringToSplit VARCHAR(MAX) )
 RETURNS
 @returnList TABLE ([Name] [nvarchar] (500))
-AS
+AS 
 BEGIN
 
  DECLARE @name NVARCHAR(255)

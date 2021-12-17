@@ -12,20 +12,33 @@
             margin-bottom: 10px;
         }
     </style>
+
+    <script src="Scripts/select2.min.js"></script>
+    <link href="Content/select2.min.css" rel="stylesheet" />
+
     <script>
         function myFunction() {
-            var input, filter, table, tr, td, i, txtValue, tx, txtValue2;
+            var input, filter, table, tr, td, i, txtValue, tx, txtValue2, d1, d2, d7,
+            txtValue1, txtValue6, txtValue7;
             input = document.getElementById("myInput");
             filter = input.value.toUpperCase();
             table = document.getElementById("myTable");
             tr = table.getElementsByTagName("tr");
             for (i = 0; i < tr.length; i++) {
                 td = tr[i].getElementsByTagName("td")[0];
+                t1 = tr[i].getElementsByTagName("td")[1];
+                t2 = tr[i].getElementsByTagName("td")[2];
                 tx = tr[i].getElementsByTagName("td")[6];
-                if (td || tx) {
+                t7 = tr[i].getElementsByTagName("td")[7];
+
+                if (td || t1 || t2 || tx || t7) {
                     txtValue = td.textContent || td.innerText;
-                    txtValue2 = tx.textContent || tx.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1) {
+                    txtValue1 = t1.textContent || t1.innerText;
+                    txtValue2 = t2.textContent || t2.innerText;
+                    txtValue6 = tx.textContent || tx.innerText;
+                    txtValue7 = t7.textContent || t7.innerText;
+
+                    if (txtValue.toUpperCase().indexOf(filter) > -1 || txtValue1.toUpperCase().indexOf(filter) > -1 || txtValue2.toUpperCase().indexOf(filter) > -1 || txtValue6.toUpperCase().indexOf(filter) > -1 || txtValue7.toUpperCase().indexOf(filter) > -1) {
                         tr[i].style.display = "";
                     } else {
                         tr[i].style.display = "none";
@@ -33,6 +46,20 @@
                 }
             }
         }
+
+           $(document).ready(function () {
+
+                $("#<%=cboBuscarClients.ClientID%>").select2({
+                    placeholder: "Buscar Client",
+                    minimumResultsForSearch: 5,
+                    allowClear: true,
+                    theme: "classic"
+
+                });
+
+            });
+
+
     </script>
 
 
@@ -51,6 +78,10 @@
         <div class="col-xs-4" align="Left">
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
         </div>
+        <div class="col-xs-4" align="Left">
+             <label style="margin-left:14px; margin-top:7px;" for="email_address" class="col-md-3 col-form-label text-md-right">Client:</label>
+             <asp:DropDownList ID="cboBuscarClients" AutoPostBack = "True" OnSelectedIndexChanged = "OnSelectedIndexChangedMethod" style="margin-left:-10px;" BackColor="White" runat="server" CssClass="form-control" TabIndex="7" Height="50px" Width="300px"></asp:DropDownList>
+        </div>
     </div>           
      
     <asp:ListView ID="lvw_Tracking" runat="server" DataKeyNames="IdTracking" EnableTheming="True" OnSelectedIndexChanging="lvw_Tracking_SelectedIndexChanging">
@@ -59,9 +90,11 @@
                 <thead>
                     <tr>
                         <th class="text-center" width="15%">Tracking Name</th>
+                        <th class="text-center" width="15%">Client Name</th>
+                        <th class="text-center" width="15%">Calendar Year</th>
                         <th class="text-center" width="12%">Start Date Time</th>
                         <th class="text-center" width="12%">Due Date Time</th>
-						<th class="text-center" width="12%">Duration Time</th>
+						<%--<th class="text-center" width="12%">Duration Time</th>--%>
                         <th class="text-center" width="12%"> Time Work</th>
 						<th class="text-center" width="12%">Status Tracking</th>
 						<th class="text-center" width="15%">Task</th>
@@ -76,9 +109,11 @@
         <ItemTemplate>
             <tr>
                 <td class="text-center"><%# Eval ("TrackingName") %></td>
+                <td class="text-center"><%# Eval ("NameClient") %></td>
+                <td class="text-center"><%# Eval ("FiscalYear") %></td>
                 <td class="text-center"><%# Eval ("StartDateTime") %></td>
 				<td class="text-center"><%# Eval ("DueDateTime") %></td>
-				<td class="text-center"><%# Eval ("DurationTime") %></td>
+				<%--<td class="text-center"><%# Eval ("DurationTime") %></td>--%>
 				<td class="text-center"><%# Eval ("TimeWork") %></td>
 				<td class="text-center"><%# Eval ("StatusTracking") %></td>
 				<td class="text-center"><%# Eval ("Task") %></td>				

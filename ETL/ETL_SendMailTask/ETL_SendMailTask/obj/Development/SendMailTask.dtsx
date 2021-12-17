@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/15/2021 4:53:10 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="PE-LPALQ001026"
+  DTS:CreatorName="HUNDRED\carlos.mejia"
+  DTS:DTSID="{D26754B2-14B7-4E23-AA3C-5F6C7B8B60E3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LocaleID="10250"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{8693F9E6-8CB1-4B37-9747-3A5F5EBF88A4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.30.45\AEACCOUNTING.AyE_Services.swb]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{40F74EF6-C447-4026-A517-EE4668E55955}"
+      DTS:ObjectName="192.168.30.45\AEACCOUNTING.AyE_Services.swb">
+      <DTS:PropertyExpression
+        DTS:Name="InitialCatalog">@[$Project::AyE_Services_InitialCatalog]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Password">@[$Project::AyE_Services_Password]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[$Project::AyE_Services_ServerName]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="UserName">@[$Project::AyE_Services_UserName]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=192.168.30.45\AEACCOUNTING;User ID=swb;Initial Catalog=AyE_Services_Prueba;Provider=SQLOLEDB.1;Application Name=SSIS-Package-{40F74EF6-C447-4026-A517-EE4668E55955}192.168.30.45\AEACCOUNTING.AyE_Services.swb;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{B1C067E2-8CD4-4D24-9298-F1BCF60C3522}"
+      DTS:ObjectName="Logging_ETL_SendMailTaskTxt_ConnectionString">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">False</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{F369AE88-5DBE-464F-B657-0281800CF90C}"
+      DTS:ObjectName="Logging_ETL_SendMailTaskTxt_ConnectionString1">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">False</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables />
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">4,7,OnError,14,OnPostValidate,10,OnProgress,9,OnWarning</DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnExecStatusChanged"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnPostValidate"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnProgress"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnWarning"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+  </DTS:LoggingOptions>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Actualiar Estado de Envio Notificaciones"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{11A1A373-CA90-4E73-988E-8189360F74F5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Actualiar Estado de Envio Notificaciones"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{40F74EF6-C447-4026-A517-EE4668E55955}"
+          SQLTask:SqlStatementSource="UPDATE NotificationsTasks &#xA;SET StatusSendMail = 2&#xA;where StatusSendMail in (1,3)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Enviar Notificacion Por Correo"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{31B0E353-3705-4E99-A507-0CB479AE384F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Enviar Notificacion Por Correo"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{40F74EF6-C447-4026-A517-EE4668E55955}"
+          SQLTask:SqlStatementSource="EXECUTE NotificacionTareas" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Listado de Tareas a Enviar"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{8566D728-ABB3-40F8-9F42-25555303814E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Listado de Tareas a Enviar"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Listado de Tareas a Enviar\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[NotificationsTasks]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[192.168.30.45\AEACCOUNTING.AyE_Services.swb]"
+                  connectionManagerRefId="Package.ConnectionManagers[192.168.30.45\AEACCOUNTING.AyE_Services.swb]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdTask]"
+                      cachedDataType="i4"
+                      cachedName="IdTask"
+                      externalMetadataColumnId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdTask]"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdTask]" />
+                    <inputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StatusSendMail]"
+                      cachedDataType="i4"
+                      cachedName="StatusSendMail"
+                      externalMetadataColumnId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatusSendMail]"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[StatusSendMail]" />
+                    <inputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SendDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="SendDate"
+                      externalMetadataColumnId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SendDate]"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[SendDate]" />
+                    <inputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdEmployee]"
+                      cachedDataType="i4"
+                      cachedName="IdEmployee"
+                      externalMetadataColumnId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UserSend]"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdEmployee]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdNotificationsTasks]"
+                      dataType="i4"
+                      name="IdNotificationsTasks" />
+                    <externalMetadataColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdTask]"
+                      dataType="i4"
+                      name="IdTask" />
+                    <externalMetadataColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatusSendMail]"
+                      dataType="i4"
+                      name="StatusSendMail" />
+                    <externalMetadataColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SendDate]"
+                      dataType="dbTimeStamp"
+                      name="SendDate" />
+                    <externalMetadataColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UserSend]"
+                      dataType="i4"
+                      name="UserSend" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Listado de Tareas a Enviar\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">EXECUTE ObtenerListaTareasEnviarCorreo</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Listado de Tareas a Enviar\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[192.168.30.45\AEACCOUNTING.AyE_Services.swb]"
+                  connectionManagerRefId="Package.ConnectionManagers[192.168.30.45\AEACCOUNTING.AyE_Services.swb]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdTask]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdTask]"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdTask]"
+                      name="IdTask"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdEmployee]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdEmployee]"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdEmployee]"
+                      name="IdEmployee"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[StatusSendMail]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StatusSendMail]"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[StatusSendMail]"
+                      name="StatusSendMail"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[SendDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SendDate]"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].Columns[SendDate]"
+                      name="SendDate"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdTask]"
+                      dataType="i4"
+                      name="IdTask" />
+                    <externalMetadataColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdEmployee]"
+                      dataType="i4"
+                      name="IdEmployee" />
+                    <externalMetadataColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StatusSendMail]"
+                      dataType="i4"
+                      name="StatusSendMail" />
+                    <externalMetadataColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SendDate]"
+                      dataType="dbTimeStamp"
+                      name="SendDate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdTask]"
+                      dataType="i4"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdTask]"
+                      name="IdTask" />
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdEmployee]"
+                      dataType="i4"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdEmployee]"
+                      name="IdEmployee" />
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SendDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SendDate]"
+                      name="SendDate" />
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StatusSendMail]"
+                      dataType="i4"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[StatusSendMail]"
+                      name="StatusSendMail" />
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Listado de Tareas a Enviar.Paths[OLE DB Source Output]"
+              endId="Package\Listado de Tareas a Enviar\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Listado de Tareas a Enviar\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{550F6782-DC42-4B83-B2E0-9CBDB0F17EB7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{40F74EF6-C447-4026-A517-EE4668E55955}"
+          SQLTask:SqlStatementSource="UPDATE NotificationsTasks &#xA;SET StatusSendMail = 3&#xA;where StatusSendMail = 1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{06D871B4-20D3-4CFA-9837-34376E96BD35}"
+      DTS:From="Package\Listado de Tareas a Enviar"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Enviar Notificacion Por Correo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{AD728536-5102-4B4C-9C5A-5FFC07A72EB1}"
+      DTS:From="Package\Enviar Notificacion Por Correo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Actualiar Estado de Envio Notificaciones" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{6AF41ED4-86E3-428F-8393-6C38428AF9FC}"
+      DTS:From="Package\Enviar Notificacion Por Correo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\Tarea Ejecutar SQL"
+      DTS:Value="1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="276,42"
+          Id="Package\Actualiar Estado de Envio Notificaciones"
+          TopLeft="227,267" />
+        <NodeLayout
+          Size="227,42"
+          Id="Package\Enviar Notificacion Por Correo"
+          TopLeft="254,165" />
+        <NodeLayout
+          Size="210,42"
+          Id="Package\Listado de Tareas a Enviar"
+          TopLeft="256,78" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="30,166" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="364.25,120">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="366.25,207">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="254,186.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-48,0"
+              Start="0,0"
+              End="-40.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-40.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-31.77869140625,5,23.0573828125,9.421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Listado de Tareas a Enviar">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Listado de Tareas a Enviar\OLE DB Destination"
+          TopLeft="236,220" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Listado de Tareas a Enviar\OLE DB Source"
+          TopLeft="247,78" />
+        <EdgeLayout
+          Id="Package\Listado de Tareas a Enviar.Paths[OLE DB Source Output]"
+          TopLeft="325,120">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,100"
+              Start="0,0"
+              End="0,92.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,92.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Listado de Tareas a Enviar\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Listado de Tareas a Enviar\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

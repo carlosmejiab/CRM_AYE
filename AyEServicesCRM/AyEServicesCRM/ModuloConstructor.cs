@@ -287,7 +287,7 @@ namespace AyEServicesCRM
             return ds;
         }
 
-        public DataSet ListarPorPeriodo(int Id)
+        public DataSet ListarPorPeriodo(int Id, int IdCliente)
         {
             DataSet ds = new DataSet();
             SqlConnection con = new SqlConnection();
@@ -297,6 +297,54 @@ namespace AyEServicesCRM
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
             da.SelectCommand.Parameters.Add("@id", SqlDbType.Int);
             da.SelectCommand.Parameters["@id"].Value = Id;
+            da.SelectCommand.Parameters.Add("@IdCliente", SqlDbType.Int);
+            da.SelectCommand.Parameters["@IdCliente"].Value = IdCliente;
+            try
+            {
+                da.Fill(ds);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            con.Close();
+            return ds;
+        }
+
+        public DataSet ListarTrakingPorCliente(int Id)
+        {
+            DataSet ds = new DataSet();
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = cad;
+            con.Open();
+            da = new SqlDataAdapter("usp_AyE_Listar_Client_Traking", con);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.Add("@IdClient", SqlDbType.Int);
+            da.SelectCommand.Parameters["@IdClient"].Value = Id;
+            try
+            {
+                da.Fill(ds);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            con.Close();
+            return ds;
+        }
+
+        public DataSet ListarObtenerUserAuthorized(int IdTask, int IdEmployee)
+        {
+            DataSet ds = new DataSet();
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = cad;
+            con.Open();
+            da = new SqlDataAdapter("ObtenerUserAuthorized", con);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.Add("@IdTask", SqlDbType.Int);
+            da.SelectCommand.Parameters["@IdTask"].Value = IdTask;
+            da.SelectCommand.Parameters.Add("@IdEmployee", SqlDbType.Int);
+            da.SelectCommand.Parameters["@IdEmployee"].Value = IdEmployee;
             try
             {
                 da.Fill(ds);

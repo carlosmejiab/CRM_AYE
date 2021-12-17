@@ -1,6 +1,18 @@
 ﻿<%@ Page Title=""Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="M_Tasks.aspx.cs" Inherits="AyEServicesCRM.M_Tasks" EnableEventValidation="False" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
+    <script src="Content/jquery.sumoselect.min.js"></script>
+    <link href="Content/sumoselect.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        function pageLoad(sender, args) {
+            $(document).ready(function () {
+                $(<%=lstBoxTest.ClientID%>).SumoSelect({
+                    placeholder: "Select Here"
+                });
+        });
+        }
+    </script>
 
     <script src="Scripts/select2.min.js"></script>
     <link href="Content/select2.min.css" rel="stylesheet" />
@@ -38,6 +50,11 @@
             padding: 12px 10px 12px 40px;
             border: 1px solid #ddd;
             margin-bottom: 10px;
+        }
+           .modal-body{
+            height: 550px;
+            /*width: 100%;*/
+            overflow-y: auto;
         }
     </style>
 
@@ -145,6 +162,9 @@
         function hideModalMensaje() {
             $("#myModalMensajes").modal('hide');
         }
+        function openModalTraking() {
+            $("#myModalTraking").modal('show');
+        }
     </script> 
 
     <script type="text/javascript">      
@@ -193,7 +213,6 @@
             $("#myModalAddDocument").modal('hide');
         }      
     </script> 
-  
         <h2>Task > Adding new </h2>
   
     <div class="row">
@@ -262,13 +281,14 @@
             </div>
         </div>
 
-        <div class="col-xs-2" align="Left">
-        
+       <div class="col-xs-2" align="right">
+                    <asp:LinkButton ID="linkActualizarListado" runat="server" CssClass="btn btn-primary" Height="40px" OnClick="linkActualizarListado_Click"><span aria-hidden="true" class="glyphicon glyphicon-repeat"></span>
+                    </asp:LinkButton>
         </div>
 
     </asp:Panel>
     </div>
-    
+   
      <hr/>
     <span id="timerLabel" runat="server"></span>
 
@@ -290,7 +310,28 @@
 
 
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModalTraking" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">This is a danger alert</h4>
+        </div>
+        <div class="modal-body">
+          <center>
+              <asp:label text="" ID="lblMensajeErrorTraking" runat="server"></asp:label>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
       
+    </div>
+  </div>  
 
      
     <asp:ListView ID="lvw_Task" runat="server" DataKeyNames="IdTask,Name,IdClient,Client,Description,IdEmployee" EnableTheming="True" OnSelectedIndexChanging="lvw_Task_SelectedIndexChanging">
@@ -299,7 +340,7 @@
                 <thead>
                     <tr>
                         <th class="text-center">Task Number</th>
-                        <th class="text-center">Fiscal Year</th>
+                        <th class="text-center">Calendar Year</th>
                         <th class="text-center">Client Account</th>
                         <th class="text-center">Name Task</th>
                         <th class="text-center">Client</th>
@@ -341,199 +382,205 @@
         </ItemTemplate>
     </asp:ListView>
 
-        <div class="modal fade" id="myModal" role="dialog">
-           <div class="modal-dialog modal-lg">
-               <asp:UpdatePanel ID="UpdatePanel5" runat="server">
-                   <ContentTemplate>
-                       <div class="modal-content">
+        <%--<div class="modal fade" id="myModal" role="dialog">--%>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <asp:UpdatePanel ID="UpdatePanel5" runat="server">
+                <ContentTemplate>
+                    <div class="modal-content">
+                        <%--<div class="modal-content" id="myModal22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">--%>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myModalLabel">
+                                <asp:Label ID="lblTitulo" runat="server" Font-Bold="true"></asp:Label>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button></h5>
 
-                           <div class="modal-header">
-                               <h5 class="modal-title" id="myModalLabel">
-                                   <asp:Label ID="lblTitulo" runat="server" Font-Bold="true"></asp:Label>
-                                   <button type="button" class="close" data-dismiss="modal">&times;</button></h5>
+                            <asp:Label ID="txtCodigoTask" runat="server" Text="Label" Visible="false"></asp:Label>
+                        </div>
 
-                               <asp:Label ID="txtCodigoTask" runat="server" Text="Label" Visible="false"></asp:Label>
-                           </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5 class="form-group"><strong>Task Number:</strong></h5>
+                                    <div class="input-group date col-sm-12">
+                                        <asp:TextBox ID="txtTaskNumber" class="form-control" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="1" Enabled="False"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5 class="form-group"><strong>Type Task*</strong></h5>
+                                    <div class="input-group date col-sm-12">
+                                        <asp:DropDownList ID="cboTypeTask"  runat="server" BackColor="White" CssClass="form-control" TabIndex="7" OnSelectedIndexChanged="cboTypeTask_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="form-group"><strong>Name*:</strong></h5>
+                                    <div class="input-group date col-sm-12">
+                                        <asp:TextBox ID="txtName"  class="form-control" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="1"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Start Date & Time*</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:TextBox ID="txtStarDate" class="form-control" AutoComplete="off" runat="server" CssClass="form-control" BackColor="White" TabIndex="5" TextMode="DateTimeLocal"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Due Date & Time*</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:TextBox ID="txtDueTime" class="form-control" AutoComplete="off" runat="server" CssClass="form-control" BackColor="White" TabIndex="5" TextMode="DateTimeLocal"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5 class="form-group"><strong>Estimate* ("You can enter as "2d 2h 30m")</strong></h5>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="input-group date col-sm-12">
+                                                <asp:TextBox ID="txtDias" class="form-control" Style="text-align: center" placeholder="Days" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="5" BackColor="White" TabIndex="8" TextMode="Number" min="0"></asp:TextBox>
+                                                <span class="input-group-btn"></span>
+                                                <asp:TextBox ID="txtHoras" class="form-control" Style="text-align: center" placeholder="Hours" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="5" BackColor="White" TabIndex="8" TextMode="Number" min="0"></asp:TextBox>
+                                                <span class="input-group-btn"></span>
+                                                <asp:TextBox ID="txtMinutos" class="form-control" Style="text-align: center" placeholder="Minutes" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="5" BackColor="White" TabIndex="8" TextMode="Number" min="0"></asp:TextBox>
 
-                           <div class="modal-body">
-                               <div class="row">
-                                   <div class="col-sm-6">
-                                       <h5 class="form-group"><strong>Type Task*</strong></h5>
-                                       <div class="input-group date col-sm-12">
-                                           <asp:DropDownList ID="cboTypeTask" runat="server" BackColor="White" CssClass="form-control" TabIndex="7" OnSelectedIndexChanged="cboTypeTask_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
-                                       </div>
-                                   </div>
-                                   <div class="col-sm-6">
-                                       <h5 class="form-group"><strong>Name*:</strong></h5>
-                                       <div class="input-group date col-sm-12">
-                                           <asp:TextBox ID="txtName" class="form-control" AutoComplete="off"  runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="1"></asp:TextBox>
-                                       </div>
-                                   </div>
-                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5 class="form-group"><strong>Assigned To*</strong></h5>
+                                    <div class="input-group date col-sm-12">
+                                        <asp:ListBox runat="server" ID="lstBoxTest" SelectionMode="Multiple" Width="408.75"></asp:ListBox>
+                                    </div>
+                                </div>
+                            </div>
 
-                               <div class="row">
-                                   <div class="col-xs-6">
-                                       <h5 class="form-group"><strong>Start Date & Time*</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:TextBox ID="txtStarDate" class="form-control" AutoComplete="off"  runat="server" CssClass="form-control" BackColor="White" TabIndex="5" TextMode="DateTimeLocal"></asp:TextBox>
-                                       </div>
-                                   </div>
-                                   <div class="col-xs-6">
-                                       <h5 class="form-group"><strong>Due Date & Time*</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:TextBox ID="txtDueTime" class="form-control" AutoComplete="off"  runat="server" CssClass="form-control" BackColor="White" TabIndex="5" TextMode="DateTimeLocal"></asp:TextBox>
-                                       </div>
-                                   </div>
-                               </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Status*</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:DropDownList ID="cboStatus"  runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Location*</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:DropDownList ID="cboLocation" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Related To*</strong></h5>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="input-group date col-xs-12">
+                                                <asp:DropDownList ID="cboTypeClient" runat="server" BackColor="White" CssClass="form-control" TabIndex="7">
+                                                    <asp:ListItem>Client</asp:ListItem>
+                                                </asp:DropDownList>
+                                                <span class="input-group-btn"></span>
+                                                <asp:TextBox ID="txtCliente" class="form-control" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="8"></asp:TextBox>
+                                                <span class="input-group-btn">
+                                                    <asp:LinkButton ID="LinkBuscarClient" runat="server" CssClass="btn btn-primary" OnClick="LinkBuscarClient_Click"><span aria-hidden="true" class="glyphicon glyphicon-search"></span>
+                                                    </asp:LinkButton>
+                                                </span>
+                                                <span class="input-group-btn">
+                                                    <asp:LinkButton ID="LinkAgregarCliente" runat="server" CssClass="btn btn-success" OnClick="LinkAgregarCliente_Click"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+                                                    </asp:LinkButton>
+                                                </span>
+                                            </div>
+                                            <asp:Label ID="lblCodClient" runat="server" Text="Label" Visible="false"></asp:Label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Parent Task*</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:TextBox ID="txtParentTask" class="form-control" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="8"></asp:TextBox>
+                                        <span class="input-group-btn">
+                                            <asp:LinkButton ID="LinkBuscarParent" runat="server" CssClass="btn btn-primary" OnClick="LinkBuscarParent_Click"><span aria-hidden="true" class="glyphicon glyphicon-search"></span>
+                                            </asp:LinkButton>
+                                        </span>
+                                        <span class="input-group-btn">
+                                            <asp:LinkButton ID="LinkAgregarParent" runat="server" CssClass="btn btn-success" OnClick="LinkAgregarParent_Click"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+                                            </asp:LinkButton>
+                                        </span>
+                                    </div>
+                                    <asp:Label ID="lblCodigoNewTask" runat="server" Text="Label" Visible="false"></asp:Label>
+                                </div>
+                            </div>
 
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Contact Name</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:DropDownList ID="cboContacts" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Priority*</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:DropDownList ID="cbopriority" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Client Account*</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:DropDownList ID="cboClientAccount" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>Calendar Year*</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:DropDownList ID="cboFiscalYear" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h5 class="form-group"><strong>Description*</strong></h5>
+                                    <div class="input-group date col-xs-12">
+                                        <asp:TextBox ID="txtDescription" Style="height: 114px;" class="form-control" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="500" BackColor="White" TabIndex="5" TextMode="MultiLine"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h5 class="form-group"><strong>State 
+                                        <asp:CheckBox ID="chkState" runat="server" Checked="true" /></strong></h5>
+                                </div>
+                                <div class="col-xs-6">
+                                </div>
+                            </div>
+                        </div>
 
-                               <div class="row">
-                                   <div class="col-sm-6">
-                                       <h5 class="form-group"><strong>Estimate* ("You can enter as "2d 2h 30m")</strong></h5>
-                                       <div class="row">
-                                           <div class="col-sm-12">
-                                               <div class="input-group date col-sm-12">
-                                                   <asp:TextBox ID="txtDias" class="form-control" style="text-align:center" placeholder="Days" AutoComplete="off"  runat="server" CssClass="form-control" MaxLength="5" BackColor="White" TabIndex="8" TextMode="Number" min="0"></asp:TextBox>
-                                                            <span class="input-group-btn"></span>
-                                                   <asp:TextBox ID="txtHoras" class="form-control" style="text-align:center" placeholder="Hours" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="5" BackColor="White" TabIndex="8" TextMode="Number" min="0"></asp:TextBox>
-                                                      <span class="input-group-btn"></span>
-                                                   <asp:TextBox ID="txtMinutos" class="form-control" style="text-align:center" placeholder="Minutes" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="5" BackColor="White" TabIndex="8" TextMode="Number" min="0"></asp:TextBox>
+                        <%--</div>--%>
 
-                                               </div>
-                                           </div>                                       
-                                       </div>                                   
-                                   </div>
-                                   <div class="col-sm-6">
-                                       <h5 class="form-group"><strong>Assigned To*</strong></h5>
-                                       <div class="input-group date col-sm-12">
-                                           <asp:DropDownList ID="cboAssigned" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
-                                       </div>
-                                   </div>
-                               </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <%--<asp:Button ID="btnSave" CssClass="btn btn-primary" runat="server" Text="Yes, save" OnClick="btnSave_Click" TabIndex="4"/>--%>
+                            <asp:LinkButton ID="btnSave" runat="server" CssClass="btn btn-primary" OnClick="btnSave_Click" ClientIDMode="Static"> Yes, save </asp:LinkButton>
+                            <asp:LinkButton ID="btnUpdate" ClientIDMode="Static" CssClass="btn btn-warning" runat="server" OnClick="btnUpdate_Click">Yes, update</asp:LinkButton>
+                            <asp:LinkButton ID="btnDelete" ClientIDMode="Static" CssClass="btn btn-danger" runat="server" OnClick="btnDelete_Click" TabIndex="4"> Yes, delete</asp:LinkButton>
 
-                               <div class="row">
-                                   <div class="col-xs-6">
-                                       <h5 class="form-group"><strong>Status*</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:DropDownList ID="cboStatus" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
-                                       </div>
-                                   </div>
-                                   <div class="col-xs-6">
-                                       <h5 class="form-group"><strong>Location*</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:DropDownList ID="cboLocation" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
-                                       </div>
-                                   </div>
-                               </div>
+                        </div>
+                    </div>
 
-                               <div class="row">                                  
-                                   <div class="col-xs-6">
-                                        <h5 class="form-group"><strong>Related To*</strong></h5>
-                                       <div class="row">                                           
-                                           <div class="col-xs-12">
-                                               <div class="input-group date col-xs-12">
-                                                      <asp:DropDownList ID="cboTypeClient" runat="server" BackColor="White" CssClass="form-control" TabIndex="7">
-                                                       <asp:ListItem>Client</asp:ListItem>
-                                                   </asp:DropDownList>
-                                                            <span class="input-group-btn"></span>
-                                                   <asp:TextBox ID="txtCliente" class="form-control" AutoComplete="off"  runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="8"></asp:TextBox>
-                                                   <span class="input-group-btn">
-                                                       <asp:LinkButton ID="LinkBuscarClient" runat="server" CssClass="btn btn-primary" OnClick="LinkBuscarClient_Click"><span aria-hidden="true" class="glyphicon glyphicon-search"></span>
-                                                       </asp:LinkButton>
-                                                   </span>
-                                                   <span class="input-group-btn">
-                                                       <asp:LinkButton ID="LinkAgregarCliente" runat="server" CssClass="btn btn-success" OnClick="LinkAgregarCliente_Click"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span>
-                                                       </asp:LinkButton>
-                                                   </span>
-                                               </div>
-                                               <asp:Label ID="lblCodClient" runat="server" Text="Label" Visible="false"></asp:Label>
-                                           </div>
-                                       </div>
-                                   </div>
-                                   <div class="col-xs-6">
-                                       <h5 class="form-group"><strong>Parent Task*</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:TextBox ID="txtParentTask" class="form-control" AutoComplete="off"  runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="8"></asp:TextBox>
-                                           <span class="input-group-btn">
-                                               <asp:LinkButton ID="LinkBuscarParent" runat="server" CssClass="btn btn-primary" OnClick="LinkBuscarParent_Click"><span aria-hidden="true" class="glyphicon glyphicon-search"></span>
-                                               </asp:LinkButton>
-                                           </span>
-                                           <span class="input-group-btn">
-                                               <asp:LinkButton ID="LinkAgregarParent" runat="server" CssClass="btn btn-success" OnClick="LinkAgregarParent_Click"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span>
-                                               </asp:LinkButton>
-                                           </span>
-                                       </div>
-                                       <asp:Label ID="lblCodigoNewTask" runat="server" Text="Label" Visible="false"></asp:Label>
-                                   </div>
-                               </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+    </div>
 
-                               <div class="row">
-                                   <div class="col-xs-6">
-                                       <h5 class="form-group"><strong>Contact Name</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:DropDownList ID="cboContacts" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
-                                       </div>
-                                   </div>
-                                   <div class="col-xs-6">
-                                       <h5 class="form-group"><strong>Priority*</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:DropDownList ID="cbopriority" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
-                                       </div>
-                                   </div>
-                               </div>
-                               <div class="row">
-                                   <div class="col-xs-6">
-                                       <h5 class="form-group"><strong>Client Account*</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:DropDownList ID="cboClientAccount" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
-                                       </div>
-                                   </div>
-                                   <div class="col-xs-6">
-                                       <h5 class="form-group"><strong>Fiscal Year*</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:DropDownList ID="cboFiscalYear" runat="server" BackColor="White" CssClass="form-control" TabIndex="7"></asp:DropDownList>
-                                       </div>
-                                   </div>
-                               </div
-                                <div class="row">                                  
-                                  <div class="col-xs-6">
-                                      <h5 class="form-group"><strong>State  <asp:CheckBox ID="chkState" runat="server" Checked="true" /></strong></h5>                                      
-                                  </div>
-                                  <div class="col-xs-6">
-                                  </div>
-                              </div>  
-                               <div class="row">
-                                   <div class="col-xs-12">
-                                       <h5 class="form-group"><strong>Description</strong></h5>
-                                       <div class="input-group date col-xs-12">
-                                           <asp:TextBox ID="txtDescription" class="form-control" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="500" BackColor="White" TabIndex="5" TextMode="MultiLine"></asp:TextBox>
-                                       </div>
-                                   </div>
-                               </div>
-
-                           </div>
-
-
-
-                           <div class="modal-footer">
-                               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-
-                                  <asp:LinkButton ID="btnSave" runat="server" CssClass="btn btn-primary" OnClick="btnSave_Click" ClientIDMode="Static"> Yes, save 
-                                  </asp:LinkButton>
-                               <asp:LinkButton ID="btnUpdate" ClientIDMode="Static" CssClass="btn btn-warning" runat="server" OnClick="btnUpdate_Click">Yes, update</asp:LinkButton>
-                               <asp:LinkButton ID="btnDelete" ClientIDMode="Static" CssClass="btn btn-danger" runat="server" OnClick="btnDelete_Click" TabIndex="4"> Yes, delete</asp:LinkButton>
-                               
-                           </div>
-                       </div>
-
-                   </ContentTemplate>
-               </asp:UpdatePanel>
-           </div>
-    </div> 
-
-        <div class="modal fade" id="myModal2" data-backdrop="static" data-keyboard="false" role="dialog">
+    <div class="modal fade" id="myModal2" data-backdrop="static" data-keyboard="false" role="dialog">
          <div class="modal-dialog modal-lg">
              <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                  <ContentTemplate>
@@ -916,7 +963,7 @@
     </div> 
 
 
-  <style>
+    <style>
              .modal-contentCenter {
               height:550px;
               overflow:auto;
@@ -968,7 +1015,7 @@
                                         <asp:Label ID="lblHora" runat="server">0</asp:Label>H:
                                         <asp:Label ID="lblMinutos" runat="server">0</asp:Label>M:
                                         <asp:Label ID="lblSegundos" runat="server">0</asp:Label>S
-                                        <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick"></asp:Timer>
+                                        <asp:Timer ID="Timer1" runat="server" Interval="815" OnTick="Timer1_Tick"></asp:Timer>
 
                                         <asp:LinkButton ID="btnPlay" runat="server" CssClass="btn btn-default" OnClick="btnPlay_Click" ClientIDMode="Static">▶️</asp:LinkButton>
                                         <asp:LinkButton ID="LinkPausa" runat="server" CssClass="btn btn-default" OnClick="LinkPausa_Click" ClientIDMode="Static">⏸️</asp:LinkButton>
@@ -1116,7 +1163,7 @@
                                 <div class="col-sm-6">
                                     <h5 class="form-group"><strong>Tracking Name *</strong></h5>
                                     <div class="input-group date col-sm-12">
-                                        <asp:TextBox ID="txtTrackingName" class="form-control" AutoComplete="off"  runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="1"></asp:TextBox>
+                                        <asp:TextBox ID="txtTrackingName" Enabled="false" class="form-control" AutoComplete="off"  runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="1"></asp:TextBox>
                         
                                     </div>
                                 </div>

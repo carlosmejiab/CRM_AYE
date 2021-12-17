@@ -376,11 +376,14 @@
                 <li runat="server" id="Reports">
                       <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl5" data-parent="#menu">Reports <span class="glyphicon glyphicon-tag pull-right"></span></a>
                      <div id="sl5" class="sublinks collapse">
-                         <a href="http://192.168.30.45/Reports/report/Reports/Report%20Client%20Account" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report Client Account</a>
-                         <a href="http://192.168.30.45/Reports/report/Reports/Report%20Client%20Task" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report Client Task</a>
-                         <a href="http://192.168.30.45/Reports/report/Reports/Report%20Type%20Task" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report Type Task</a>
-                         <a href="http://192.168.30.45/Reports/report/Reports/Report%20Event%20Client" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report Event</a>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Bookkeeping%20Status%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Bookkeeping Status Report</a>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Tasks%20By%20Client%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Tasks By Client Report</a>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Event%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Event Report</a>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Tasks%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Tasks Report</a>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Tracking%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Tracking Report</a>
+                         <a href="http://192.168.30.45/" target="_blank" class="list-group-item small"><span></span></a>
 
+                         
 <%--                     <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report3</a>
                          <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report4</a>
                          <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report5</a>

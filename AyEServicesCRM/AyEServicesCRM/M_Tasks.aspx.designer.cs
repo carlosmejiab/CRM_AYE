@@ -94,6 +94,15 @@ namespace AyEServicesCRM {
         protected global::System.Web.UI.WebControls.DropDownList cboPeriod;
         
         /// <summary>
+        /// Control linkActualizarListado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton linkActualizarListado;
+        
+        /// <summary>
         /// Control timerLabel.
         /// </summary>
         /// <remarks>
@@ -101,6 +110,15 @@ namespace AyEServicesCRM {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl timerLabel;
+        
+        /// <summary>
+        /// Control lblMensajeErrorTraking.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMensajeErrorTraking;
         
         /// <summary>
         /// Control lvw_Task.
@@ -137,6 +155,15 @@ namespace AyEServicesCRM {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label txtCodigoTask;
+        
+        /// <summary>
+        /// Control txtTaskNumber.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTaskNumber;
         
         /// <summary>
         /// Control cboTypeTask.
@@ -202,13 +229,13 @@ namespace AyEServicesCRM {
         protected global::System.Web.UI.WebControls.TextBox txtMinutos;
         
         /// <summary>
-        /// Control cboAssigned.
+        /// Control lstBoxTest.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboAssigned;
+        protected global::System.Web.UI.WebControls.ListBox lstBoxTest;
         
         /// <summary>
         /// Control cboStatus.
@@ -346,15 +373,6 @@ namespace AyEServicesCRM {
         protected global::System.Web.UI.WebControls.DropDownList cboFiscalYear;
         
         /// <summary>
-        /// Control chkState.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkState;
-        
-        /// <summary>
         /// Control txtDescription.
         /// </summary>
         /// <remarks>
@@ -362,6 +380,15 @@ namespace AyEServicesCRM {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDescription;
+        
+        /// <summary>
+        /// Control chkState.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkState;
         
         /// <summary>
         /// Control btnSave.

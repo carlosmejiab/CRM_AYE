@@ -17,12 +17,21 @@ namespace AyEServicesCRM
         DataSet ds;
         DataTable dt;
         DataRow dr;
+        //Periodo = P
+        //Fechas = F
+        //NumTask = N
+        //Cliente = C
+
+        //String TipoBusqueda = "";
+
+
         ModuloConstructor ca = new ModuloConstructor();
         public String StatusTracking, StatusTrackingPlay;
         public void ListarTaskFechas()
         {
             lvw_Task.DataSource = ca.ListarMultiplesFechas("MTask", 0, Convert.ToDateTime(txtStarDateSearch.Text), Convert.ToDateTime(txtDueDateSearch.Text));
             lvw_Task.DataBind();
+            Session["TipoBusqueda"] = "F";
         }
 
         public void ListarTaskList()
@@ -38,6 +47,7 @@ namespace AyEServicesCRM
         DateTime dtime = new DateTime(2014, 9, 1, 0, 0, 0, 000);
         Timer t = new Timer();
         String IdUseer, IdEmployees;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
@@ -127,6 +137,7 @@ namespace AyEServicesCRM
 
         public void Limpiar()
         {
+            txtTaskNumber.Text = "";
             txtName.Text = "";
             txtDias.Text = "0";
             txtHoras.Text = "0";
@@ -139,6 +150,10 @@ namespace AyEServicesCRM
             cboClientAccount.DataSource = null;
             cboClientAccount.Items.Clear();
             chkState.Checked = true;
+            lstBoxTest.DataSource = null;
+            lstBoxTest.Items.Clear();
+
+
         }
         public void Desbloquear()
         {
@@ -149,7 +164,7 @@ namespace AyEServicesCRM
             txtDias.Enabled = true;
             txtHoras.Enabled = true;
             txtMinutos.Enabled = true;
-            cboAssigned.Enabled = true;
+            //cboAssigned.Enabled = true;
             cboStatus.Enabled = true;
             cboLocation.Enabled = true;
             cboTypeClient.Enabled = true;
@@ -169,7 +184,7 @@ namespace AyEServicesCRM
             txtDias.Enabled = false;
             txtHoras.Enabled = false;
             txtMinutos.Enabled = false;
-            cboAssigned.Enabled = false;
+            //cboAssigned.Enabled = false;
             cboStatus.Enabled = false;
             cboLocation.Enabled = false;
             cboTypeClient.Enabled = false;
@@ -187,7 +202,7 @@ namespace AyEServicesCRM
             String State, IdParentTask;
 
             GetTypeTask();
-            GetEmployees();
+            //GetEmployees();
             GetStatus();
             GetLocation();
 
@@ -201,6 +216,7 @@ namespace AyEServicesCRM
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 dr = dt.Rows[i];
+                txtTaskNumber.Text = Convert.ToString(txtCodigoTask.Text);
                 txtName.Text = ((Convert.ToString(dr["Name"])));
                 //txtStarDate.Text = "2020-11-19T20:07";
                 DateTime StarDate = ((Convert.ToDateTime(dr["StartDateTime"])));
@@ -256,8 +272,8 @@ namespace AyEServicesCRM
                 cbopriority.ClearSelection();
                 cbopriority.Items.FindByText((Convert.ToString(dr["Priority"]))).Selected = true;
 
-                cboAssigned.ClearSelection();
-                cboAssigned.Items.FindByText((Convert.ToString(dr["Assigned"]))).Selected = true;
+                //cboAssigned.ClearSelection();
+                //cboAssigned.Items.FindByText((Convert.ToString(dr["Assigned"]))).Selected = true;
 
                 if (Convert.ToString(dr["ClienteAccount"]) != "")
                 {
@@ -334,7 +350,7 @@ namespace AyEServicesCRM
             GetPriority();
             //GetClientAccount();
             GetFiscalYear();
-
+            //GetEmployees();
             txtName.Text = cboTypeTask.SelectedItem.ToString();
             lblTitulo.Text = "Do you want to save the information?";
 
@@ -346,130 +362,7 @@ namespace AyEServicesCRM
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModal();", true);
         }
 
-        protected void btnSave_Click(object sender, EventArgs e)
-        {
-            if (cboTypeTask.SelectedIndex == 0)
-            {
-                cboTypeTask.Focus();
-                return;
-            }
 
-            if (txtName.Text == "")
-            {
-                txtName.Focus();
-                return;
-            }
-
-            if (txtStarDate.Text == "")
-            {
-                txtStarDate.Focus();
-                return;
-            }
-
-            if (txtDueTime.Text == "")
-            {
-                txtDueTime.Focus();
-                return;
-            }
-
-            if (cboAssigned.SelectedIndex == 0)
-            {
-                cboAssigned.Focus();
-                return;
-            }
-
-            if (cboStatus.SelectedIndex == 0)
-            {
-                cboStatus.Focus();
-                return;
-            }
-
-            if (cboLocation.SelectedIndex == 0)
-            {
-                cboLocation.Focus();
-                return;
-            }
-
-            //if (cboContacts.SelectedIndex == 0)
-            //{
-            //    cboContacts.Focus();
-            //    return;
-            //}
-
-            if (cbopriority.SelectedIndex == 0)
-            {
-                cbopriority.Focus();
-                return;
-            }
-
-            TaskEntity Task = new TaskEntity();
-            Task.IdClient = int.Parse(lblCodClient.Text);
-            Task.IdTypeTask = int.Parse(cboTypeTask.SelectedValue.ToString());
-            Task.IdEmployee = int.Parse(cboAssigned.SelectedValue.ToString());
-            Task.IdEmployeeCreate= int.Parse(IdEmployees);
-            Task.IdStatus = int.Parse(cboStatus.SelectedValue.ToString());
-            Task.IdLocation = int.Parse(cboLocation.SelectedValue.ToString());
-            if (txtParentTask.Text == "")
-            {
-                Task.IdParentTask = int.Parse("0");
-            }
-            else
-            {
-                Task.IdParentTask = int.Parse(lblCodigoNewTask.Text);
-            }
-            Task.IdContact = cboContacts.SelectedValue.ToString() == "" ? 0 : int.Parse(cboContacts.SelectedValue.ToString());
-            Task.IdPriority = int.Parse(cbopriority.SelectedValue.ToString());
-            Task.Name = txtName.Text;
-            Task.StartDateTime = Convert.ToDateTime(txtStarDate.Text);
-            Task.DueDateTime = Convert.ToDateTime(txtDueTime.Text);
-            Task.FiscalYear = int.Parse(cboFiscalYear.SelectedValue.ToString());
-            Task.IdClientAccount = cboClientAccount.SelectedValue.ToString() == "" ? 0 : int.Parse(cboClientAccount.SelectedValue.ToString());
-
-            int MinutosDay = 0, MinutosHour = 0, Minutos, Estimate = 0;
-            if (txtDias.Text != "")
-            {
-                int HourDay = int.Parse(txtDias.Text) * 24;
-                MinutosDay = HourDay * 60;
-            }
-            else
-            {
-                MinutosDay = 0;
-            }
-
-            if (txtHoras.Text != "")
-            {
-                MinutosHour = int.Parse(txtHoras.Text) * 60;
-            }
-            else
-            {
-                MinutosHour = 0;
-            }
-
-            if (txtMinutos.Text != "")
-            {
-                Minutos = int.Parse(txtMinutos.Text);
-            }
-            else
-            {
-                Minutos = 0;
-            }
-            Estimate = MinutosDay + MinutosHour + Minutos;
-            Task.Estimate = Estimate;
-            Task.Description = txtDescription.Text;
-            if (chkState.Checked == true)
-            {
-                Task.State = "1";
-            }
-            else
-            {
-                Task.State = "0";
-            }
-            Task = TaskBS.Save(Task);
-
-            lblMensajeModal.Text = "Saved correctly.";
-            LinkOk.Focus();
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
-        }
 
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -477,7 +370,8 @@ namespace AyEServicesCRM
             Task.IdTask = int.Parse(txtCodigoTask.Text);
             Task.IdClient = int.Parse(lblCodClient.Text);
             Task.IdTypeTask = int.Parse(cboTypeTask.SelectedValue.ToString());
-            Task.IdEmployee = int.Parse(cboAssigned.SelectedValue.ToString());
+            //Task.IdEmployee = int.Parse(cboAssigned.SelectedValue.ToString());
+            Task.IdEmployee = int.Parse(lstBoxTest.SelectedValue.ToString());
             Task.IdEmployeeCreate = int.Parse(IdEmployees);
             Task.IdStatus = int.Parse(cboStatus.SelectedValue.ToString());
             Task.IdLocation = int.Parse(cboLocation.SelectedValue.ToString());
@@ -531,11 +425,13 @@ namespace AyEServicesCRM
                 Task.State = "0";
             }
             Task = TaskBS.Update(Task);
+            UpdateTaskPacticipants();
 
             lblMensajeModal.Text = "Edited correctly.";
             LinkOk.Focus();
             //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "hideModal();", true);
+
         }
 
         protected void btnDelete_Click(object sender, EventArgs e)
@@ -560,8 +456,7 @@ namespace AyEServicesCRM
             Task.Description = "";
             Task.State = "0";
             Task = TaskBS.Delete(Task);
-
-
+            DeleteTaskPacticipants();
             lblMensajeModal.Text = "Successfully removed.";
             LinkOk.Focus();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
@@ -571,7 +466,11 @@ namespace AyEServicesCRM
             int IdTask;
             lblTitulo.Text = "Do you want to modify the information?";
             Desbloquear();
-
+            lstBoxTest.Items.Clear();
+            var button = sender as LinkButton;
+            ListViewItem item = button.NamingContainer as ListViewItem;
+            txtCodigoTask.Text = lvw_Task.DataKeys[item.DataItemIndex].Values["IdTask"].ToString();
+            GetEmployeesUpdate();
             btnSave.Visible = false;
             btnUpdate.Visible = true;
             btnDelete.Visible = false;
@@ -582,6 +481,11 @@ namespace AyEServicesCRM
         {
             lblTitulo.Text = "Do you want to delete the information ? ";
             Bloquear();
+            lstBoxTest.Items.Clear();
+            var button = sender as LinkButton;
+            ListViewItem item = button.NamingContainer as ListViewItem;
+            txtCodigoTask.Text = lvw_Task.DataKeys[item.DataItemIndex].Values["IdTask"].ToString();
+            GetEmployeesUpdate();
             btnSave.Visible = false;
             btnUpdate.Visible = false;
             btnDelete.Visible = true;
@@ -614,23 +518,29 @@ namespace AyEServicesCRM
 
         public void GetEmployees()
         {
-            using (SqlConnection cnn = new SqlConnection(cadenaconexion))
+            using (SqlConnection conn = new SqlConnection())
             {
-                cnn.Open();
-                SqlCommand cmd = new SqlCommand("usp_AyE_Listar_Tablas_Todo", cnn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@TIPO", "MEmployees");
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                cnn.Close();
-
-                cboAssigned.DataTextField = "LastName";
-                cboAssigned.DataValueField = "IdEmployee";
-                cboAssigned.DataSource = dt;
-                cboAssigned.DataBind();
-                cboAssigned.Items.Insert(0, new ListItem("- To Select -", ""));
+                conn.ConnectionString = ConfigurationManager
+                        .ConnectionStrings["micadenaconexion"].ConnectionString;
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.CommandText = "select E.IdEmployee,e.LastName +' '+E.FirstName as 'Employees' from Employees E where E.State='1' order by e.LastName asc";
+                    cmd.Connection = conn;
+                    conn.Open();
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@IdEmployee", IdEmployees);
+                    using (SqlDataReader sdr = cmd.ExecuteReader())
+                    {
+                        while (sdr.Read())
+                        {
+                            ListItem item = new ListItem();
+                            item.Text = sdr["Employees"].ToString();
+                            item.Value = sdr["IdEmployee"].ToString();
+                            lstBoxTest.Items.Add(item);
+                        }
+                    }
+                    conn.Close();
+                }
             }
         }
 
@@ -1393,12 +1303,24 @@ namespace AyEServicesCRM
 
             IdEmployee = Session["IdEmployessSession"].ToString();
 
-            if (IdEmployee != CodEmpleado)
+            if (ObtenerUserAuthorized(Convert.ToInt32(lblCodigoTaskTracking.Text), Convert.ToInt32(IdEmployee)))
             {
                 lblMensajeModal.Text = "User not authorized to perform Traking.";
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
+                lblMensajeErrorTraking.CssClass = "alert alert-danger";
+                lblMensajeErrorTraking.Text = "User not authorized to perform Traking.";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModalTraking();", true);
+
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "hideModal();", true);
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
                 return;
             }
+
+            //if (IdEmployee != CodEmpleado)
+            //{
+            //    lblMensajeModal.Text = "User not authorized to perform Traking.";
+            //    ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
+            //    return;
+            //}
 
             if (ExisteTrackingPlay(Convert.ToInt32(IdEmployee)))
             {
@@ -1431,6 +1353,7 @@ namespace AyEServicesCRM
                 lblCondicion.Text = "Paused";
             }
             lblmensaje.Visible = false;
+            //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "hideModal();", true);
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalmyModalTracking();", true);
         }
 
@@ -1534,7 +1457,8 @@ namespace AyEServicesCRM
         {
             txtTaskTracking.Text = lblTaskTracking.Text;
             lblCodTaskTracking.Text = lblCodigoTaskTracking.Text;
-            txtTrackingName.Text = "";
+            txtTrackingName.Text = lblTaskTracking.Text;
+            //txtTrackingName.Text = "";
             txtStarTimeTracking.Text = Convert.ToString(DateTime.Now.ToString());
             txtDueTimeTracking.Text = Convert.ToString(DateTime.Now.ToString());
             GeStatusTracking();
@@ -1717,7 +1641,7 @@ namespace AyEServicesCRM
         protected void LinkOk_Click(object sender, EventArgs e)
         {
             //Response.Redirect(Page.Request.Path);
-            Response.Redirect(Request.RawUrl, false);
+            Response.Redirect(Request.RawUrl, true);
 
         }
         public void TimeWork(int IdTracking)
@@ -1953,6 +1877,7 @@ namespace AyEServicesCRM
         protected void UpdatePanel6_Load(object sender, EventArgs e)
         {
             txtTaskTracking.Text = lblTaskTracking.Text;
+            txtTrackingName.Text = lblTaskTracking.Text;
             lblCodTaskTracking.Text = lblCodigoTaskTracking.Text;
         }
 
@@ -2213,6 +2138,7 @@ namespace AyEServicesCRM
         {
             lvw_Task.DataSource = ca.ListarNumTask((txtTask.Text).ToString());
             lvw_Task.DataBind();
+            Session["TipoBusqueda"] = "N";
         }
 
         protected void linkBuscarTask_Click(object sender, EventArgs e)
@@ -2261,6 +2187,7 @@ namespace AyEServicesCRM
 
                 lvw_Task.DataSource = ca.ListarPorCliente(IdClient, StarDateSearch, DueDateSearch);
                 lvw_Task.DataBind();
+                Session["TipoBusqueda"] = "C";
                 return true;
 
             }
@@ -2276,12 +2203,15 @@ namespace AyEServicesCRM
             string msn = "";
             int IdClient;
 
-            IdClient = Convert.ToInt32(cboBuscarClients.SelectedItem.Value);
-
-            if (!ListarPorCliente(IdClient))
-            {
-                msn = "Connection error";
-                ShowDialog(msn);
+            if (cboBuscarClients.SelectedItem.Value != "")
+            { 
+                IdClient = Convert.ToInt32(cboBuscarClients.SelectedItem.Value);
+            
+                if (!ListarPorCliente(IdClient))
+                {
+                    msn = "Connection error";
+                    ShowDialog(msn);
+                }
             }
         }
 
@@ -2289,23 +2219,33 @@ namespace AyEServicesCRM
         {
             string msn = "";
             int IdPeriodo;
+            int IdClient;
 
             IdPeriodo = Convert.ToInt32(cboPeriod.SelectedItem.Value);
+            if (cboBuscarClients.SelectedIndex == 0)
+            {
+                IdClient = 0;
+            }
+            else
+            {
+                IdClient = Convert.ToInt32(cboBuscarClients.SelectedItem.Value);
+            }
 
-            if (!ListarPorPeriodo(IdPeriodo))
+            if (!ListarPorPeriodo(IdPeriodo, IdClient))
             {
                 msn = "Connection error";
                 ShowDialog(msn);
             }
         }
 
-        public bool ListarPorPeriodo(int IdPeriodo)
+        public bool ListarPorPeriodo(int IdPeriodo, int IdCliente)
         {
             try
             {
 
-                lvw_Task.DataSource = ca.ListarPorPeriodo(IdPeriodo);
+                lvw_Task.DataSource = ca.ListarPorPeriodo(IdPeriodo, IdCliente);
                 lvw_Task.DataBind();
+                Session["TipoBusqueda"]  = "P";
                 return true;
 
             }
@@ -2316,7 +2256,370 @@ namespace AyEServicesCRM
 
         }
 
+        private void GetEmployeesUpdate()
+        {
+            using (SqlConnection conn = new SqlConnection())
+            {
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["micadenaconexion"].ConnectionString;
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.CommandText = "usp_AyE_Listar_Task_Participantes";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@idTask", Convert.ToInt32(txtCodigoTask.Text));
+                    cmd.Connection = conn;
+                    conn.Open();
+                    using (SqlDataReader sdr = cmd.ExecuteReader())
+                    {
+                        while (sdr.Read())
+                        {
+                            ListItem item = new ListItem();
+                            item.Text = sdr["Employees"].ToString();
+                            item.Value = sdr["IdEmployee"].ToString();
+                            item.Selected = Convert.ToBoolean(sdr["State"]);
+                            lstBoxTest.Items.Add(item);
+                        }
+                    }
+                    conn.Close();
+                }
+            }
+        }
 
+        protected void InsertTaskPacticipants()
+        {
+            using (SqlConnection conn = new SqlConnection())
+            {
+                bool seleccionado;
+                seleccionado = false;
+                conn.ConnectionString = ConfigurationManager
+                .ConnectionStrings["micadenaconexion"].ConnectionString;
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.CommandText = "usp_AyE_Add_ParticipantsTask";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Connection = conn;
+                    conn.Open();
+                    foreach (ListItem item in lstBoxTest.Items)
+                    {
+                        if (item.Selected)
+                        {
+                            cmd.Parameters.Clear();
+                            cmd.Parameters.AddWithValue("@IdTask", int.Parse(txtCodigoTask.Text));
+                            cmd.Parameters.AddWithValue("@IdEmployee", int.Parse(item.Value));
+                            cmd.Parameters.AddWithValue("@State", '1');
+                            cmd.ExecuteNonQuery();
+                            seleccionado = true;
+                        }
+                    }
+                    conn.Close();
+                }
+
+                //using (SqlCommand cmd = new SqlCommand())
+                //{
+
+                //    cmd.CommandText = "usp_AyE_Add_ParticipantsTask";
+                //    cmd.CommandType = CommandType.StoredProcedure;
+                //    cmd.Connection = conn;
+                //    conn.Open();
+
+                //    cmd.Parameters.Clear();
+                //    cmd.Parameters.AddWithValue("@State", '1');
+                //    cmd.Parameters.AddWithValue("@IdTask", int.Parse(txtCodigoTask.Text));
+                //    cmd.Parameters.AddWithValue("@IdEmployee", int.Parse(IdEmployees));
+                //    cmd.ExecuteNonQuery();
+
+                //    conn.Close();
+                //}
+            }
+
+
+        }
+
+
+
+        public void IdTask()
+        {
+            ds = ca.ListarMultiplesTablasTodo("TaskIdMax");
+            dt = ds.Tables[0];
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                dr = dt.Rows[i];
+                txtCodigoTask.Text = ((Convert.ToString(dr["Id_Max"])));
+            }
+        }
+
+
+
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            string msn;
+            msn = "";
+            //btnSave.Enabled = false;
+            if (cboTypeTask.SelectedIndex == 0)
+            {
+                cboTypeTask.Focus();
+                return;
+            }
+
+            if (txtName.Text == "")
+            {
+                txtName.Focus();
+                return;
+            }
+
+            if (txtStarDate.Text == "")
+            {
+                txtStarDate.Focus();
+                return;
+            }
+
+            if (txtDueTime.Text == "")
+            {
+                txtDueTime.Focus();
+                return;
+            }
+
+            string msg = "";
+            foreach (ListItem li in lstBoxTest.Items)
+            {
+                if (li.Selected == true)
+                {
+                    msg += li.Text + " is selected.";
+                }
+            }
+
+            if (msg == "")
+            {
+                lstBoxTest.Focus();
+                msg = "No selecciono un participante";
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "alert('" + msg + "');", true);
+
+                //msn = "User not assigned";
+                //ShowDialog(msn);
+                return;
+            }
+
+
+            //if (cboAssigned.SelectedIndex == 0)
+            //{
+            //    cboAssigned.Focus();
+            //    return;
+            //}
+            //if (lstBoxTest.SelectedIndex == 0)
+            //{
+            //    lstBoxTest.Focus();
+            //    return;
+            //}
+
+
+            if (cboStatus.SelectedIndex == 0)
+            {
+                cboStatus.Focus();
+                return;
+            }
+
+            if (cboLocation.SelectedIndex == 0)
+            {
+                cboLocation.Focus();
+                return;
+            }
+
+            //if (cboContacts.SelectedIndex == 0)
+            //{
+            //    cboContacts.Focus();
+            //    return;
+            //}
+
+            if (cbopriority.SelectedIndex == 0)
+            {
+                cbopriority.Focus();
+                return;
+            }
+
+            TaskEntity Task = new TaskEntity();
+            Task.IdClient = int.Parse(lblCodClient.Text);
+            Task.IdTypeTask = int.Parse(cboTypeTask.SelectedValue.ToString());
+            //Task.IdEmployee = int.Parse(cboAssigned.SelectedValue.ToString());
+            Task.IdEmployee = int.Parse(lstBoxTest.SelectedValue.ToString());
+            Task.IdEmployeeCreate = int.Parse(IdEmployees);
+            Task.IdStatus = int.Parse(cboStatus.SelectedValue.ToString());
+            Task.IdLocation = int.Parse(cboLocation.SelectedValue.ToString());
+            if (txtParentTask.Text == "")
+            {
+                Task.IdParentTask = int.Parse("0");
+            }
+            else
+            {
+                Task.IdParentTask = int.Parse(lblCodigoNewTask.Text);
+            }
+            Task.IdContact = cboContacts.SelectedValue.ToString() == "" ? 0 : int.Parse(cboContacts.SelectedValue.ToString());
+            Task.IdPriority = int.Parse(cbopriority.SelectedValue.ToString());
+            Task.Name = txtName.Text;
+            Task.StartDateTime = Convert.ToDateTime(txtStarDate.Text);
+            Task.DueDateTime = Convert.ToDateTime(txtDueTime.Text);
+            Task.FiscalYear = int.Parse(cboFiscalYear.SelectedValue.ToString());
+            Task.IdClientAccount = cboClientAccount.SelectedValue.ToString() == "" ? 0 : int.Parse(cboClientAccount.SelectedValue.ToString());
+
+            int MinutosDay = 0, MinutosHour = 0, Minutos, Estimate = 0;
+            if (txtDias.Text != "")
+            {
+                int HourDay = int.Parse(txtDias.Text) * 24;
+                MinutosDay = HourDay * 60;
+            }
+            else
+            {
+                MinutosDay = 0;
+            }
+
+            if (txtHoras.Text != "")
+            {
+                MinutosHour = int.Parse(txtHoras.Text) * 60;
+            }
+            else
+            {
+                MinutosHour = 0;
+            }
+
+            if (txtMinutos.Text != "")
+            {
+                Minutos = int.Parse(txtMinutos.Text);
+            }
+            else
+            {
+                Minutos = 0;
+            }
+            Estimate = MinutosDay + MinutosHour + Minutos;
+            Task.Estimate = Estimate;
+            Task.Description = txtDescription.Text;
+            if (chkState.Checked == true)
+            {
+                Task.State = "1";
+            }
+            else
+            {
+                Task.State = "0";
+            }
+            Task = TaskBS.Save(Task);
+            IdTask();
+            InsertTaskPacticipants();
+            lblMensajeModal.Text = "Saved correctly.";
+            LinkOk.Focus();
+            //btnSave.Enabled = true;
+            //string script = "showModalMensaje();";
+            //ScriptManager.RegisterStartupScript(this, typeof(Page), "invocarfuncion", script, true);
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
+        }
+
+        public void UpdateTaskPacticipants()
+        {
+            using (SqlConnection conn = new SqlConnection())
+            {
+                conn.ConnectionString = ConfigurationManager
+                        .ConnectionStrings["micadenaconexion"].ConnectionString;
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.CommandText = "usp_AyE_Update_Task_Participants";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Connection = conn;
+                    conn.Open();
+
+                    foreach (ListItem item in lstBoxTest.Items)
+                    {
+                        if (item.Selected)
+                        {
+                            cmd.Parameters.Clear();
+                            cmd.Parameters.AddWithValue("@State", item.Selected);
+                            cmd.Parameters.AddWithValue("@IdTask", txtCodigoTask.Text);
+                            cmd.Parameters.AddWithValue("@IdEmployee", item.Value);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                    conn.Close();
+                }
+            }
+        }
+
+        public void DeleteTaskPacticipants()
+        {
+            using (SqlConnection conn = new SqlConnection())
+            {
+                conn.ConnectionString = ConfigurationManager
+                        .ConnectionStrings["micadenaconexion"].ConnectionString;
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.CommandText = "update TaskPacticipants set State = @State where  IdTask=@IdTask and  IdEmployee=@IdEmploye";
+                    cmd.Connection = conn;
+                    conn.Open();
+                    foreach (ListItem item in lstBoxTest.Items)
+                    {
+                        cmd.Parameters.Clear();
+                        cmd.Parameters.AddWithValue("@State", 0);
+                        cmd.Parameters.AddWithValue("@IdTask", txtCodigoTask.Text);
+                        cmd.Parameters.AddWithValue("@IdEmploye", item.Value);
+                        cmd.ExecuteNonQuery();
+                    }
+                    conn.Close();
+                }
+            }
+        }
+
+        public bool ObtenerUserAuthorized(int IdTask, int IdEmployee)
+        {
+            int valIdEmployee;
+            valIdEmployee = 0;
+
+            try
+            {
+                ds = ca.ListarObtenerUserAuthorized(IdTask, IdEmployee);
+                dt = ds.Tables[0];
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    dr = dt.Rows[i];
+                    valIdEmployee = ((Convert.ToInt32(dr["IdEmployee"])));
+                }
+
+                if (valIdEmployee == 0)
+                {
+
+                    return true;
+                }
+                else
+                {
+
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                return true;
+            }
+        }
+
+        protected void linkActualizarListado_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToString(Session["TipoBusqueda"]) == "P")
+            {
+                cboPeriod_SelectedIndexChanged(sender, e);
+            }
+
+            if (Convert.ToString(Session["TipoBusqueda"]) == "F")
+            {
+                linkBuscarFechas_Click(sender, e);
+            }
+
+            if (Convert.ToString(Session["TipoBusqueda"]) == "N")
+            {
+                linkBuscarTask_Click(sender, e);
+            }
+
+            if (Convert.ToString(Session["TipoBusqueda"]) == "C")
+            {
+                OnSelectedIndexChangedMethod(sender, e);
+            }
+
+        }
 
     }
 }

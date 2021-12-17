@@ -299,7 +299,7 @@
                                 <div class="col-sm-6">
                                     <h5 class="form-group"><strong>Participants*</strong></h5>
                                     <div class="input-group date col-sm-12">
-                                        <asp:ListBox runat="server" ID="lstBoxTest" SelectionMode="Multiple" class="form-control"></asp:ListBox>
+                                        <asp:ListBox runat="server" ID="lstBoxTest" SelectionMode="Multiple" required="required" class="form-control" Width="418.75"></asp:ListBox>
                                     </div>
                                 </div>
                             </div>
