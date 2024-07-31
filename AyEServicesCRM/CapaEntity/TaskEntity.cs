@@ -27,6 +27,9 @@ namespace CapaEntity
         public DateTime CreationDate { get; set; }
         public DateTime ModificationDate { get; set; }
 
+        public int IdGroup { get; set; }
+
+
 
     }
 }

@@ -7,7 +7,7 @@ namespace CapaBusiness
     public class ClientAccountBS
     {
         ClientAccountDAO ca = new ClientAccountDAO();
-        DataSet ds;
+        //DataSet ds;
 
         public static ClientAccountEntity Save(ClientAccountEntity _Entidad)
         {

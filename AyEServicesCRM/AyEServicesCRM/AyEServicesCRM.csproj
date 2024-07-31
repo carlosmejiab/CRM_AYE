@@ -435,6 +435,7 @@
     <Content Include="Content\select2.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\sumoselect.css" />
+    <Content Include="Content\sweetalert2.min.css" />
     <Content Include="Datatable\dataTables.bootstrap.css" />
     <Content Include="Datatable\dataTables.bootstrap.min.js" />
     <Content Include="Datatable\dataTables.responsive.css" />
@@ -467,6 +468,7 @@
     <Content Include="M_Tracking.aspx" />
     <Content Include="ProcesarFoto.ashx" />
     <Content Include="Scripts\MensajeValidacion.js" />
+    <Content Include="Scripts\sweetalert2.min.js" />
     <Content Include="Scripts\WebForms\Task.js" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Calendar\dist\css\adminlte.css.map" />
@@ -494,6 +496,7 @@
     <Content Include="Calendar\plugins\moment\moment-with-locales.min.js.map" />
     <Content Include="Calendar\plugins\moment\moment.min.js.map" />
     <Content Include="JsonResponse.ashx" />
+    <None Include="Properties\PublishProfiles\pruebadesarrollo.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
@@ -548,7 +551,9 @@
     <Content Include="Site.Master" />
     <Content Include="U_EmployeesUser.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>

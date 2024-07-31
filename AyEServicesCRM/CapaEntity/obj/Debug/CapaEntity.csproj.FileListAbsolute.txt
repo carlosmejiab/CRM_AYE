@@ -54,6 +54,16 @@ C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\Cap
 C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
 C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
 C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
-C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojResolveAssemblyReference.cache
 C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
 C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csprojResolveAssemblyReference.cache
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csproj.CoreCompileInputs.cache
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb

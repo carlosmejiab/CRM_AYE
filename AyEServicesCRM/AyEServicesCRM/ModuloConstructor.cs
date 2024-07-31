@@ -31,6 +31,28 @@ namespace AyEServicesCRM
             con.Close();
             return ds;
         }
+
+        public DataSet ListarCliente()
+        {
+            DataSet ds = new DataSet();
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = cad;
+            con.Open();
+            da = new SqlDataAdapter("sp_ListarCliente", con);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            try
+            {
+                da.Fill(ds);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            con.Close();
+            return ds;
+        }
+
         public DataSet ListarMultiplesTablasPorCodigo(String Tipo, int Codigo)
         {
             DataSet ds = new DataSet();

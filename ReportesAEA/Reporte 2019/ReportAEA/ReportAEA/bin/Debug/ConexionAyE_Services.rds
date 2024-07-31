@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ConexionAyE_Services">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=CARLOS\CMEJIA;Initial Catalog=AyE_Services</ConnectString>
+    <Prompt>Specify a user name and password for data source ConexionAyE_Services:</Prompt>
+  </ConnectionProperties>
+  <DataSourceID>855760bf-2a31-4596-be17-ff1bb3070892</DataSourceID>
+</RptDataSource>

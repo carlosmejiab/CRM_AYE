@@ -17,13 +17,6 @@ namespace AyEServicesCRM
         DataSet ds;
         DataTable dt;
         DataRow dr;
-        //Periodo = P
-        //Fechas = F
-        //NumTask = N
-        //Cliente = C
-
-        //String TipoBusqueda = "";
-
 
         ModuloConstructor ca = new ModuloConstructor();
         public String StatusTracking, StatusTrackingPlay;
@@ -39,11 +32,13 @@ namespace AyEServicesCRM
             lvw_NewTask.DataSource = ca.ListarMultiplesTablasTodo("MTaskList");
             lvw_NewTask.DataBind();
         }
+
         public void ListarClient()
         {
-            lvw_Client.DataSource = ca.ListarMultiplesTablasTodo("MClient");
+            lvw_Client.DataSource = ca.ListarCliente();
             lvw_Client.DataBind();
         }
+
         DateTime dtime = new DateTime(2014, 9, 1, 0, 0, 0, 000);
         Timer t = new Timer();
         String IdUseer, IdEmployees;
@@ -52,15 +47,9 @@ namespace AyEServicesCRM
         {
             if (!Page.IsPostBack)
             {
-                GetBuscarClient();
                 ListarComboCliente();
                 ListarComboPeriodo();
 
-
-                //txtTask.Attributes.Add("onKeyPress", "doClick('" + btnSearch.ClientID + "',event)");
-                //Timer1.Enabled = false;
-                //Timer1.Interval = 1;
-                //Label1.Text = dtime.ToLongTimeString() + ":" + dtime.Millisecond;
             }
 
             if (Session["EmployessSession"] != null)
@@ -115,25 +104,6 @@ namespace AyEServicesCRM
             }
         }
 
-        public void GetBuscarClient()
-        {
-            using (SqlConnection cnn = new SqlConnection(cadenaconexion))
-            {
-                cnn.Open();
-                SqlCommand cmd = new SqlCommand("usp_AyE_Listar_Tablas_Todo", cnn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@TIPO", "MClient");
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                cnn.Close();
-
-                cboBuscarClients.DataTextField = "Name";
-                cboBuscarClients.DataValueField = "IdClient";
-                cboBuscarClients.DataSource = dt;
-                cboBuscarClients.DataBind();
-            }
-        }
 
         public void Limpiar()
         {
@@ -164,7 +134,6 @@ namespace AyEServicesCRM
             txtDias.Enabled = true;
             txtHoras.Enabled = true;
             txtMinutos.Enabled = true;
-            //cboAssigned.Enabled = true;
             cboStatus.Enabled = true;
             cboLocation.Enabled = true;
             cboTypeClient.Enabled = true;
@@ -184,7 +153,6 @@ namespace AyEServicesCRM
             txtDias.Enabled = false;
             txtHoras.Enabled = false;
             txtMinutos.Enabled = false;
-            //cboAssigned.Enabled = false;
             cboStatus.Enabled = false;
             cboLocation.Enabled = false;
             cboTypeClient.Enabled = false;
@@ -202,13 +170,11 @@ namespace AyEServicesCRM
             String State, IdParentTask;
 
             GetTypeTask();
-            //GetEmployees();
             GetStatus();
             GetLocation();
-
+            ListarComboGroup();
             GetPriority();
             GetFiscalYear();
-            GetClientAccount();
             txtCodigoTask.Text = lvw_Task.DataKeys[e.NewSelectedIndex].Value.ToString();
             ds = ca.ListarMultiplesTablasPorCodigo("MTask", Convert.ToInt32(txtCodigoTask.Text));
             dt = ds.Tables[0];
@@ -218,7 +184,6 @@ namespace AyEServicesCRM
                 dr = dt.Rows[i];
                 txtTaskNumber.Text = Convert.ToString(txtCodigoTask.Text);
                 txtName.Text = ((Convert.ToString(dr["Name"])));
-                //txtStarDate.Text = "2020-11-19T20:07";
                 DateTime StarDate = ((Convert.ToDateTime(dr["StartDateTime"])));
                 txtStarDate.Text = String.Format("{0:yyyy-MM-ddTHH:mm}", StarDate);
 
@@ -226,6 +191,7 @@ namespace AyEServicesCRM
                 txtDueTime.Text = String.Format("{0:yyyy-MM-ddTHH:mm}", DueTime);
 
                 lblCodClient.Text = ((Convert.ToString(dr["IdClient"])));
+                GetClientAccount();
                 txtCliente.Text = ((Convert.ToString(dr["Client"])));
                 txtDescription.Text = ((Convert.ToString(dr["Description"])));
                 txtDias.Text = ((Convert.ToString(dr["Dia"])));
@@ -252,10 +218,47 @@ namespace AyEServicesCRM
                 }
 
                 GetContacName(Convert.ToInt32(lblCodClient.Text));
-                GetClitAccount(int.Parse((Convert.ToString(dr["IdClientAccount"]))));
+
+                cboClientAccount.ClearSelection();
+
+                string numCuenta;
+                if (Convert.ToString(dr["IdClientAccount"]) == "0")
+                {
+                    numCuenta = "- To Select -";
+                }
+                else
+                {
+                    numCuenta = Convert.ToString(dr["ClienteAccount"]);
+                }
+                cboClientAccount.Items.FindByText(numCuenta).Selected = true;
+
+                //GetClitAccount(int.Parse((Convert.ToString(dr["IdClientAccount"]))));
 
                 cboTypeTask.ClearSelection();
-                cboTypeTask.Items.FindByText((Convert.ToString(dr["TypeTask"]))).Selected = true;
+
+                cboTypeTask.Items.FindByText(Convert.ToString(dr["TypeTask"])).Selected = true;
+
+                if (cboTypeTask.SelectedItem.ToString() == "Billing")
+                {
+                    GetStatusBilling();
+                }
+
+                cboStatus.ClearSelection();
+                cboStatus.Items.FindByText((Convert.ToString(dr["Status"]))).Selected = true;
+
+
+                string nameGroup = Convert.ToString(dr["NameGroup"]);
+                ListItem item = cboGroup.Items.FindByText(nameGroup);
+                if (item != null)
+                {
+                    cboGroup.ClearSelection();
+                    item.Selected = true;
+                }
+
+                if (cboTypeTask.SelectedItem.ToString() == "Billing")
+                {
+                    GetStatusBilling();
+                }
 
                 cboStatus.ClearSelection();
                 cboStatus.Items.FindByText((Convert.ToString(dr["Status"]))).Selected = true;
@@ -272,8 +275,6 @@ namespace AyEServicesCRM
                 cbopriority.ClearSelection();
                 cbopriority.Items.FindByText((Convert.ToString(dr["Priority"]))).Selected = true;
 
-                //cboAssigned.ClearSelection();
-                //cboAssigned.Items.FindByText((Convert.ToString(dr["Assigned"]))).Selected = true;
 
                 if (Convert.ToString(dr["ClienteAccount"]) != "")
                 {
@@ -345,18 +346,18 @@ namespace AyEServicesCRM
             GetEmployees();
             GetStatus();
             GetLocation();
-            //GetContacName(Convert.ToInt32(lblCodClient.Text));
+            ListarComboGroup();
             cboContacts.Items.Clear();
             GetPriority();
-            //GetClientAccount();
             GetFiscalYear();
-            //GetEmployees();
+            GetClientAccount();
             txtName.Text = cboTypeTask.SelectedItem.ToString();
             lblTitulo.Text = "Do you want to save the information?";
 
             btnUpdate.Visible = false;
             btnDelete.Visible = false;
             btnSave.Visible = true;
+            cboClientAccount.Enabled = false;
 
             cboTypeTask.Focus();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModal();", true);
@@ -366,72 +367,202 @@ namespace AyEServicesCRM
 
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
-            TaskEntity Task = new TaskEntity();
-            Task.IdTask = int.Parse(txtCodigoTask.Text);
-            Task.IdClient = int.Parse(lblCodClient.Text);
-            Task.IdTypeTask = int.Parse(cboTypeTask.SelectedValue.ToString());
-            //Task.IdEmployee = int.Parse(cboAssigned.SelectedValue.ToString());
-            Task.IdEmployee = int.Parse(lstBoxTest.SelectedValue.ToString());
-            Task.IdEmployeeCreate = int.Parse(IdEmployees);
-            Task.IdStatus = int.Parse(cboStatus.SelectedValue.ToString());
-            Task.IdLocation = int.Parse(cboLocation.SelectedValue.ToString());
-            Task.IdParentTask = int.Parse(lblCodigoNewTask.Text);
-            Task.IdContact = cboContacts.SelectedValue.ToString() == "" ? 0 : int.Parse(cboContacts.SelectedValue.ToString());
-            Task.IdPriority = int.Parse(cbopriority.SelectedValue.ToString());
-            Task.Name = txtName.Text;
-            Task.StartDateTime = Convert.ToDateTime(txtStarDate.Text);
-            Task.DueDateTime = Convert.ToDateTime(txtDueTime.Text);
-            Task.FiscalYear = int.Parse(cboFiscalYear.SelectedValue.ToString());
-            Task.IdClientAccount = cboClientAccount.SelectedValue.ToString() == "" ? 0 : int.Parse(cboClientAccount.SelectedValue.ToString());
+            string ErrorMensaje;
+            string MensajeAlerta;
+            string msgNoSelec;
 
+            try
+            {
+
+                if (cboTypeTask.SelectedValue.ToString() == "")
+                {
+                    MensajeAlerta = "You have to select the type of task.";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + MensajeAlerta + "', 'Task log alert');", true);
+                    return;
+                }
+
+                if (cboStatus.SelectedValue.ToString() == "")
+                {
+                    MensajeAlerta = "You have to select the status.";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + MensajeAlerta + "', 'Task log alert');", true);
+                    return;
+                }
+
+                if (cboTypeTask.SelectedIndex == 4 && cboClientAccount.SelectedIndex == 0)
+                {
+                    cboClientAccount.Focus();
+                    msgNoSelec = "You have to select the Client Account";
+
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msgNoSelec + "', 'Task log alert');", true);
+
+                    return;
+                }
+
+                if (lstBoxTest.SelectedIndex == -1)
+                {
+                    lstBoxTest.Focus();
+                    msgNoSelec = "Please select at least one user before registering the task.";
+
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msgNoSelec + "', 'Task log alert');", true);
+
+                    return;
+                }
+
+
+                TaskEntity Task = new TaskEntity();
+                Task.IdTask = int.Parse(txtCodigoTask.Text);
+                Task.IdClient = int.Parse(lblCodClient.Text);
+                Task.IdTypeTask = int.Parse(cboTypeTask.SelectedValue.ToString());
+                Task.IdEmployee = int.Parse(lstBoxTest.SelectedValue.ToString());
+                Task.IdEmployeeCreate = int.Parse(IdEmployees);
+                Task.IdStatus = int.Parse(cboStatus.SelectedValue.ToString());
+                Task.IdLocation = int.Parse(cboLocation.SelectedValue.ToString());
+                Task.IdParentTask = int.Parse(lblCodigoNewTask.Text);
+                Task.IdContact = cboContacts.SelectedValue.ToString() == "" ? 0 : int.Parse(cboContacts.SelectedValue.ToString());
+                Task.IdPriority = int.Parse(cbopriority.SelectedValue.ToString());
+                Task.Name = txtName.Text;
+                Task.StartDateTime = Convert.ToDateTime(txtStarDate.Text);
+                Task.DueDateTime = Convert.ToDateTime(txtDueTime.Text);
+                Task.FiscalYear = int.Parse(cboFiscalYear.SelectedValue.ToString());
+                Task.IdClientAccount = cboClientAccount.SelectedValue.ToString() == "" ? 0 : int.Parse(cboClientAccount.SelectedValue.ToString());
+                Task.IdGroup = string.IsNullOrEmpty(cboGroup.SelectedValue?.ToString()) ? 0 : int.Parse(cboGroup.SelectedValue.ToString());
+
+                int MinutosDay = 0, MinutosHour = 0, Minutos, Estimate = 0;
+                if (txtDias.Text != "")
+                {
+                    int HourDay = int.Parse(txtDias.Text) * 24;
+                    MinutosDay = HourDay * 60;
+                }
+                else
+                {
+                    MinutosDay = 0;
+                }
+
+                if (txtHoras.Text != "")
+                {
+                    MinutosHour = int.Parse(txtHoras.Text) * 60;
+                }
+                else
+                {
+                    MinutosHour = 0;
+                }
+
+                if (txtMinutos.Text != "")
+                {
+                    Minutos = int.Parse(txtMinutos.Text);
+                }
+                else
+                {
+                    Minutos = 0;
+                }
+                Estimate = MinutosDay + MinutosHour + Minutos;
+                Task.Estimate = Estimate;
+                Task.Description = txtDescription.Text;
+                if (chkState.Checked == true)
+                {
+                    Task.State = "1";
+                }
+                else
+                {
+                    Task.State = "0";
+                }
+
+                TaskBS taskBSInstance = new TaskBS();
+
+                int repeatedIdTask = taskBSInstance.ExisteTaskUpdate(Task);
+
+                if (repeatedIdTask > 0)
+                {
+                    // Mostrar alerta
+                    string Mensaje = "The task already exists with task number: " + repeatedIdTask.ToString();
+
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + Mensaje + "', 'Task log alert');", true);
+                    return;
+
+                }
+                Task = TaskBS.Update(Task);
+                UpdateTaskPacticipants();
+                VerificarEstadoPacticipantes();
+
+                lblMensajeModal.Text = "Edited correctly.";
+                LinkOk.Focus();
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
+                //ShowSuccessMessage("Updated successfully.");
+
+            }
+            catch (Exception ex)
+            {
+                ErrorMensaje = "Error saving the task. " + ex.Message;
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + ErrorMensaje + "', 'Task log alert');", true);
+            }
+
+        }
+
+        public void VerificarEstadoPacticipantes()
+        {
+            DataSet dsr;
+            DataTable dtr;
+            DataRow drw;
+            dsr = ca.ListarMultiplesTablasPorCodigo("TaskPacticipants", Convert.ToInt32(txtCodigoTask.Text));
+            dtr = dsr.Tables[0];
+            int IdEmployee;
+            int IdTaskPacticipants;
+
+            for (int i = 0; i < dtr.Rows.Count; i++)
+            {
+                drw = dtr.Rows[i];
+                IdEmployee = ((Convert.ToInt32(drw["IdEmployee"])));
+                IdTaskPacticipants = ((Convert.ToInt32(drw["IdTaskPacticipants"])));
+                UpdateEstadoPacticipants(IdTaskPacticipants, IdEmployee);
+            }
+        }
+
+        public void UpdateEstadoPacticipants(int IdTaskPacticipants, int IdEmployee)
+        {
+
+            string Estado = "No encontrado";
             
-            int MinutosDay = 0, MinutosHour = 0, Minutos, Estimate = 0;
-            if (txtDias.Text != "")
+            using (SqlConnection conn2 = new SqlConnection())
             {
-                int HourDay = int.Parse(txtDias.Text) * 24;
-                MinutosDay = HourDay * 60;
-            }
-            else
-            {
-                MinutosDay = 0;
-            }
+                conn2.ConnectionString = ConfigurationManager
+                        .ConnectionStrings["micadenaconexion"].ConnectionString;
 
-            if (txtHoras.Text != "")
-            {
-                MinutosHour = int.Parse(txtHoras.Text) * 60;
-            }
-            else
-            {
-                MinutosHour = 0;
-            }
+                using (SqlCommand cmd2 = new SqlCommand())
+                {
+                    cmd2.CommandText = "usp_AyE_Update_State_TaskParticipants";
+                    cmd2.CommandType = CommandType.StoredProcedure;
+                    cmd2.Connection = conn2;
+                    conn2.Open();
 
-            if (txtMinutos.Text != "")
-            {
-                Minutos = int.Parse(txtMinutos.Text);
-            }
-            else
-            {
-                Minutos = 0;
-            }
-            Estimate = MinutosDay + MinutosHour + Minutos;
-            Task.Estimate = Estimate;
-            Task.Description = txtDescription.Text;
-            if (chkState.Checked == true)
-            {
-                Task.State = "1";
-            }
-            else
-            {
-                Task.State = "0";
-            }
-            Task = TaskBS.Update(Task);
-            UpdateTaskPacticipants();
+                    foreach (ListItem item in lstBoxTest.Items)
+                    {
+                        if (item.Selected)
+                        {
+                            if (Estado == "No encontrado")
+        
+                    {
+                                if (Convert.ToInt32(item.Value) == IdEmployee)
+                                {
+                                    Estado = "Encontrado";
+        
+                                }
 
-            lblMensajeModal.Text = "Edited correctly.";
-            LinkOk.Focus();
-            //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "hideModal();", true);
+                            }
 
+                        }
+
+                    }
+
+                    if (Estado == "No encontrado")
+                    {
+                        cmd2.Parameters.Clear();
+                        cmd2.Parameters.AddWithValue("@IdTaskPacticipants", IdTaskPacticipants);
+                        cmd2.ExecuteNonQuery();
+                    }
+
+                    conn2.Close();
+                }
+            }
         }
 
         protected void btnDelete_Click(object sender, EventArgs e)
@@ -463,7 +594,7 @@ namespace AyEServicesCRM
         }
         protected void LinkUpdate_Click(object sender, EventArgs e)
         {
-            int IdTask;
+            //int IdTask;
             lblTitulo.Text = "Do you want to modify the information?";
             Desbloquear();
             lstBoxTest.Items.Clear();
@@ -520,29 +651,41 @@ namespace AyEServicesCRM
         {
             using (SqlConnection conn = new SqlConnection())
             {
-                conn.ConnectionString = ConfigurationManager
-                        .ConnectionStrings["micadenaconexion"].ConnectionString;
-                using (SqlCommand cmd = new SqlCommand())
+                try
                 {
-                    cmd.CommandText = "select E.IdEmployee,e.LastName +' '+E.FirstName as 'Employees' from Employees E where E.State='1' order by e.LastName asc";
-                    cmd.Connection = conn;
-                    conn.Open();
-                    cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("@IdEmployee", IdEmployees);
-                    using (SqlDataReader sdr = cmd.ExecuteReader())
+                    conn.ConnectionString = ConfigurationManager.ConnectionStrings["micadenaconexion"].ConnectionString;
+                    using (SqlCommand cmd = new SqlCommand())
                     {
-                        while (sdr.Read())
+                        cmd.CommandText = "SELECT E.IdEmployee, e.LastName + ' ' + E.FirstName AS 'Employees' FROM Employees E WHERE E.State='1' ORDER BY e.LastName ASC";
+                        cmd.Connection = conn;
+                        conn.Open();
+
+                        using (SqlDataReader sdr = cmd.ExecuteReader())
                         {
-                            ListItem item = new ListItem();
-                            item.Text = sdr["Employees"].ToString();
-                            item.Value = sdr["IdEmployee"].ToString();
-                            lstBoxTest.Items.Add(item);
+                            while (sdr.Read())
+                            {
+                                ListItem item = new ListItem();
+                                item.Text = sdr["Employees"].ToString();
+                                item.Value = sdr["IdEmployee"].ToString(); 
+                                lstBoxTest.Items.Add(item);
+                            }
                         }
                     }
-                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+                finally
+                {
+                    if (conn.State == ConnectionState.Open)
+                    {
+                        conn.Close();
+                    }
                 }
             }
         }
+
 
         public void GetStatus()
         {
@@ -565,6 +708,50 @@ namespace AyEServicesCRM
                 cboStatus.Items.Insert(0, new ListItem("- To Select -", ""));
             }
         }
+
+        public void GetStatusPorTypeTask(int IdTypeTask)
+        {
+            using (SqlConnection cnn = new SqlConnection(cadenaconexion))
+            {
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand("usp_GetStatusPorTypeTask", cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdTypeTask", IdTypeTask);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                cnn.Close();
+
+                cboStatus.DataTextField = "Description";
+                cboStatus.DataValueField = "IdTabla";
+                cboStatus.DataSource = dt;
+                cboStatus.DataBind();
+                cboStatus.Items.Insert(0, new ListItem("- To Select -", ""));
+            }
+        }
+
+        public void GetStatusBilling()
+        {
+            using (SqlConnection cnn = new SqlConnection(cadenaconexion))
+            {
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand("usp_AyE_Listar_Status_Billing", cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                cnn.Close();
+
+                cboStatus.DataTextField = "Description";
+                cboStatus.DataValueField = "IdTabla";
+                cboStatus.DataSource = dt;
+                cboStatus.DataBind();
+                cboStatus.Items.Insert(0, new ListItem("- To Select -", ""));
+            }
+        }
+
         public void GetLocation()
         {
             using (SqlConnection cnn = new SqlConnection(cadenaconexion))
@@ -686,10 +873,6 @@ namespace AyEServicesCRM
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModal2();", true);
         }
 
-        protected void lvw_Client_SelectedIndexChanging(object sender, ListViewSelectEventArgs e)
-        {
-
-        }
 
         protected void LinkSelect_Click(object sender, EventArgs e)
         {
@@ -700,6 +883,11 @@ namespace AyEServicesCRM
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "hideModal2();", true);
             GetContacName(Convert.ToInt32(lblCodClient.Text));
             GetClientAccount();
+        }
+
+        protected void lvw_Client_SelectedIndexChanging(object sender, ListViewSelectEventArgs e)
+        {
+
         }
 
         protected void LinkAgregarCliente_Click(object sender, EventArgs e)
@@ -726,6 +914,19 @@ namespace AyEServicesCRM
 
         protected void cboTypeTask_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cboTypeTask.SelectedItem.ToString() == "Bookkeeping Services")
+            {
+                cboClientAccount.Enabled = true;
+            }
+            else
+            {
+                cboClientAccount.ClearSelection();
+                string numCuenta;
+                numCuenta = "- To Select -";
+                cboClientAccount.Items.FindByText(numCuenta).Selected = true;
+                cboClientAccount.Enabled = false;
+            }
+
             //Validar cuando es Other.
             if (cboTypeTask.SelectedItem.ToString() == "Other")
             {
@@ -737,6 +938,76 @@ namespace AyEServicesCRM
                 txtName.Enabled = false;
                 txtName.Text = cboTypeTask.SelectedItem.ToString();
             }
+
+
+            if (cboTypeTask.SelectedItem.ToString() == "Billing")
+            {
+                string SelecGetStatusBilling;
+
+                SelecGetStatusBilling = cboStatus.SelectedItem.Text;
+
+                GetStatusBilling();
+
+
+                if (SelecGetStatusBilling == "Done" || SelecGetStatusBilling == "Inactive" || SelecGetStatusBilling == "Need Payment" || SelecGetStatusBilling == "Not Started" || SelecGetStatusBilling == "Payment Received")
+                {
+
+                    cboStatus.ClearSelection();
+                    cboStatus.Items.FindByText(SelecGetStatusBilling).Selected = true;
+                }
+
+            }
+
+            else
+            {
+                string SelecGetStatus;
+                int IdTypeTask;
+
+                SelecGetStatus = cboStatus.SelectedItem.Text;
+
+                if (cboTypeTask.SelectedValue == "")
+                {
+                    IdTypeTask = 0;
+                }
+                else
+                {
+                    IdTypeTask = int.Parse(cboTypeTask.SelectedValue);
+
+                }
+
+
+                GetStatusPorTypeTask(IdTypeTask);
+
+                ListItem item = cboStatus.Items.FindByText(SelecGetStatus);
+                if (item != null)
+                {
+                    item.Selected = true;
+                }
+                else
+                {
+                    cboStatus.ClearSelection();
+                    // El elemento no existe en la lista, maneja este caso según tus necesidades.
+                }
+
+            }
+
+            if (cboTypeTask.SelectedValue != "2" )
+            {
+
+                if (cboTypeTask.SelectedValue != "10" )
+                {
+
+                    if ( cboTypeTask.SelectedValue != "25")
+                    {
+
+                        cboGroup.SelectedValue = "";
+
+                    }
+
+                }
+
+            }
+
 
         }
         public void IdClient()
@@ -950,8 +1221,6 @@ namespace AyEServicesCRM
 
         protected void btnSaveTastRegister_Click(object sender, EventArgs e)
         {
-            //aca
-
             if (txtNameRegister.Text == "")
             {
                 txtNameRegister.Focus();
@@ -1019,6 +1288,7 @@ namespace AyEServicesCRM
             Task.DueDateTime = Convert.ToDateTime(txtDueDateRegister.Text);
             Task.FiscalYear = int.Parse(cboFiscalYear.SelectedValue.ToString());
             Task.IdClientAccount = int.Parse(cboClientAccount.SelectedValue.ToString());
+            Task.IdGroup = string.IsNullOrEmpty(cboGroup.SelectedValue?.ToString()) ? 0 : int.Parse(cboGroup.SelectedValue.ToString());
 
             int MinutosDay = 0, MinutosHour = 0, Minutos, Estimate = 0;
             if (txtDaysRegister.Text != "")
@@ -1282,7 +1552,6 @@ namespace AyEServicesCRM
 
         protected void LinkAgregarTracking_Click(object sender, EventArgs e)
         {
-            //lblCondicion.Text = "Pause";
             GetEmployeesTracking(); GeStatusTracking();
             txtTrackingName.Focus();
             string CodEmpleado;
@@ -1310,17 +1579,9 @@ namespace AyEServicesCRM
                 lblMensajeErrorTraking.Text = "User not authorized to perform Traking.";
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModalTraking();", true);
 
-                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "hideModal();", true);
-                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
                 return;
             }
 
-            //if (IdEmployee != CodEmpleado)
-            //{
-            //    lblMensajeModal.Text = "User not authorized to perform Traking.";
-            //    ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
-            //    return;
-            //}
 
             if (ExisteTrackingPlay(Convert.ToInt32(IdEmployee)))
             {
@@ -1353,7 +1614,6 @@ namespace AyEServicesCRM
                 lblCondicion.Text = "Paused";
             }
             lblmensaje.Visible = false;
-            //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "hideModal();", true);
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalmyModalTracking();", true);
         }
 
@@ -1458,7 +1718,6 @@ namespace AyEServicesCRM
             txtTaskTracking.Text = lblTaskTracking.Text;
             lblCodTaskTracking.Text = lblCodigoTaskTracking.Text;
             txtTrackingName.Text = lblTaskTracking.Text;
-            //txtTrackingName.Text = "";
             txtStarTimeTracking.Text = Convert.ToString(DateTime.Now.ToString());
             txtDueTimeTracking.Text = Convert.ToString(DateTime.Now.ToString());
             GeStatusTracking();
@@ -1629,20 +1888,15 @@ namespace AyEServicesCRM
             Ruta();
         }
 
-        protected void lvw_DocumentTask_SelectedIndexChanging(object sender, ListViewSelectEventArgs e)
-        {
-
-        }
-
         protected void lvwTrackinTask_SelectedIndexChanging(object sender, ListViewSelectEventArgs e)
         {
 
         }
         protected void LinkOk_Click(object sender, EventArgs e)
         {
-            //Response.Redirect(Page.Request.Path);
-            Response.Redirect(Request.RawUrl, true);
-
+            //Response.Redirect(Request.RawUrl, true);
+            string script = @"$('#myModal').modal('hide'); $('#myModalMensajes').modal('hide');";
+            ScriptManager.RegisterStartupScript(this, GetType(), "HideModals", script, true);
         }
         public void TimeWork(int IdTracking)
         {
@@ -1718,12 +1972,7 @@ namespace AyEServicesCRM
 
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-            //if (lblEstado.Text == "Stop")
-            //{
-            //    Timer1.Enabled = false;
-            //}
-            //else
-            //{
+
             int seconds = int.Parse(lblSegundos.Text);
             if (seconds >= 0)
             {
@@ -1745,10 +1994,7 @@ namespace AyEServicesCRM
             {
                 Timer1.Enabled = false;
             }
-            //}       
 
-            //dtime = dtime.AddMilliseconds(1);
-            //Label1.Text = dtime.ToLongTimeString() + ":" + dtime.Millisecond;
         }
 
         public void DatosTrackingValidarPlay()
@@ -1765,12 +2011,7 @@ namespace AyEServicesCRM
 
         protected void btnPlay_Click(object sender, EventArgs e)
         {
-            //if (lblCondicion.Text== "Working")
-            //{
-            //    Timer1.Enabled = true;
-            //}
-            //else
-            //{
+
             ConfirmarTrackingStar();
             DatosTrackingValidarPlay();
             TrackingEntity Tracking = new TrackingEntity();
@@ -1801,7 +2042,6 @@ namespace AyEServicesCRM
             Timer1.Enabled = true;
             lblCondicion.Text = "Start Tracking";
             lblStatusSelect.Text = "Working";
-            //}
             DatosTrackingWoringNew();
             SiteMaster master = this.Master as SiteMaster;
             master.ExisteTeacking();
@@ -1849,7 +2089,6 @@ namespace AyEServicesCRM
             Tracking2.DueDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
             Tracking2.DurationTime = Convert.ToInt32("0");//Se envia desde el PA
             Tracking2.TimeWork = Convert.ToInt32("0");
-            //Tracking2.TrackingStart = Convert.ToDateTime(TrackingStar);
             Tracking2.TrackingStart = DateTime.Now;
             Tracking2.TrackingDue = DateTime.Now;
             Tracking2.State = "2";
@@ -1858,9 +2097,7 @@ namespace AyEServicesCRM
             lblSegundos.Text = "0";
             lblMinutos.Text = "0";
             lblHora.Text = "0";
-            Timer1.Enabled = false; //For stop the timer
-                                    //dtime = new DateTime(2014, 9, 1, 0, 0, 0, 000);
-                                    //Label1.Text = dtime.ToLongTimeString() + ":" + dtime.Millisecond;
+            Timer1.Enabled = false; 
             ListarTrackingTask(Convert.ToInt32(lblCodigoTaskTracking.Text), Convert.ToInt32(IdEmployees));
             lblCondicion.Text = "Pause";
             lblmensaje.Text = "";
@@ -1883,10 +2120,7 @@ namespace AyEServicesCRM
 
         protected void UpdatePanel4_Load(object sender, EventArgs e)
         {
-            //if(lblCondicion.Text == "Working")
-            //{
-            //    ListarTrackingTask(Convert.ToInt32(lblCodigoTaskTracking.Text));
-            //}
+
         }
 
         protected void LinkPausa_Click(object sender, EventArgs e)
@@ -1971,28 +2205,6 @@ namespace AyEServicesCRM
             }
         }
 
-        //public void GetFiscalYear(int FiscalYear)
-        //{
-        //    using (SqlConnection cnn = new SqlConnection(cadenaconexion))
-        //    {
-        //        cnn.Open();
-        //        SqlCommand cmd = new SqlCommand("usp_AyE_Listar_FiscalYear", cnn);
-        //        cmd.CommandType = CommandType.StoredProcedure;
-        //        cmd.Parameters.AddWithValue("@FiscalYear", FiscalYear);
-        //        SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-        //        DataTable dt = new DataTable();
-        //        da.Fill(dt);
-        //        cnn.Close();
-
-        //        cboFiscalYear.DataTextField = "Description";
-        //        cboFiscalYear.DataValueField = "IdTabla";
-        //        cboFiscalYear.DataSource = dt;
-        //        cboFiscalYear.DataBind();
-        //        cboContacts.Items.Insert(0, new ListItem("- To Select -", ""));
-        //    }
-        //}
-
         public void GetClientAccount()
         {
             int CodCliente;
@@ -2018,25 +2230,10 @@ namespace AyEServicesCRM
                 cboClientAccount.DataValueField = "IdTabla";
                 cboClientAccount.DataSource = dt;
                 cboClientAccount.DataBind();
-                cboContacts.Items.Insert(0, new ListItem("- To Select -", ""));
+                cboClientAccount.Items.Insert(0, new ListItem("- To Select -", ""));
             }
         }
         String TiempoHoras, TiempoMinutos;
-
-        //protected void btnSearch_Click(object sender, EventArgs e)
-        //{
-        //    string searchText = string.Empty;
-        //    AddText(ref searchText, txtTask, "SearchButtonJavaScript");
-
-
-        //    if (string.IsNullOrEmpty(searchText))
-        //    {
-        //        searchText = "You did not enter any search text.";
-        //    }
-
-        //    ShowDialog(searchText);
-        //}
-
 
         private void AddText(ref string p_searchText, TextBox p_txtBox, string whichButton)
         {
@@ -2152,6 +2349,16 @@ namespace AyEServicesCRM
                 return;
             }
 
+            if(cboPeriod.SelectedValue != "")
+            {
+                cboPeriod.SelectedValue = "";
+            }
+
+            if (cboBuscarClients.SelectedValue != "")
+            {
+                cboBuscarClients.SelectedValue = "";
+            }
+
             ListarNumTask();
         }
 
@@ -2194,6 +2401,7 @@ namespace AyEServicesCRM
             catch (Exception ex)
             {
                 return false;
+                throw ex;
             }
             
         }
@@ -2213,6 +2421,19 @@ namespace AyEServicesCRM
                     ShowDialog(msn);
                 }
             }
+            else
+            {
+                IdClient = 0;
+
+                if (!ListarPorCliente(IdClient))
+                {
+                    msn = "Connection error";
+                    ShowDialog(msn);
+                }
+
+            }
+
+            txtTask.Text = "";
         }
 
         protected void cboPeriod_SelectedIndexChanged(object sender, EventArgs e)
@@ -2221,7 +2442,31 @@ namespace AyEServicesCRM
             int IdPeriodo;
             int IdClient;
 
-            IdPeriodo = Convert.ToInt32(cboPeriod.SelectedItem.Value);
+
+
+            if (cboPeriod.SelectedItem != null)
+            {
+                int selectedValue;
+                if (int.TryParse(cboPeriod.SelectedItem.Value, out selectedValue))
+                {
+                    // La conversión fue exitosa, puedes utilizar el valor seleccionado convertido (selectedValue) aquí
+                    IdPeriodo = Convert.ToInt32(cboPeriod.SelectedItem.Value);
+
+                }
+                else
+                {
+                    IdPeriodo = 0;
+                    // El valor seleccionado no se puede convertir a un entero válido
+                    // Puedes manejar esta situación de acuerdo a tus necesidades
+                }
+            }
+            else
+            {
+                IdPeriodo = 0;
+                // No hay ningún elemento seleccionado en el DropDownList
+                // Puedes manejar esta situación de acuerdo a tus necesidades
+            }
+
             if (cboBuscarClients.SelectedIndex == 0)
             {
                 IdClient = 0;
@@ -2236,6 +2481,8 @@ namespace AyEServicesCRM
                 msn = "Connection error";
                 ShowDialog(msn);
             }
+
+            txtTask.Text = "";
         }
 
         public bool ListarPorPeriodo(int IdPeriodo, int IdCliente)
@@ -2252,6 +2499,7 @@ namespace AyEServicesCRM
             catch (Exception ex)
             {
                 return false;
+                throw ex;
             }
 
         }
@@ -2288,8 +2536,6 @@ namespace AyEServicesCRM
         {
             using (SqlConnection conn = new SqlConnection())
             {
-                bool seleccionado;
-                seleccionado = false;
                 conn.ConnectionString = ConfigurationManager
                 .ConnectionStrings["micadenaconexion"].ConnectionString;
 
@@ -2308,30 +2554,12 @@ namespace AyEServicesCRM
                             cmd.Parameters.AddWithValue("@IdEmployee", int.Parse(item.Value));
                             cmd.Parameters.AddWithValue("@State", '1');
                             cmd.ExecuteNonQuery();
-                            seleccionado = true;
                         }
                     }
                     conn.Close();
                 }
 
-                //using (SqlCommand cmd = new SqlCommand())
-                //{
-
-                //    cmd.CommandText = "usp_AyE_Add_ParticipantsTask";
-                //    cmd.CommandType = CommandType.StoredProcedure;
-                //    cmd.Connection = conn;
-                //    conn.Open();
-
-                //    cmd.Parameters.Clear();
-                //    cmd.Parameters.AddWithValue("@State", '1');
-                //    cmd.Parameters.AddWithValue("@IdTask", int.Parse(txtCodigoTask.Text));
-                //    cmd.Parameters.AddWithValue("@IdEmployee", int.Parse(IdEmployees));
-                //    cmd.ExecuteNonQuery();
-
-                //    conn.Close();
-                //}
             }
-
 
         }
 
@@ -2349,167 +2577,395 @@ namespace AyEServicesCRM
             }
         }
 
-
-
         protected void btnSave_Click(object sender, EventArgs e)
         {
-            string msn;
-            msn = "";
-            //btnSave.Enabled = false;
-            if (cboTypeTask.SelectedIndex == 0)
+            try
             {
-                cboTypeTask.Focus();
-                return;
-            }
+                if (!ValidateSelection(cboTypeTask, "Type Task")) return;
+                if (!ValidateDateTime(txtStarDate, "Start")) return;
+                if (!ValidateDateTime(txtDueTime, "Due")) return;
+                if (!ValidateListBox(lstBoxTest, "participant")) return;
+                if (!ValidateSelection(cboStatus, "Status")) return;
+                if (!ValidateSelection(cboLocation, "Location")) return;
+                if (!ValidateText(txtCliente, "Client")) return;
 
-            if (txtName.Text == "")
-            {
-                txtName.Focus();
-                return;
-            }
-
-            if (txtStarDate.Text == "")
-            {
-                txtStarDate.Focus();
-                return;
-            }
-
-            if (txtDueTime.Text == "")
-            {
-                txtDueTime.Focus();
-                return;
-            }
-
-            string msg = "";
-            foreach (ListItem li in lstBoxTest.Items)
-            {
-                if (li.Selected == true)
+                if (IsSpecialTypeTask())
                 {
-                    msg += li.Text + " is selected.";
+                    if (!ValidateSelection(cboGroup, "Group")) return;
+                }
+
+                if (cboTypeTask.SelectedValue == "6" && !ValidateSelection(cboClientAccount, "Client Account")) return;
+
+                if (!ValidateText(txtName, "Task Name")) return;
+
+                TaskEntity task = CreateTaskEntity();
+
+                TaskBS taskBSInstance = new TaskBS();
+
+                int repeatedIdTask = taskBSInstance.ExisteTaskUpdate(task);
+
+                if (repeatedIdTask > 0)
+                {
+                    ShowAlert("The task already exists with task number: " + repeatedIdTask.ToString());
+                    return;
+                }
+                TaskEntity Task = new TaskEntity();
+                Task = TaskBS.Save(task);
+                IdTask();
+                InsertTaskPacticipants();
+                ShowSuccessMessage("Saved correctly.");
+            }
+            catch (Exception ex)
+            {
+                string errorMessage = "Error saving the task. " + ex.Message;
+                ShowAlert(errorMessage);
+                throw;
+            }
+        }
+
+        private bool ValidateDateTime(TextBox textBox, string dateType)
+        {
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                textBox.Focus();
+                ShowAlert($"You have to select the {dateType} Date & Time");
+                return false;
+            }
+
+            DateTime result;
+            if (!DateTime.TryParse(textBox.Text, out result))
+            {
+                textBox.Focus();
+                ShowAlert($"Invalid {dateType} Date & Time format");
+                return false;
+            }
+
+            return true;
+        }
+        private bool ValidateSelection(ListControl control, string fieldName)
+        {
+            if (control.SelectedIndex == 0)
+            {
+                control.Focus();
+                ShowAlert($"You have to select the {fieldName}");
+                return false;
+            }
+            return true;
+        }
+
+        private bool ValidateText(TextBox textBox, string fieldName)
+        {
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                textBox.Focus();
+                ShowAlert($"You have to enter the {fieldName}");
+                return false;
+            }
+            return true;
+        }
+
+        private bool ValidateListBox(ListBox listBox, string fieldName)
+        {
+            bool anySelected = false;
+
+            foreach (ListItem li in listBox.Items)
+            {
+                if (li.Selected)
+                {
+                    anySelected = true;
+                    break;
                 }
             }
 
-            if (msg == "")
+            if (!anySelected)
             {
-                lstBoxTest.Focus();
-                msg = "No selecciono un participante";
-                ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "alert('" + msg + "');", true);
-
-                //msn = "User not assigned";
-                //ShowDialog(msn);
-                return;
+                listBox.Focus();
+                ShowAlert($"You have to select a {fieldName}");
+                return false;
             }
 
-
-            //if (cboAssigned.SelectedIndex == 0)
-            //{
-            //    cboAssigned.Focus();
-            //    return;
-            //}
-            //if (lstBoxTest.SelectedIndex == 0)
-            //{
-            //    lstBoxTest.Focus();
-            //    return;
-            //}
+            return true;
+        }
 
 
-            if (cboStatus.SelectedIndex == 0)
-            {
-                cboStatus.Focus();
-                return;
-            }
+        private bool IsSpecialTypeTask()
+        {
+            return cboTypeTask.SelectedValue == "2" || cboTypeTask.SelectedValue == "10" || cboTypeTask.SelectedValue == "25";
+        }
 
-            if (cboLocation.SelectedIndex == 0)
+        private TaskEntity CreateTaskEntity()
+        {
+            TaskEntity task = new TaskEntity
             {
-                cboLocation.Focus();
-                return;
-            }
+                IdClient = int.Parse(lblCodClient.Text),
+                IdTypeTask = int.Parse(cboTypeTask.SelectedValue),
+                IdGroup = string.IsNullOrEmpty(cboGroup.SelectedValue) ? 0 : int.Parse(cboGroup.SelectedValue),
+                IdEmployee = int.Parse(lstBoxTest.SelectedValue),
+                IdEmployeeCreate = int.Parse(IdEmployees),
+                IdStatus = int.Parse(cboStatus.SelectedValue),
+                IdLocation = int.Parse(cboLocation.SelectedValue),
+                IdParentTask = string.IsNullOrEmpty(txtParentTask.Text) ? 0 : int.Parse(lblCodigoNewTask.Text),
+                IdContact = string.IsNullOrEmpty(cboContacts.SelectedValue) ? 0 : int.Parse(cboContacts.SelectedValue),
+                IdPriority = 215, // int.Parse(cbopriority.SelectedValue.ToString());
+                Name = txtName.Text,
+                StartDateTime = DateTime.Parse(txtStarDate.Text),
+                DueDateTime = DateTime.Parse(txtDueTime.Text),
+                FiscalYear = int.Parse(cboFiscalYear.SelectedValue),
+                IdClientAccount = string.IsNullOrEmpty(cboClientAccount.SelectedValue) ? 0 : int.Parse(cboClientAccount.SelectedValue),
+                Estimate = CalculateEstimate(),
+                Description = txtDescription.Text,
+                State = chkState.Checked ? "1" : "0"
+            };
 
-            //if (cboContacts.SelectedIndex == 0)
-            //{
-            //    cboContacts.Focus();
-            //    return;
-            //}
+            return task;
+        }
 
-            if (cbopriority.SelectedIndex == 0)
-            {
-                cbopriority.Focus();
-                return;
-            }
+        private int CalculateEstimate()
+        {
+            int minutesDay = string.IsNullOrEmpty(txtDias.Text) ? 0 : int.Parse(txtDias.Text) * 24 * 60;
+            int minutesHour = string.IsNullOrEmpty(txtHoras.Text) ? 0 : int.Parse(txtHoras.Text) * 60;
+            int minutes = string.IsNullOrEmpty(txtMinutos.Text) ? 0 : int.Parse(txtMinutos.Text);
 
-            TaskEntity Task = new TaskEntity();
-            Task.IdClient = int.Parse(lblCodClient.Text);
-            Task.IdTypeTask = int.Parse(cboTypeTask.SelectedValue.ToString());
-            //Task.IdEmployee = int.Parse(cboAssigned.SelectedValue.ToString());
-            Task.IdEmployee = int.Parse(lstBoxTest.SelectedValue.ToString());
-            Task.IdEmployeeCreate = int.Parse(IdEmployees);
-            Task.IdStatus = int.Parse(cboStatus.SelectedValue.ToString());
-            Task.IdLocation = int.Parse(cboLocation.SelectedValue.ToString());
-            if (txtParentTask.Text == "")
-            {
-                Task.IdParentTask = int.Parse("0");
-            }
-            else
-            {
-                Task.IdParentTask = int.Parse(lblCodigoNewTask.Text);
-            }
-            Task.IdContact = cboContacts.SelectedValue.ToString() == "" ? 0 : int.Parse(cboContacts.SelectedValue.ToString());
-            Task.IdPriority = int.Parse(cbopriority.SelectedValue.ToString());
-            Task.Name = txtName.Text;
-            Task.StartDateTime = Convert.ToDateTime(txtStarDate.Text);
-            Task.DueDateTime = Convert.ToDateTime(txtDueTime.Text);
-            Task.FiscalYear = int.Parse(cboFiscalYear.SelectedValue.ToString());
-            Task.IdClientAccount = cboClientAccount.SelectedValue.ToString() == "" ? 0 : int.Parse(cboClientAccount.SelectedValue.ToString());
+            return minutesDay + minutesHour + minutes;
+        }
 
-            int MinutosDay = 0, MinutosHour = 0, Minutos, Estimate = 0;
-            if (txtDias.Text != "")
-            {
-                int HourDay = int.Parse(txtDias.Text) * 24;
-                MinutosDay = HourDay * 60;
-            }
-            else
-            {
-                MinutosDay = 0;
-            }
+        private void ShowAlert(string message)
+        {
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", $"alert('{message}', 'Task log alert');", true);
+        }
 
-            if (txtHoras.Text != "")
-            {
-                MinutosHour = int.Parse(txtHoras.Text) * 60;
-            }
-            else
-            {
-                MinutosHour = 0;
-            }
-
-            if (txtMinutos.Text != "")
-            {
-                Minutos = int.Parse(txtMinutos.Text);
-            }
-            else
-            {
-                Minutos = 0;
-            }
-            Estimate = MinutosDay + MinutosHour + Minutos;
-            Task.Estimate = Estimate;
-            Task.Description = txtDescription.Text;
-            if (chkState.Checked == true)
-            {
-                Task.State = "1";
-            }
-            else
-            {
-                Task.State = "0";
-            }
-            Task = TaskBS.Save(Task);
-            IdTask();
-            InsertTaskPacticipants();
-            lblMensajeModal.Text = "Saved correctly.";
+        private void ShowSuccessMessage(string message)
+        {
+            lblMensajeModal.Text = message;
             LinkOk.Focus();
-            //btnSave.Enabled = true;
-            //string script = "showModalMensaje();";
-            //ScriptManager.RegisterStartupScript(this, typeof(Page), "invocarfuncion", script, true);
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
         }
+
+
+
+        //protected void btnSave_Click(object sender, EventArgs e)
+        //{
+
+        //    string ErrorMensaje = "";
+
+        //    try
+        //    {
+        //        string msgNoSelec = "";
+
+        //        if (cboTypeTask.SelectedIndex == 0)
+        //        {
+        //            cboTypeTask.Focus();
+        //            msgNoSelec = "You have to select the Type Task";
+
+        //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msgNoSelec + "', 'Task log alert');", true);
+        //            return;
+        //        }
+
+        //        if (txtStarDate.Text == "")
+        //        {
+        //            txtStarDate.Focus();
+        //            msgNoSelec = "You have to select the Star Date & Time";
+
+        //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msgNoSelec + "', 'Task log alert');", true);
+        //            return;
+        //        }
+
+        //        if (txtDueTime.Text == "")
+        //        {
+        //            txtDueTime.Focus();
+        //            msgNoSelec = "You have to select the Due Date & Time";
+
+        //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msgNoSelec + "', 'Task log alert');", true);
+        //            return;
+        //        }
+
+        //        StringBuilder msgBuilder = new StringBuilder();
+        //        foreach (ListItem li in lstBoxTest.Items)
+        //        {
+        //            if (li.Selected)
+        //            {
+        //                msgBuilder.Append(li.Text + " is selected.");
+        //            }
+        //        }
+        //        string msg = msgBuilder.ToString();
+
+        //        if (msg == "")
+        //        {
+        //            lstBoxTest.Focus();
+        //            msg = "You have to select a participant";
+        //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msg + "', 'Task log alert');", true);
+        //            return;
+        //        }
+
+        //        if (cboStatus.SelectedIndex == 0)
+        //        {
+        //            cboStatus.Focus();
+        //            msgNoSelec = "You have to select the Status";
+
+        //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msgNoSelec + "', 'Task log alert');", true);
+
+        //            return;
+
+        //        }
+
+        //        if (cboLocation.SelectedIndex == 0)
+        //        {
+        //            cboLocation.Focus();
+        //            msgNoSelec = "You have to select the Location";
+
+        //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msgNoSelec + "', 'Task log alert');", true);
+
+        //            return;
+
+        //        }
+
+        //        if (txtCliente.Text == "")
+        //        {
+        //            txtCliente.Focus();
+        //            msgNoSelec = "You have to select the Client";
+        //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msgNoSelec + "', 'Task log alert');", true);
+        //            return;
+
+        //        }
+
+        //        if (cboTypeTask.SelectedValue == "2" || cboTypeTask.SelectedValue == "10" || cboTypeTask.SelectedValue == "25")
+        //        {
+        //            if (cboGroup.SelectedIndex == 0)
+        //            {
+        //                cboGroup.Focus();
+        //                return;
+        //            }
+        //        }
+
+        //        if (cboGroup.SelectedValue != "")
+        //        {
+        //            if (cboTypeTask.SelectedValue == "")
+        //            {
+        //                cboTypeTask.Focus();
+        //                return;
+        //            }
+        //        }
+
+
+        //        if (cboTypeTask.SelectedIndex == 4 && cboClientAccount.SelectedIndex == 0)
+        //        {
+        //            cboClientAccount.Focus();
+        //            msgNoSelec = "You have to select the Client Account";
+
+        //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + msgNoSelec + "', 'Task log alert');", true);
+
+        //            return;
+        //        }
+
+        //        if (txtName.Text == "")
+        //        {
+        //            txtName.Focus();
+        //            return;
+        //        }
+
+        //        TaskEntity Task = new TaskEntity();
+        //        Task.IdClient = int.Parse(lblCodClient.Text);
+        //        Task.IdTypeTask = int.Parse(cboTypeTask.SelectedValue.ToString());
+        //        Task.IdGroup = string.IsNullOrEmpty(cboGroup.SelectedValue?.ToString()) ? 0 : int.Parse(cboGroup.SelectedValue.ToString());
+        //        Task.IdEmployee = int.Parse(lstBoxTest.SelectedValue.ToString());
+
+        //        if (cboGroup.SelectedValue.ToString() == "")
+        //        {
+        //            Task.IdGroup = 0;
+        //        }
+        //        else
+        //        {
+        //            Task.IdGroup = int.Parse(cboGroup.SelectedValue.ToString());
+        //        }
+
+        //        Task.IdEmployeeCreate = int.Parse(IdEmployees);
+        //        Task.IdStatus = int.Parse(cboStatus.SelectedValue.ToString());
+        //        Task.IdLocation = int.Parse(cboLocation.SelectedValue.ToString());
+        //        if (txtParentTask.Text == "")
+        //        {
+        //            Task.IdParentTask = int.Parse("0");
+        //        }
+        //        else
+        //        {
+        //            Task.IdParentTask = int.Parse(lblCodigoNewTask.Text);
+        //        }
+        //        Task.IdContact = cboContacts.SelectedValue.ToString() == "" ? 0 : int.Parse(cboContacts.SelectedValue.ToString());
+        //        Task.IdPriority = 215;//int.Parse(cbopriority.SelectedValue.ToString());
+        //        Task.Name = txtName.Text;
+        //        Task.StartDateTime = Convert.ToDateTime(txtStarDate.Text);
+        //        Task.DueDateTime = Convert.ToDateTime(txtDueTime.Text);
+        //        Task.FiscalYear = int.Parse(cboFiscalYear.SelectedValue.ToString());
+        //        Task.IdClientAccount = cboClientAccount.SelectedValue.ToString() == "" ? 0 : int.Parse(cboClientAccount.SelectedValue.ToString());
+
+        //        int MinutosDay = 0, MinutosHour = 0, Minutos, Estimate = 0;
+        //        if (txtDias.Text != "")
+        //        {
+        //            int HourDay = int.Parse(txtDias.Text) * 24;
+        //            MinutosDay = HourDay * 60;
+        //        }
+        //        else
+        //        {
+        //            MinutosDay = 0;
+        //        }
+
+        //        if (txtHoras.Text != "")
+        //        {
+        //            MinutosHour = int.Parse(txtHoras.Text) * 60;
+        //        }
+        //        else
+        //        {
+        //            MinutosHour = 0;
+        //        }
+
+        //        if (txtMinutos.Text != "")
+        //        {
+        //            Minutos = int.Parse(txtMinutos.Text);
+        //        }
+        //        else
+        //        {
+        //            Minutos = 0;
+        //        }
+        //        Estimate = MinutosDay + MinutosHour + Minutos;
+        //        Task.Estimate = Estimate;
+        //        Task.Description = txtDescription.Text;
+        //        if (chkState.Checked == true)
+        //        {
+        //            Task.State = "1";
+        //        }
+        //        else
+        //        {
+        //            Task.State = "0";
+        //        }
+
+        //        TaskBS taskBSInstance = new TaskBS();
+
+        //        int repeatedIdTask = taskBSInstance.ExisteTaskUpdate(Task);
+
+        //        if (repeatedIdTask > 0)
+        //        {
+        //            // Mostrar alerta  
+        //            string Mensaje = "The task already exists with task number: " + repeatedIdTask.ToString();
+
+        //            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + Mensaje + "', 'Task log alert');", true);
+        //            return;
+        //        }
+
+        //        Task = TaskBS.Save(Task);
+        //        IdTask();
+        //        InsertTaskPacticipants();
+        //        lblMensajeModal.Text = "Saved correctly.";
+        //        LinkOk.Focus();
+        //        ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "showModalMensaje();", true);
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        ErrorMensaje = "Error saving the task. " + ex.Message;
+        //        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('" + ErrorMensaje + "', 'Task log alert');", true);
+        //        throw;
+        //    }
+
+        //}
 
         public void UpdateTaskPacticipants()
         {
@@ -2620,6 +3076,113 @@ namespace AyEServicesCRM
             }
 
         }
+
+        public void ListarComboGroup()
+        {
+            using (SqlConnection cnn = new SqlConnection(cadenaconexion))
+            {
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand("ListarGroup", cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                cnn.Close();
+
+                cboGroup.DataTextField = "NameGroup";
+                cboGroup.DataValueField = "IdGroup";
+                cboGroup.DataSource = dt;
+                cboGroup.DataBind();
+                cboGroup.Items.Insert(0, new ListItem("- To Select -", ""));
+
+            }
+        }
+
+        //protected void cboGroup_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    if (cboGroup.SelectedValue != "")
+        //    {
+        //        if (cboTypeTask.SelectedValue != "2" )
+        //        {
+
+        //            if ( cboTypeTask.SelectedValue != "10" )
+        //            {
+
+        //                if ( cboTypeTask.SelectedValue != "25")
+        //                {
+
+        //                    if (cboTypeTask.SelectedValue != "1")
+        //                    {
+        //                        ListarComboTypeTaskPorGrupos();
+
+        //                    }
+
+        //                }
+
+        //            }
+
+        //        }
+
+        //    }
+        //    else
+        //    {
+        //        string Selec;
+
+        //        Selec = cboTypeTask.SelectedItem.Text;
+
+
+        //        GetTypeTask();
+
+        //        cboTypeTask.ClearSelection();
+        //        cboTypeTask.Items.FindByText(Selec).Selected = true;
+        //    }
+        //}
+
+        protected void cboGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboGroup.SelectedValue == "" || cboGroup.SelectedValue == "1")
+            {
+                string selectedText = cboTypeTask.SelectedItem.Text;
+
+                GetTypeTask();
+
+                cboTypeTask.ClearSelection();
+                cboTypeTask.Items.FindByText(selectedText).Selected = true;
+                return;
+            }
+
+            string selectedValue = cboTypeTask.SelectedValue;
+
+            if (selectedValue != "2" && selectedValue != "10" && selectedValue != "25")
+            {
+                ListarComboTypeTaskPorGrupos();
+            }
+        }
+
+
+
+        public void ListarComboTypeTaskPorGrupos()
+        {
+            using (SqlConnection cnn = new SqlConnection(cadenaconexion))
+            {
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand("usp_AyE_ListarComboTipoTareaPorGrupo", cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                cnn.Close();
+
+                cboTypeTask.DataTextField = "Name";
+                cboTypeTask.DataValueField = "IdTypeTask";
+                cboTypeTask.DataSource = dt;
+                cboTypeTask.DataBind();
+                cboTypeTask.Items.Insert(0, new ListItem("- To Select -", ""));
+            }
+        }
+
+
 
     }
 }

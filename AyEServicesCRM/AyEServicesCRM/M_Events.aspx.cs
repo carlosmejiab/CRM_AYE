@@ -236,8 +236,8 @@ namespace AyEServicesCRM
         {
             using (SqlConnection conn = new SqlConnection())
             {
-                bool seleccionado;
-                seleccionado = false;
+                //bool seleccionado;
+                //seleccionado = false;
                 conn.ConnectionString = ConfigurationManager
                 .ConnectionStrings["micadenaconexion"].ConnectionString;
 
@@ -257,7 +257,7 @@ namespace AyEServicesCRM
                             cmd.Parameters.AddWithValue("@IdEmployee", int.Parse(item.Value));
                             cmd.Parameters.AddWithValue("@State", '1');
                             cmd.ExecuteNonQuery();
-                            seleccionado = true;
+                            //seleccionado = true;
                         }
                     }
                     conn.Close();

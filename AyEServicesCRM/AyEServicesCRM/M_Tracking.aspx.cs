@@ -14,9 +14,9 @@ namespace AyEServicesCRM
 {
     public partial class M_Tracking : System.Web.UI.Page
     {
-        DataSet ds;
-        DataTable dt;
-        DataRow dr;
+        //DataSet ds;
+        //DataTable dt;
+        //DataRow dr;
         ModuloConstructor ca = new ModuloConstructor();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -92,6 +92,7 @@ namespace AyEServicesCRM
             catch (Exception ex)
             {
                 return false;
+                throw ex;
             }
 
         }

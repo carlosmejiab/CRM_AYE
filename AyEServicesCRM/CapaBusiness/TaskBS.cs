@@ -21,5 +21,14 @@ namespace CapaBusiness
         {
             return TaskDAO.SaveTaskSubTask(_Entidad);
         }
+        public int ExistsTask(TaskEntity _Entidad)
+        {
+            return TaskDAO.TaskExists(_Entidad);
+        }
+
+        public int ExisteTaskUpdate(TaskEntity _Entidad)
+        {
+            return TaskDAO.TaskExistsUpdate(_Entidad);
+        }
     }
 }

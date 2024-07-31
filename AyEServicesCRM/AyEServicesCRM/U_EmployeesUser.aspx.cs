@@ -36,7 +36,7 @@ namespace AyEServicesCRM
         ModuloConstructor ca = new ModuloConstructor();
         public void DatosEmployees(int CodUser)
         {
-            String State;
+            //String State;
         
             GetLocation();
             GetExtension();
