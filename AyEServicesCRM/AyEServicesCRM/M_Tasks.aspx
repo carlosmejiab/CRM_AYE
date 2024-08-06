@@ -7,14 +7,138 @@
     <link href="Content/sumoselect.css" rel="stylesheet" />
 
     <script type="text/javascript">
-        function pageLoad(sender, args) {
-            $(document).ready(function () {
-                $(<%=lstBoxTest.ClientID%>).SumoSelect({
-                    placeholder: "Select Here"
-                });
+    $(document).ready(function () {
+        // Inicializa SumoSelect
+        var lstBoxTest = $('#<%= lstBoxTest.ClientID %>');
+        if (lstBoxTest.length > 0) {
+            lstBoxTest.SumoSelect({
+                placeholder: "Select Here"
             });
         }
+
+        // Manejador del evento de cierre del modal
+        $('#MyModalTracking').on('hide.bs.modal', function (e) {
+            var hfCronometroEnMarcha = document.getElementById('<%= hfCronometroEnMarcha.ClientID %>');
+
+            // Verificar si el cronómetro está en marcha
+            if (hfCronometroEnMarcha && hfCronometroEnMarcha.value === "true") {
+                var confirmationMessage = "The timer is running. Do you want to leave the page? Changes you made may not be saved.";
+
+                // Mostrar el mensaje de confirmación
+                if (!window.confirm(confirmationMessage)) {
+                    // Evitar el cierre del modal si el usuario cancela
+                    e.preventDefault();
+                    e.stopImmediatePropagation(); // Detener la propagación del evento
+                } else {
+                    // Si el usuario acepta, actualizar el valor del campo oculto
+                    hfCronometroEnMarcha.value = "false"; // Actualiza según la lógica de tu aplicación
+                    console.log('Cronómetro en marcha:', hfCronometroEnMarcha.value);
+                }
+            }
+        });
+
+        // Evento `beforeunload` para advertencias de cambios no guardados
+        window.addEventListener("beforeunload", function (e) {
+            var hfCronometroEnMarcha = document.getElementById('<%= hfCronometroEnMarcha.ClientID %>');
+            if (hfCronometroEnMarcha && hfCronometroEnMarcha.value === "true") {
+                var confirmationMessage = "The timer is running. Do you want to leave the page? Changes you made may not be saved.";
+                e.returnValue = confirmationMessage; // Estándar para la mayoría de los navegadores
+                return confirmationMessage; // Para navegadores más antiguos
+            }
+        });
+
+        // Manejador de cambio de color para los botones
+        var btnPlay = document.getElementById('<%= btnPlay.ClientID %>');
+        var btnPause = document.getElementById('<%= LinkPausa.ClientID %>');
+        var btnStop = document.getElementById('<%= LinkStop.ClientID %>');
+
+        if (btnPlay && btnPause && btnStop) {
+            btnPlay.addEventListener('click', function () {
+                resetButtons();
+                btnPlay.classList.add('active');
+            });
+
+            btnPause.addEventListener('click', function () {
+                resetButtons();
+                btnPause.classList.add('active');
+            });
+
+            btnStop.addEventListener('click', function () {
+                resetButtons();
+                btnStop.classList.add('active');
+            });
+
+            function resetButtons() {
+                btnPlay.classList.remove('active');
+                btnPause.classList.remove('active');
+                btnStop.classList.remove('active');
+            }
+        } else {
+            console.error("Uno o más elementos de botón no se encontraron.");
+        }
+
+        // Lógica del cronómetro
+        var seconds = 0;
+        var minutes = 0;
+        var hours = 0;
+        var timerInterval;
+
+        // Inicia el cronómetro y actualiza cada segundo
+        function startTimer() {
+            timerInterval = setInterval(function () {
+                seconds++;
+                if (seconds == 60) {
+                    seconds = 0;
+                    minutes++;
+                    if (minutes == 60) {
+                        minutes = 0;
+                        hours++;
+                    }
+                }
+                // Actualiza las etiquetas en el HTML
+                document.getElementById('<%= lblSegundos.ClientID %>').innerText = seconds;
+                document.getElementById('<%= lblMinutos.ClientID %>').innerText = minutes;
+                document.getElementById('<%= lblHora.ClientID %>').innerText = hours;
+            }, 850); // Intervalo de 1 segundo
+        }
+
+        // Detiene el cronómetro
+        function stopTimer() {
+            clearInterval(timerInterval);
+        }
+
+
+        window.confirmStopTracking = function (taskId) {
+            var message = "¿Do you want to finish tracking the task?";
+                var confirmation = confirm(message);
+
+                var hiddenField = document.getElementById('<%= hfTrackingConfirmation.ClientID %>');
+            if (hiddenField) {
+                hiddenField.value = confirmation ? "true" : "false";
+                console.log('Hidden field value set to:', hiddenField.value);
+            } else {
+                console.error('Hidden field not found');
+            }
+
+            resetTimer();
+
+            return confirmation;
+        };
+
+        // Reinicia el cronómetro
+        function resetTimer() {
+            clearInterval(timerInterval);
+            seconds = 0;
+            minutes = 0;
+            hours = 0;
+            // Resetea las etiquetas en el HTML
+            document.getElementById('<%= lblSegundos.ClientID %>').innerText = seconds;
+            document.getElementById('<%= lblMinutos.ClientID %>').innerText = minutes;
+            document.getElementById('<%= lblHora.ClientID %>').innerText = hours;
+        }
+    });
     </script>
+
 
     <script src="Scripts/select2.min.js"></script>
     <link href="Content/select2.min.css" rel="stylesheet" />
@@ -60,6 +184,110 @@
             /*width: 100%;*/
             overflow-y: auto;
         }
+
+        .text-danger {
+        color: red;
+        font-weight: bold;
+
+
+    }
+        /* Estilo para el cronómetro */
+        #Cronometro {
+            font-size: 27px; /* Aumenta el tamaño de la fuente del cronómetro */
+            text-align: center;
+        }
+
+        /* Estilo para los labels del cronómetro */
+        .cronometro-label {
+            font-size: 27px; /* Tamaño de la fuente de los labels */
+            font-weight: bold; /* Negrita */
+            margin: 0 5px; /* Espaciado entre los labels */
+        }
+
+
+        /* Estilo para los textos estáticos (H:, M:, S:) */
+        .cronometro-text {
+            font-size: 27px; /* Asegura que el texto estático tenga el mismo tamaño que los números */
+            font-weight: bold; /* Negrita */
+            margin: 0 5px; /* Espaciado entre los textos */
+        }
+
+        /* Estilo para los botones del cronómetro */
+        .btn-cronometro {
+            font-size: 23px; /* Tamaño de la fuente de los botones */
+            padding: 10px 20px; /* Tamaño del padding de los botones */
+            margin: 5px; /* Margen alrededor de los botones */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        }
+
+        /* Estilo para los botones del cronómetro */
+        .btn-cronometro {
+            font-size: 23px; /* Tamaño de la fuente de los botones */
+            padding: 8px 16px; /* Tamaño del padding de los botones */
+            margin: 2px; /* Margen alrededor de los botones */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        }
+
+    /* Estilo para los botones del cronómetro */
+    .btn-cronometro {
+        font-size: 23px; /* Tamaño de la fuente de los botones */
+        padding: 8px 16px; /* Tamaño del padding de los botones */
+        margin: 2px; /* Margen alrededor de los botones */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+
+    /* Botón de Play */
+    .btn-play {
+        background-color: #28a745; /* Verde */
+        color: white;
+        border: none;
+        font-size: 24px; /* Tamaño de fuente reducido */
+        padding: 8px 16px; /* Tamaño del padding reducido */
+        margin: 2px; /* Margen reducido */
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .btn-play:hover {
+        background-color: #218838;
+        color: white;
+    }
+
+    /* Botón de Pause */
+    .btn-pause {
+        background-color: #ffc107; /* Naranja */
+        color: white;
+        border: none;
+        font-size: 24px; /* Tamaño de fuente reducido */
+        padding: 8px 16px; /* Tamaño del padding reducido */
+        margin: 2px; /* Margen reducido */
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .btn-pause:hover {
+        background-color: #e0a800;
+        color: white;
+    }
+
+    /* Botón de Stop */
+    .btn-stop {
+        background-color: #dc3545; /* Rojo */
+        color: white;
+        border: none;
+        font-size: 24px; /* Tamaño de fuente reducido */
+        padding: 8px 16px; /* Tamaño del padding reducido */
+        margin: 2px; /* Margen reducido */
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .btn-stop:hover {
+        background-color: #c82333;
+        color: white;
+    }
+
+
     </style>
 
     <script>
@@ -998,183 +1226,192 @@
     </style>
 
     <div class="modal fade" id="MyModalTracking" data-backdrop="static" data-keyboard="false" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <asp:UpdatePanel ID="UpdatePanel4" runat="server">
-                <ContentTemplate>
-                    <div class="modal-content modal-contentCenter">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myModalLabelTracking">
-                                <asp:Label ID="Label3" runat="server" Font-Bold="true" Text="Task"></asp:Label>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button></h5>
+    <div class="modal-dialog modal-lg">
+        <asp:UpdatePanel ID="UpdatePanel4" runat="server">
+            <ContentTemplate>
+                <div class="modal-content modal-contentCenter">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabelTracking">
+                            <asp:Label ID="Label3" runat="server" Font-Bold="true" Text="Task"></asp:Label>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-9" style="text-align: left">
+                                        Task Name: 
+                                        <asp:Label ID="lblTaskTracking" runat="server" Font-Bold="true" Text="Task Name"></asp:Label>
+                                        <br />
+                                        Num. Task: 
+                                        <asp:Label ID="lblCodigoTaskTracking" runat="server" Text="Label" Visible="true"></asp:Label>
+                                        <asp:Label ID="lblCodCLientTask" runat="server" Text="Label" Visible="false"></asp:Label>
+                                        <asp:Label ID="lblClienteTask" runat="server" Text="Label" Visible="false"></asp:Label>
+                                        <asp:Label ID="lblIdTracking" runat="server" Text="Label" Visible="false"></asp:Label>
+                                    </div>
+
+                                    <div class="col-sm-3" style="text-align: right">
+                                        <div class="input-group date col-sm-12">
+                                            <asp:DropDownList ID="cboStateTask" runat="server" CssClass="form-control" Style="margin-bottom: 2px" TabIndex="4" BackColor="White">
+                                                <asp:ListItem>PENDING</asp:ListItem>
+                                                <asp:ListItem>IN PROGRESS</asp:ListItem>
+                                                <asp:ListItem>COMPLETED</asp:ListItem>
+                                                <asp:ListItem>SKIPPED</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Campo oculto para el estado del cronómetro -->
+                                <asp:HiddenField ID="hfCronometroEnMarcha" runat="server" Value="false" />
+                            </div>
                         </div>
 
-                        <div class="modal-body">
-                            <div class="panel panel-default">
-                                <div class="panel-body">
+                        <asp:UpdatePanel ID="UpdatePanel8" runat="server">
+                            <ContentTemplate>
+                                <div runat="server" id="Cronometro" visible="false">
+                                    <!-- Mensaje de error o información -->
+                                    <asp:Label ID="lblmensajeCronometro" runat="server" Text="Label" Visible="false" CssClass="text-danger"></asp:Label><br>
+            
+                                    <!-- Etiquetas para mostrar el tiempo del cronómetro -->
+                                    <asp:Label ID="lblHora" runat="server" CssClass="cronometro-label">0</asp:Label><span class="cronometro-text">H:</span>
+                                    <asp:Label ID="lblMinutos" runat="server" CssClass="cronometro-label">0</asp:Label><span class="cronometro-text">M:</span>
+                                    <asp:Label ID="lblSegundos" runat="server" CssClass="cronometro-label">0</asp:Label><span class="cronometro-text">S</span>
+
+                                    <!-- Timer ASP.NET (no se usará, pero se mantiene por compatibilidad) -->
+                                    <asp:Timer ID="Timer1" runat="server" Interval="965" OnTick="Timer1_Tick"></asp:Timer>
+
+                                    <!-- Botones de control del cronómetro -->
+                                    <asp:LinkButton ID="btnPlay" runat="server" CssClass="btn-play btn-cronometro" 
+                                        OnClientClick="startTimer(); return false;" OnClick="btnPlay_Click" 
+                                        ClientIDMode="Static" title="Play">▶️</asp:LinkButton>
+                                    <asp:LinkButton ID="LinkPausa" runat="server" CssClass="btn-pause btn-cronometro" 
+                                        OnClientClick="stopTimer(); return false;" OnClick="LinkPausa_Click" 
+                                        ClientIDMode="Static" title="Pause">⏸️</asp:LinkButton>
+                                    <asp:LinkButton ID="LinkStop" runat="server" CssClass="btn-stop btn-cronometro" 
+                                        OnClientClick='return confirmStopTracking();' 
+                                        OnClick="LinkStop_Click" 
+                                        ClientIDMode="Static" title="Stop">⏹️</asp:LinkButton>
+
+                                    <asp:HiddenField ID="hfTrackingConfirmation" runat="server" />
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <h5 class="form-group"><strong>Description:</strong></h5>
+                                <div class="input-group date col-sm-12">
+                                    <asp:TextBox ID="txtDescripcionTaskTracking" class="form-control" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="1" TextMode="MultiLine"></asp:TextBox>
+                                </div>
+                                <asp:Label ID="lblmensaje" runat="server" Text="Label" Visible="false"></asp:Label><br>
+                                <asp:Label ID="lblCondicion" runat="server" Text="Label" Visible="true"></asp:Label>
+                                <hr>
+                                <strong>Timelog Name</strong>
+                                <asp:Label ID="lblTimeLogSelect" runat="server" Text="Label" Visible="false"></asp:Label>
+                                <br>
+                                <strong>Started on</strong>
+                                <asp:Label ID="lblStartedSelect" runat="server" Text="Label" Visible="false"></asp:Label><br>
+                                <strong>Ended on </strong>
+                                <asp:Label ID="lblEndedSelect" runat="server" Text="Label" Visible="false"></asp:Label><br>
+                                <strong>Time Spent</strong>
+                                <asp:Label ID="lblTimeSelect" runat="server" Text="Label" Visible="false"></asp:Label>
+                                <strong>mm</strong><br>
+                                <strong>Status</strong>
+                                <asp:Label ID="lblStatusSelect" runat="server" Text="Label" Visible="false"></asp:Label>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="panel panel-default">
                                     <div class="row">
-                                        <div class="col-sm-9" style="text-align: left">
-                                            Task Name: 
-                                            <asp:Label ID="lblTaskTracking" runat="server" Font-Bold="true" Text="Task Name"></asp:Label>
-                                            <asp:Label ID="lblCodigoTaskTracking" runat="server" Text="Label" Visible="false"></asp:Label>
-                                            <asp:Label ID="lblCodCLientTask" runat="server" Text="Label" Visible="false"></asp:Label>
-                                            <asp:Label ID="lblClienteTask" runat="server" Text="Label" Visible="false"></asp:Label>
-                                            <asp:Label ID="lblIdTracking" runat="server" Text="Label" Visible="false"></asp:Label>
+                                        <div class="col-sm-6" style="text-align: left">
+                                            <h5 class="form-group">
+                                                <strong>&nbsp Tracking</strong>
+                                            </h5>
                                         </div>
-
-                                        <div class="col-sm-3" style="text-align: right">
-                                            <div class="input-group date col-sm-12">
-                                                <asp:DropDownList ID="cboStateTask" runat="server" CssClass="form-control" Style="margin-bottom: 2px" TabIndex="4" BackColor="White">
-                                                    <asp:ListItem>PENDING</asp:ListItem>
-                                                    <asp:ListItem>IN PROGRESS</asp:ListItem>
-                                                    <asp:ListItem>COMPLETED</asp:ListItem>
-                                                    <asp:ListItem>SKIPPED</asp:ListItem>
-                                                </asp:DropDownList>
-                                            </div>
+                                        <div class="col-sm-6" style="text-align: right">
+                                            <asp:LinkButton ID="LinkAddTranking" CssClass="btn btn-primary" runat="server" OnClick="LinkAddTranking_Click" ClientIDMode="Static">+</asp:LinkButton>
                                         </div>
                                     </div>
                                 </div>
+                                <asp:ListView ID="lvwTrackinTask" runat="server" DataKeyNames="IdTracking,Status" EnableTheming="True" OnSelectedIndexChanging="lvwTrackinTask_SelectedIndexChanging">
+                                    <LayoutTemplate>
+                                        <table class="table table-striped table-bordered" id="myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left">Trackings</th>
+                                                </tr>
+                                            </thead>
+                                            <tr id="itemPlaceHolder" runat="server"></tr>
+                                            <tfoot>
+                                            </tfoot>
+                                        </table>
+                                    </LayoutTemplate>
+                                    <ItemTemplate>
+                                        <tr>
+                                            <td class="text-left">
+                                                <strong>Timelog Name</strong> <%# Eval ("Tracking") %>
+                                                <br>
+                                                <strong>Started on</strong> <%# Eval ("StartDateTime") %><br>
+                                                <strong>Ended on </strong><%# Eval ("DueDateTime") %><br>
+                                                <strong>Time Spent</strong> <%# Eval ("DurationTime") %> <strong>mm</strong><br>
+                                                <strong>Status</strong> <%# Eval ("Status") %>
+                                            </td>
+                                            <td class="text-center">
+                                                <asp:LinkButton ID="LinkCronometro" runat="server" CssClass="btn btn-default btn-sm" OnClick="LinkCronometro_Click" ClientIDMode="Static">⌚</asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                    </ItemTemplate>
+                                </asp:ListView>
+
+                                <div class="panel panel-default">
+                                    <div class="row">
+                                        <div class="col-sm-6" style="text-align: left">
+                                            <h5 class="form-group"><strong>&nbsp Documents</strong></h5>
+                                        </div>
+                                        <div class="col-sm-6" style="text-align: right">
+                                            <asp:LinkButton ID="LinkAddDocument" CssClass="btn btn-primary" runat="server" OnClick="LinkAddDocument_Click" ClientIDMode="Static">+</asp:LinkButton>
+                                        </div>
+                                    </div>
+                                </div>
+                                <asp:ListView ID="lvw_DocumentTask" runat="server" DataKeyNames="IdDocument" EnableTheming="True">
+                                    <LayoutTemplate>
+                                        <table class="table table-striped table-bordered" id="myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left">Documents</th>
+                                                </tr>
+                                            </thead>
+                                            <tr id="itemPlaceHolder" runat="server"></tr>
+                                            <tfoot>
+                                            </tfoot>
+                                        </table>
+                                    </LayoutTemplate>
+                                    <ItemTemplate>
+                                        <tr>
+                                            <td class="text-left">
+                                                <strong>Title</strong> <%# Eval ("NameDocument") %>
+                                                <br>
+                                                <strong>Assigned To</strong> <%# Eval ("Employees") %><br>
+                                                <strong>Folder Name</strong> <%# Eval ("FolderName") %><br>
+                                                <strong>Modified Time</strong> <%# Eval ("ModificationDate") %>
+                                            </td>
+                                        </tr>
+                                    </ItemTemplate>
+                                </asp:ListView>
                             </div>
-
-
-                            <asp:UpdatePanel ID="UpdatePanel8" runat="server">
-                                <ContentTemplate>
-                                    <div runat="server" id="Cronometro" visible="false">
-
-                                        <asp:Label ID="lblHora" runat="server">0</asp:Label>H:
-                                        <asp:Label ID="lblMinutos" runat="server">0</asp:Label>M:
-                                        <asp:Label ID="lblSegundos" runat="server">0</asp:Label>S
-                                        <asp:Timer ID="Timer1" runat="server" Interval="815" OnTick="Timer1_Tick"></asp:Timer>
-
-                                        <asp:LinkButton ID="btnPlay" runat="server" CssClass="btn btn-default" OnClick="btnPlay_Click" ClientIDMode="Static">▶️</asp:LinkButton>
-                                        <asp:LinkButton ID="LinkPausa" runat="server" CssClass="btn btn-default" OnClick="LinkPausa_Click" ClientIDMode="Static">⏸️</asp:LinkButton>
-                                        <asp:LinkButton ID="LinkStop" runat="server" CssClass="btn btn-default" OnClick="LinkStop_Click" ClientIDMode="Static">⏹️</asp:LinkButton>
-                                    </div>
-                                </ContentTemplate>
-                            </asp:UpdatePanel>
-
-
-                            <div class="row">
-                                <div class="col-sm-7">
-                                    <h5 class="form-group"><strong>Description:</strong></h5>
-                                    <div class="input-group date col-sm-12">
-                                        <asp:TextBox ID="txtDescripcionTaskTracking" class="form-control" AutoComplete="off" runat="server" CssClass="form-control" MaxLength="100" BackColor="White" TabIndex="1" TextMode="MultiLine"></asp:TextBox>
-                                    </div>
-                                    <asp:Label ID="lblmensaje" runat="server" Text="Label" Visible="false"></asp:Label><br>
-                                    <asp:Label ID="lblCondicion" runat="server" Text="Label" Visible="true"></asp:Label>
-                                    <hr>
-                                    <strong>Timelog Name</strong>
-                                    <asp:Label ID="lblTimeLogSelect" runat="server" Text="Label" Visible="false"></asp:Label>
-                                    <br>
-                                    <strong>Started on</strong>
-                                    <asp:Label ID="lblStartedSelect" runat="server" Text="Label" Visible="false"></asp:Label><br>
-                                    <strong>Ended on </strong>
-                                    <asp:Label ID="lblEndedSelect" runat="server" Text="Label" Visible="false"></asp:Label><br>
-                                    <strong>Time Spent</strong>
-                                    <asp:Label ID="lblTimeSelect" runat="server" Text="Label" Visible="false"></asp:Label>
-                                    <strong>mm</strong><br>
-                                    <strong>Status</strong>
-                                    <asp:Label ID="lblStatusSelect" runat="server" Text="Label" Visible="false"></asp:Label>
-                                </div>
-                                <div class="col-sm-5">
-                                    <div class="panel panel-default">
-                                        <div class="row">
-                                            <div class="col-sm-6" style="text-align: left">
-                                                <h5 class="form-group">
-                                                    <strong>&nbsp Tracking</strong>
-                                                </h5>
-                                            </div>
-                                            <div class="col-sm-6" style="text-align: right">
-
-                                                <asp:LinkButton ID="LinkAddTranking" CssClass="btn btn-primary" runat="server" OnClick="LinkAddTranking_Click" ClientIDMode="Static">+</asp:LinkButton>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <asp:ListView ID="lvwTrackinTask" runat="server" DataKeyNames="IdTracking,Status" EnableTheming="True" OnSelectedIndexChanging="lvwTrackinTask_SelectedIndexChanging">
-                                        <LayoutTemplate>
-                                            <table class="table table-striped table-bordered" id="myTable">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="text-left">Trackings 
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tr id="itemPlaceHolder" runat="server"></tr>
-                                                <tfoot>
-                                                </tfoot>
-                                            </table>
-                                        </LayoutTemplate>
-                                        <ItemTemplate>
-                                            <tr>
-                                                <td class="text-left">
-                                                    <strong>Timelog Name</strong> <%# Eval ("Tracking") %>
-                                                    <br>
-                                                    <strong>Started on</strong> <%# Eval ("StartDateTime") %><br>
-                                                    <strong>Ended on </strong><%# Eval ("DueDateTime") %><br>
-                                                    <strong>Time Spent</strong> <%# Eval ("DurationTime") %>   <strong>mm</strong><br>
-                                                    <strong>Status</strong> <%# Eval ("Status") %>
-                                                </td>
-                                                <td class="text-center">
-                                                    <asp:LinkButton ID="LinkCronometro" runat="server" CssClass="btn btn-default btn-sm" OnClick="LinkCronometro_Click" ClientIDMode="Static">⌚</asp:LinkButton>
-                                                </td>
-                                            </tr>
-                                        </ItemTemplate>
-                                    </asp:ListView>
-
-
-
-
-                                    <div class="panel panel-default">
-                                        <div class="row">
-                                            <div class="col-sm-6" style="text-align: left">
-                                                <h5 class="form-group"><strong>&nbsp Documents</strong></h5>
-                                            </div>
-                                            <div class="col-sm-6" style="text-align: right">
-                                                <asp:LinkButton ID="LinkAddDocument" CssClass="btn btn-primary" runat="server" OnClick="LinkAddDocument_Click" ClientIDMode="Static">+</asp:LinkButton>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <asp:ListView ID="lvw_DocumentTask" runat="server" DataKeyNames="IdDocument" EnableTheming="True">
-                                        <LayoutTemplate>
-                                            <table class="table table-striped table-bordered" id="myTable">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="text-left">Documents 
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tr id="itemPlaceHolder" runat="server"></tr>
-                                                <tfoot>
-                                                </tfoot>
-                                            </table>
-                                        </LayoutTemplate>
-                                        <ItemTemplate>
-                                            <tr>
-                                                <td class="text-left">
-                                                    <strong>Title</strong> <%# Eval ("NameDocument") %>
-                                                    <br>
-                                                    <strong>Assigned To</strong>   <%# Eval ("Employees") %><br>
-                                                    <strong>Folder Name</strong>   <%# Eval ("FolderName") %><br>
-                                                    <strong>Modified Time</strong>   <%# Eval ("ModificationDate") %>
-                                                </td>
-                                            </tr>
-                                        </ItemTemplate>
-                                    </asp:ListView>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                         </div>
                     </div>
 
-                </ContentTemplate>
-            </asp:UpdatePanel>
-        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
     </div>
+</div>
+
 
 
     <div class="modal fade" id="MyModalAddTracking" role="dialog">

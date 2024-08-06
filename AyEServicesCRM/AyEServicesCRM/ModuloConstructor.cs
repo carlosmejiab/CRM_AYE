@@ -77,6 +77,30 @@ namespace AyEServicesCRM
             return ds;
         }
 
+        public DataSet ObtenerTrakingXtaskWorking(int IdEmployee, int IdTask)
+        {
+            DataSet ds = new DataSet();
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = cad;
+            con.Open();
+            da = new SqlDataAdapter("usp_ObtenerTrakingXtaskWorking", con);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.Add("@IdEmployee", SqlDbType.Int);
+            da.SelectCommand.Parameters["@IdEmployee"].Value = IdEmployee;
+            da.SelectCommand.Parameters.Add("@IdTask", SqlDbType.Int);
+            da.SelectCommand.Parameters["@IdTask"].Value = IdTask;
+            try
+            {
+                da.Fill(ds);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            con.Close();
+            return ds;
+        }
+
         public DataSet ListarMultiplesTablasPorDescripcion(String Tipo, String Email)
         {
             DataSet ds = new DataSet();
