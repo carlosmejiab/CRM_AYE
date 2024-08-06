@@ -1,5 +1,6 @@
 ﻿using CapaDAO;
 using CapaEntity;
+using System.Collections.Generic;
 
 
 namespace CapaBusiness
@@ -25,6 +26,26 @@ namespace CapaBusiness
         public static TrackingEntity TrackingDueTime(TrackingEntity _Entidad)
         {
             return TrackingDAO.TrackingDueTime(_Entidad);
+        }
+
+        public static List<DailyTrackingEntity> GetDailyTracking(int trackingId)
+        {
+            return TrackingDAO.GetDailyTracking(trackingId);
+        }
+
+        public static void InsertDailyTracking(DailyTrackingEntity dailyTracking)
+        {
+            TrackingDAO.InsertDailyTracking(dailyTracking);
+        }
+
+
+        public static void SaveOrUpdateDailyTracking(DailyTrackingEntity dailyTracking)
+        {
+            TrackingDAO.SaveOrUpdateDailyTracking(dailyTracking);
+        }
+        public static void UpdateTaskStatus(int idTask, int newStatusId)
+        {
+            TrackingDAO.UpdateTaskStatus(idTask, newStatusId);
         }
     }
 }
