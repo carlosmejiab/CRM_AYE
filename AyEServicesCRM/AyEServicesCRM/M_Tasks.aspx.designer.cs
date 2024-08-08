@@ -879,6 +879,15 @@ namespace AyEServicesCRM
         protected global::System.Web.UI.WebControls.DropDownList cboStateTask;
 
         /// <summary>
+        /// hfCronometroEnMarcha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfCronometroEnMarcha;
+
+        /// <summary>
         /// UpdatePanel8 control.
         /// </summary>
         /// <remarks>
@@ -895,6 +904,15 @@ namespace AyEServicesCRM
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Cronometro;
+
+        /// <summary>
+        /// lblmensajeCronometro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblmensajeCronometro;
 
         /// <summary>
         /// lblHora control.
@@ -958,6 +976,15 @@ namespace AyEServicesCRM
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkStop;
+
+        /// <summary>
+        /// hfTrackingConfirmation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hfTrackingConfirmation;
 
         /// <summary>
         /// txtDescripcionTaskTracking control.

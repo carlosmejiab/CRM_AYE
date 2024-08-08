@@ -67,3 +67,8 @@ C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServ
 C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csproj.CoreCompileInputs.cache
 C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
 C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\bin\Debug\CapaEntity.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.csproj.CoreCompileInputs.cache
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaEntity\obj\Debug\CapaEntity.pdb

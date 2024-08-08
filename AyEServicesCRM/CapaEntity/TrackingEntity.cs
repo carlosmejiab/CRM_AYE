@@ -20,5 +20,6 @@ namespace CapaEntity
         public DateTime TrackingStart { get; set; }
         public DateTime TrackingDue { get; set; }
         public String State { get; set; }
+        public int DailyTimeWorked { get; set; }
     }
 }

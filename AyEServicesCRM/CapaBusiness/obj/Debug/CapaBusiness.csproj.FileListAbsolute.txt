@@ -154,3 +154,14 @@ C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServ
 C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\obj\Debug\CapaBusiness.csproj.CopyComplete
 C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\obj\Debug\CapaNEG.dll
 C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\obj\Debug\CapaNEG.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\bin\Debug\CapaNEG.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\bin\Debug\CapaNEG.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\bin\Debug\CapaDAO.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\bin\Debug\CapaEntity.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\bin\Debug\CapaDAO.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\bin\Debug\CapaEntity.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\obj\Debug\CapaBusiness.csproj.AssemblyReference.cache
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\obj\Debug\CapaBusiness.csproj.CoreCompileInputs.cache
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\obj\Debug\CapaBusiness.csproj.CopyComplete
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\obj\Debug\CapaNEG.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaBusiness\obj\Debug\CapaNEG.pdb

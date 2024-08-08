@@ -204,16 +204,32 @@ namespace AyEServicesCRM
 
         public void ExisteTeacking()
         {
-            if (ExisteTrackingPlay())
+            try
             {
-                //DatosTrackingWoring();         
-                lblTrackingPendiente.Text = "There is pending tracking";
+                // Verifica si hay seguimientos activos
+                bool trackingActivo = ExisteTrackingPlay();
+
+                // Actualiza el texto de la etiqueta en función de si hay seguimientos activos
+                if (trackingActivo)
+                {
+                    lblTrackingPendiente.Text = "There is pending tracking";
+                    // Opcionalmente, puedes cargar más detalles sobre el seguimiento pendiente
+                    // DatosTrackingWoring(); // Descomenta esta línea si deseas mostrar más detalles
+                }
+                else
+                {
+                    lblTrackingPendiente.Text = "You have no pending Tracking";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                lblTrackingPendiente.Text = "You have no pending Tracking";
+                // Manejo de excepciones: puedes registrar el error o mostrar un mensaje de error
+                // Por ejemplo: LogError(ex); 
+                lblTrackingPendiente.Text = $"Error checking tracking status error: {ex.Message}"; // Mensaje de error general
+                throw; // Vuelve a lanzar la excepción para que el código llamador pueda manejarla si es necesario
             }
         }
+
 
         //public void DatosTrackingWoring()
         //{
@@ -227,23 +243,46 @@ namespace AyEServicesCRM
         //        //lblMinutos.Text = Convert.ToString(dr["TimeWorkMinutes"]);
         //        //lblIdTracking.Text = Convert.ToString(dr["IdTracking"]);              
         //    }
-          
+
         //}
         public static bool ExisteTrackingPlay()
         {
-            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["micadenaconexion"].ToString()))
+            try
             {
-                string query = "SELECT COUNT(*) FROM Tracking a inner join TablaMaestra b on b.IdTabla = a.IdStatusTracking WHERE a.State = '1' and b.Description = 'Working'";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                //cmd.Parameters.AddWithValue("idTask", Id_Task);
-                conn.Open();
-                int count = Convert.ToInt32(cmd.ExecuteScalar());
-                if (count == 0)
-                    return false;
-                else
-                    return true;
+                // Establece la conexión a la base de datos usando la cadena de conexión
+                using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["micadenaconexion"].ToString()))
+                {
+                    // Define la consulta SQL para contar los seguimientos activos
+                    string query = @"
+                SELECT COUNT(*) 
+                FROM Tracking a
+                INNER JOIN TablaMaestra b ON b.IdTabla = a.IdStatusTracking 
+                WHERE a.State = '1' 
+                AND b.Description = 'Working'";
+
+                    // Crea un comando SQL con la consulta y la conexión
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        // Abre la conexión a la base de datos
+                        conn.Open();
+
+                        // Ejecuta la consulta y obtiene el conteo de registros
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        // Retorna true si hay al menos un seguimiento activo, false en caso contrario
+                        return count > 0;
+                    }
+                }
+            }
+            catch (Exception )
+            {
+                // Manejo de excepciones: registra el error o maneja la excepción según sea necesario
+                // Puedes usar un método de registro o simplemente lanzar la excepción para manejarla en el código llamador
+                // Por ejemplo: LogError(ex); 
+                throw; // Re-lanza la excepción para permitir que el código llamador la maneje
             }
         }
+
         protected void LinkCerrar_Click(object sender, EventArgs e)
         {
             //Session.Remove("UserSession");

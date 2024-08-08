@@ -9,6 +9,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
 using System.Web.Services;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web.Optimization;
 
 namespace AyEServicesCRM
 {
@@ -1508,13 +1511,15 @@ namespace AyEServicesCRM
             ListarTaskFechas();
         }
 
-        public static bool ExisteTrackingPlay(int IdEmployee)
+        public static bool ExisteTrackingPlay(int IdEmployee, int IdTask)
         {
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["micadenaconexion"].ToString()))
             {
-                string query = "SELECT COUNT(*) FROM Tracking a inner join TablaMaestra b on b.IdTabla = a.IdStatusTracking WHERE a.State != '0' and b.Description = 'Working' and a.IdEmployee=@IdEmployee";
+                string query = "SELECT COUNT(*) FROM Tracking a inner join Task t on t.IdTask = a.IdTask inner join TablaMaestra b on b.IdTabla = a.IdStatusTracking WHERE a.State != '0' and b.Description = 'Working' and a.IdEmployee=@IdEmployee and t.IdTask = @IdTask";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@IdEmployee", IdEmployee);
+                cmd.Parameters.AddWithValue("@IdTask", IdTask);
+
                 conn.Open();
                 int count = Convert.ToInt32(cmd.ExecuteScalar());
                 if (count == 0)
@@ -1524,9 +1529,9 @@ namespace AyEServicesCRM
             }
         }
 
-        public void DatosTrackingWoring()
+        public void DatosTrackingWoring(int IdTask)
         {
-            ds = ca.ListarMultiplesTablasPorCodigo("MTrackingXtaskWorking", Convert.ToInt32(IdEmployees));
+            ds = ca.ObtenerTrakingXtaskWorking(Convert.ToInt32(IdEmployees), IdTask);
             dt = ds.Tables[0];
 
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -1554,6 +1559,9 @@ namespace AyEServicesCRM
         {
             GetEmployeesTracking(); GeStatusTracking();
             txtTrackingName.Focus();
+            btnPlay.Enabled = true;
+            LinkPausa.Enabled = true;
+            LinkStop.Enabled = true;
             string CodEmpleado;
 
             var button = sender as LinkButton;
@@ -1569,7 +1577,7 @@ namespace AyEServicesCRM
             ListarTrackingTask(Convert.ToInt32(lblCodigoTaskTracking.Text), Convert.ToInt32(IdEmployees));
 
             string IdEmployee;
-
+            int IdTask = Convert.ToInt32(lblCodigoTaskTracking.Text);
             IdEmployee = Session["IdEmployessSession"].ToString();
 
             if (ObtenerUserAuthorized(Convert.ToInt32(lblCodigoTaskTracking.Text), Convert.ToInt32(IdEmployee)))
@@ -1583,16 +1591,17 @@ namespace AyEServicesCRM
             }
 
 
-            if (ExisteTrackingPlay(Convert.ToInt32(IdEmployee)))
+            if (ExisteTrackingPlay(Convert.ToInt32(IdEmployee), IdTask))
             {
                 if (lblCondicion.Text != "Start Tracking")
                 {
                     Cronometro.Visible = true;
-                    DatosTrackingWoring();
+                    DatosTrackingWoring(IdTask);
                     AsignarTrackingTimeDue();
                     if (StatusTracking == "2")
                     {
                         Timer1.Enabled = true;
+                        hfCronometroEnMarcha.Value = "true";
                     }
                     else
                     {
@@ -1606,6 +1615,7 @@ namespace AyEServicesCRM
                 else
                 {
                     lblCondicion.Text = "Start Tracking";
+                    
                 }
             }
             else
@@ -1908,6 +1918,8 @@ namespace AyEServicesCRM
                 dr = dt.Rows[i];
                 lblHora.Text = Convert.ToString(dr["TimeWorkHour"]);
                 lblMinutos.Text = Convert.ToString(dr["TimeWorkMinutes"]);
+                lblSegundos.Text = Convert.ToString(dr["TimeWorkSeconds"]);
+
 
                 lblTimeLogSelect.Text = Convert.ToString(dr["Tracking"]);
                 lblStartedSelect.Text = Convert.ToString(dr["StartDateTime"]);
@@ -1932,6 +1944,10 @@ namespace AyEServicesCRM
                 return;
             }
 
+            btnPlay.Enabled = true;
+            LinkPausa.Enabled = true;
+            LinkStop.Enabled = true;
+
             var button = sender as LinkButton;
             ListViewItem item = button.NamingContainer as ListViewItem;
             String StatusConsicion = lvwTrackinTask.DataKeys[item.DataItemIndex].Values["Status"].ToString();
@@ -1948,7 +1964,7 @@ namespace AyEServicesCRM
                     lblmensaje.Visible = false;
                     lblmensaje.Text = "";
                     TimeWork(Convert.ToInt32(lblIdTracking.Text));
-                    MinutosAdicionales();
+                    //MinutosAdicionales();
                 }
                 else
                 {
@@ -1972,30 +1988,29 @@ namespace AyEServicesCRM
 
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-
             int seconds = int.Parse(lblSegundos.Text);
-            if (seconds >= 0)
+            int minutes = int.Parse(lblMinutos.Text);
+            int hours = int.Parse(lblHora.Text);
+
+            seconds++;
+
+            if (seconds == 60)
             {
-                lblSegundos.Text = (seconds + 1).ToString();
-                if (Convert.ToInt32(lblSegundos.Text) == 60)
+                seconds = 0;
+                minutes++;
+
+                if (minutes == 60)
                 {
-                    int Minutos = int.Parse(lblMinutos.Text) + 1;
-                    lblMinutos.Text = Minutos.ToString();
-                    lblSegundos.Text = "0";
-                    if (int.Parse(lblMinutos.Text) == 60)
-                    {
-                        int Horas = int.Parse(lblHora.Text) + 1;
-                        lblHora.Text = Horas.ToString();
-                        lblMinutos.Text = "0";
-                    }
+                    minutes = 0;
+                    hours++;
                 }
             }
-            else
-            {
-                Timer1.Enabled = false;
-            }
 
+            lblSegundos.Text = seconds.ToString();
+            lblMinutos.Text = minutes.ToString();
+            lblHora.Text = hours.ToString();
         }
+
 
         public void DatosTrackingValidarPlay()
         {
@@ -2016,8 +2031,8 @@ namespace AyEServicesCRM
             DatosTrackingValidarPlay();
             TrackingEntity Tracking = new TrackingEntity();
             Tracking.IdTracking = Convert.ToInt32(lblIdTracking.Text);
-            Tracking.IdTask = Convert.ToInt32("0");
-            Tracking.IdEmployee = Convert.ToInt32("0");
+            Tracking.IdTask = Convert.ToInt32(lblCodigoTaskTracking.Text);
+            Tracking.IdEmployee = Convert.ToInt32(IdEmployees.ToString());
             Tracking.IdStatusTracking = Convert.ToInt32("55");//dar Play pasa a status Working
             Tracking.Name = "";
             Tracking.StartDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
@@ -2048,68 +2063,217 @@ namespace AyEServicesCRM
             master.IdTracking = lblIdTracking.Text;
             master.MostrarDatoTracking();
             ListarTrackingTask(Convert.ToInt32(lblCodigoTaskTracking.Text), Convert.ToInt32(IdEmployees));
+
+            // Actualizar o insertar en DailyTracking
+            ActualizarDailyTracking(Tracking.IdTracking, Tracking.IdTask, Tracking.IdEmployee);
+            hfCronometroEnMarcha.Value = "true";
         }
+
+        private void ActualizarDailyTracking(int idTracking, int idTask, int idEmployee)
+        {
+            DateTime today = DateTime.Today;
+            List<DailyTrackingEntity> dailyTrackings = TrackingBS.GetDailyTracking(idTracking);
+            DailyTrackingEntity todayTracking = dailyTrackings.FirstOrDefault(dt => dt.TrackingDate == today && dt.IdTask == idTask && dt.IdEmployee == idEmployee);
+
+            if (todayTracking == null)
+            {
+                // Insertar nuevo registro
+                TrackingBS.InsertDailyTracking(new DailyTrackingEntity
+                {
+                    IdTracking = idTracking,
+                    IdTask = idTask,
+                    IdEmployee = idEmployee,
+                    TrackingDate = today,
+                    TimeWork = 0
+                });
+            }
+        }
+
+
 
         protected void LinkStop_Click(object sender, EventArgs e)
         {
-            ConfirmarTrackingStar();
-            int MinutosHora = 0, Minutos = 0;
-            if (Convert.ToInt32(lblHora.Text) > 0)
+            try
             {
-                MinutosHora = Convert.ToInt32(lblHora.Text) * 60;
-                Minutos = Convert.ToInt32(lblMinutos.Text) + MinutosHora;
+                // Fecha predeterminada válida para SqlDateTime
+                DateTime defaultDate = new DateTime(1753, 1, 1);
+                // Verifica la confirmación del usuario
+                if (hfTrackingConfirmation.Value != "true")
+                {
+                    lblmensajeCronometro.Text = "Task status not updated.";
+                    lblmensajeCronometro.Visible = true;
+                    return;
+
+                }
+                //Actualiza el estado de la tarea a Done
+                UpdateTaskStatusAndTracking();
+
+                //En caso el traking este en estado Working actualiza el tiempo
+                if(lblCondicion.Text == "There is tracking in Working")
+                {
+                    ConfirmarTrackingStar();
+
+                    // Asumiendo que TrackingStar es un string que contiene la fecha y hora de inicio
+                    if (!DateTime.TryParse(TrackingStar, out DateTime trackingStartTime))
+                    {
+                        lblmensaje.Text = "Error: Tracking start time is invalid.";
+                        return;
+                    }
+
+                    int MinutosHora = Convert.ToInt32(lblHora.Text) > 0 ? Convert.ToInt32(lblHora.Text) * 60 : 0;
+                    int Minutos = MinutosHora + Convert.ToInt32(lblMinutos.Text);
+
+                    //int HorasASegundos = Convert.ToInt32(lblHora.Text) > 0 ? Convert.ToInt32(lblHora.Text) * 3600 : 0;
+                    //int MinutosASegundos = Convert.ToInt32(lblMinutos.Text) > 0 ? Convert.ToInt32(lblMinutos.Text) * 60 : 0;
+                    //int Segundos = Convert.ToInt32(lblSegundos.Text);
+
+                    //int TotalSegundos = HorasASegundos + MinutosASegundos + Segundos;
+
+
+
+
+                    TrackingEntity Tracking = new TrackingEntity
+                    {
+                        IdTracking = Convert.ToInt32(lblIdTracking.Text),
+                        IdTask = 0,
+                        IdEmployee = 0,
+                        IdStatusTracking = 0,
+                        Name = "",
+                        StartDateTime = defaultDate,
+                        DueDateTime = defaultDate,
+                        DurationTime = 0,
+                        TimeWork = Minutos,
+                        TrackingStart = defaultDate,
+                        TrackingDue = defaultDate,
+                        State = ""
+                    };
+
+                    // Registra en Tracking el tiempo total
+                    Tracking = TrackingBS.TimeWork(Tracking);
+
+                    DateTime now = DateTime.Now;
+                    DateTime current = trackingStartTime;
+
+                    // Divide el tiempo trabajado entre los días involucrados
+                    while (current < now)
+                    {
+                        DateTime endOfDay = current.Date.AddDays(1).AddTicks(-1);
+                        if (endOfDay > now)
+                        {
+                            endOfDay = now;
+                        }
+
+                        // Calcular segundos trabajados
+                        int secondsWorked = (int)(endOfDay - current).TotalSeconds;
+
+                        // Asegúrate de que secondsWorked no sea negativo
+                        if (secondsWorked < 0)
+                            secondsWorked = 0;
+
+                        DailyTrackingEntity dailyTracking = new DailyTrackingEntity
+                        {
+                            IdTracking = Tracking.IdTracking,
+                            IdTask = 0,
+                            IdEmployee = 0,
+                            TrackingDate = current.Date,
+                            TimeWork = secondsWorked
+                        };
+
+                        TrackingBS.SaveOrUpdateDailyTracking(dailyTracking);
+
+                        // Avanzar al siguiente día
+                        current = endOfDay.AddDays(1); // Cambiado a AddDays(1) para asegurar que el próximo ciclo comience al inicio del siguiente día
+                    }
+
+
+                    // Si el tiempo actual es aún dentro del mismo día, agregarlo como último registro
+                    if (current < now)
+                    {
+                        int minutesWorked = (int)(now - current).TotalMinutes;
+                        if (minutesWorked < 0)
+                            minutesWorked = 0;
+
+                        DailyTrackingEntity dailyTracking = new DailyTrackingEntity
+                        {
+                            IdTracking = Tracking.IdTracking,
+                            IdTask = 0,
+                            IdEmployee = 0,
+                            TrackingDate = current.Date,
+                            TimeWork = minutesWorked
+                        };
+
+                        TrackingBS.SaveOrUpdateDailyTracking(dailyTracking);
+                    }
+                }
+
+
+                // Actualizar el estado del seguimiento a completado
+                TrackingEntity Tracking2 = new TrackingEntity
+                {
+                    IdTracking = Convert.ToInt32(lblIdTracking.Text),
+                    IdTask = 0,
+                    IdEmployee = 0,
+                    IdStatusTracking = 56, // Id Status Completed
+                    Name = "",
+                    StartDateTime = defaultDate,
+                    DueDateTime = defaultDate,
+                    DurationTime = 0,
+                    TimeWork = 0,
+                    TrackingStart = DateTime.Now,
+                    TrackingDue = DateTime.Now,
+                    State = "2"
+                };
+
+                Tracking2 = TrackingBS.TrackingWorking(Tracking2);
+
+                // Reiniciar los valores del cronómetro
+                lblSegundos.Text = "0";
+                lblMinutos.Text = "0";
+                lblHora.Text = "0";
+                Timer1.Enabled = false;
+
+                // Actualizar la interfaz de usuario
+                ListarTrackingTask(Convert.ToInt32(lblCodigoTaskTracking.Text), Convert.ToInt32(IdEmployees));
+                lblCondicion.Text = "Completed";
+                lblStatusSelect.Text = "Completed";
+                lblmensaje.Text = "";
+
+                lblTimeLogSelect.Visible = false;
+                lblStartedSelect.Visible = false;
+                lblEndedSelect.Visible = false;
+                lblTimeSelect.Visible = false;
+                lblStatusSelect.Visible = false;
+                btnPlay.Enabled = false;
+                LinkPausa.Enabled = false;
+                LinkStop.Enabled = false;
+
+                SiteMaster master = this.Master as SiteMaster;
+                master.ExisteTeacking();
+                hfCronometroEnMarcha.Value = "false";
+                
             }
-            else
+            catch (FormatException ex)
             {
-                Minutos = Convert.ToInt32(lblMinutos.Text);
+                lblmensajeCronometro.Text = $"Error: The date format is incorrect. error: {ex.Message}";
+                lblmensajeCronometro.Visible = true;
+                // Log the exception if necessary
             }
+            catch (SqlException ex)
+            {
+                lblmensajeCronometro.Text = $"Error: Database operation failed. error: {ex.Message}";
+                lblmensajeCronometro.Visible = true;
 
-            TrackingEntity Tracking = new TrackingEntity();
-            Tracking.IdTracking = Convert.ToInt32(lblIdTracking.Text);
-            Tracking.IdTask = Convert.ToInt32("0");
-            Tracking.IdEmployee = Convert.ToInt32("0");
-            Tracking.IdStatusTracking = Convert.ToInt32("0");
-            Tracking.Name = "";
-            Tracking.StartDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking.DueDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking.DurationTime = Convert.ToInt32("0");//Se envia desde el PA
-            Tracking.TimeWork = (Minutos);
-            Tracking.TrackingStart = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking.TrackingDue = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking.State = "";
-            Tracking = TrackingBS.TimeWork(Tracking);
+                // Log the exception if necessary
+            }
+            catch (Exception ex)
+            {
+                lblmensajeCronometro.Text = $"An unexpected error occurred: {ex.Message}";
+                lblmensajeCronometro.Visible = true;
 
-            TrackingEntity Tracking2 = new TrackingEntity();
-            Tracking2.IdTracking = Convert.ToInt32(lblIdTracking.Text);
-            Tracking2.IdTask = Convert.ToInt32("0");
-            Tracking2.IdEmployee = Convert.ToInt32("0");
-            Tracking2.IdStatusTracking = Convert.ToInt32("56");// Id Status Completed
-            Tracking2.Name = "";
-            Tracking2.StartDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking2.DueDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking2.DurationTime = Convert.ToInt32("0");//Se envia desde el PA
-            Tracking2.TimeWork = Convert.ToInt32("0");
-            Tracking2.TrackingStart = DateTime.Now;
-            Tracking2.TrackingDue = DateTime.Now;
-            Tracking2.State = "2";
-            Tracking2 = TrackingBS.TrackingWorking(Tracking2);
-
-            lblSegundos.Text = "0";
-            lblMinutos.Text = "0";
-            lblHora.Text = "0";
-            Timer1.Enabled = false; 
-            ListarTrackingTask(Convert.ToInt32(lblCodigoTaskTracking.Text), Convert.ToInt32(IdEmployees));
-            lblCondicion.Text = "Pause";
-            lblmensaje.Text = "";
-
-            lblTimeLogSelect.Visible = false;
-            lblStartedSelect.Visible = false;
-            lblEndedSelect.Visible = false;
-            lblTimeSelect.Visible = false;
-            lblStatusSelect.Visible = false;
-            SiteMaster master = this.Master as SiteMaster;
-            master.ExisteTeacking();
+                // Log the exception if necessary
+            }
         }
+
 
         protected void UpdatePanel6_Load(object sender, EventArgs e)
         {
@@ -2125,63 +2289,161 @@ namespace AyEServicesCRM
 
         protected void LinkPausa_Click(object sender, EventArgs e)
         {
-            ConfirmarTrackingStar();
-
-            int MinutosHora = 0, Minutos = 0;
-            if (Convert.ToInt32(lblHora.Text) > 0)
+            try
             {
-                MinutosHora = Convert.ToInt32(lblHora.Text) * 60;
-                Minutos = Convert.ToInt32(lblMinutos.Text) + MinutosHora;
+                ConfirmarTrackingStar();
+
+                // Asumiendo que TrackingStar es un string que contiene la fecha y hora de inicio
+                if (!DateTime.TryParse(TrackingStar, out DateTime trackingStartTime))
+                {
+                    lblmensaje.Text = "Error: Tracking start time is invalid.";
+                    return;
+                }
+
+                int MinutosHora = Convert.ToInt32(lblHora.Text) > 0 ? Convert.ToInt32(lblHora.Text) * 60 : 0;
+                int Minutos = MinutosHora + Convert.ToInt32(lblMinutos.Text);
+
+                //int HorasASegundos = Convert.ToInt32(lblHora.Text) > 0 ? Convert.ToInt32(lblHora.Text) * 3600 : 0;
+                //int MinutosASegundos = Convert.ToInt32(lblMinutos.Text) > 0 ? Convert.ToInt32(lblMinutos.Text) * 60 : 0;
+                //int Segundos = Convert.ToInt32(lblSegundos.Text);
+
+                //int TotalSegundos = HorasASegundos + MinutosASegundos + Segundos;
+
+
+                // Fecha predeterminada válida para SqlDateTime
+                DateTime defaultDate = new DateTime(1753, 1, 1);
+
+                TrackingEntity Tracking = new TrackingEntity
+                {
+                    IdTracking = Convert.ToInt32(lblIdTracking.Text),
+                    IdTask = 0,
+                    IdEmployee = 0,
+                    IdStatusTracking = 0,
+                    Name = "",
+                    StartDateTime = defaultDate,
+                    DueDateTime = defaultDate,
+                    DurationTime = 0,
+                    TimeWork = Minutos,
+                    TrackingStart = defaultDate,
+                    TrackingDue = defaultDate,
+                    State = ""
+                };
+
+                // Registra en Tracking el tiempo total
+                Tracking = TrackingBS.TimeWork(Tracking);
+
+                DateTime now = DateTime.Now;
+                DateTime current = trackingStartTime;
+
+                // Divide el tiempo trabajado entre los días involucrados
+                while (current < now)
+                {
+                    DateTime endOfDay = current.Date.AddDays(1).AddTicks(-1);
+                    if (endOfDay > now)
+                    {
+                        endOfDay = now;
+                    }
+
+                    // Calcular segundos trabajados
+                    int secondsWorked = (int)(endOfDay - current).TotalSeconds;
+
+                    // Asegúrate de que secondsWorked no sea negativo
+                    if (secondsWorked < 0)
+                        secondsWorked = 0;
+
+                    DailyTrackingEntity dailyTracking = new DailyTrackingEntity
+                    {
+                        IdTracking = Tracking.IdTracking,
+                        IdTask = 0,
+                        IdEmployee = 0,
+                        TrackingDate = current.Date,
+                        TimeWork = secondsWorked
+                    };
+
+                    TrackingBS.SaveOrUpdateDailyTracking(dailyTracking);
+
+                    // Avanzar al siguiente día
+                    current = endOfDay.AddDays(1); // Cambiado a AddDays(1) para asegurar que el próximo ciclo comience al inicio del siguiente día
+                }
+
+
+                // Si el tiempo actual es aún dentro del mismo día, agregarlo como último registro
+                if (current < now)
+                {
+                    int minutesWorked = (int)(now - current).TotalMinutes;
+                    if (minutesWorked < 0)
+                        minutesWorked = 0;
+
+                    DailyTrackingEntity dailyTracking = new DailyTrackingEntity
+                    {
+                        IdTracking = Tracking.IdTracking,
+                        IdTask = 0,
+                        IdEmployee = 0,
+                        TrackingDate = current.Date,
+                        TimeWork = minutesWorked
+                    };
+
+                    TrackingBS.SaveOrUpdateDailyTracking(dailyTracking);
+                }
+
+                // Actualizar el estado del tracking a Paused
+                TrackingEntity Tracking2 = new TrackingEntity
+                {
+                    IdTracking = Convert.ToInt32(lblIdTracking.Text),
+                    IdTask = 0,
+                    IdEmployee = 0,
+                    IdStatusTracking = 54, // Id Status Paused
+                    Name = "",
+                    StartDateTime = defaultDate,
+                    DueDateTime = defaultDate,
+                    DurationTime = 0,
+                    TimeWork = 0,
+                    TrackingStart = DateTime.Now,
+                    TrackingDue = DateTime.Now,
+                    State = "2"
+                };
+
+                Tracking2 = TrackingBS.TrackingWorking(Tracking2);
+
+                Timer1.Enabled = false;
+
+                ListarTrackingTask(Convert.ToInt32(lblCodigoTaskTracking.Text), Convert.ToInt32(IdEmployees));
+                lblCondicion.Text = "Pause";
+                lblmensaje.Text = "";
+
+                lblTimeLogSelect.Visible = false;
+                lblStartedSelect.Visible = false;
+                lblEndedSelect.Visible = false;
+                lblTimeSelect.Visible = false;
+                lblStatusSelect.Visible = false;
+                lblmensajeCronometro.Text = string.Empty;
+                lblmensajeCronometro.Visible = false;
+
+                SiteMaster master = this.Master as SiteMaster;
+                master.ExisteTeacking();
+                hfCronometroEnMarcha.Value = "false";
             }
-            else
+            catch (FormatException ex)
             {
-                Minutos = Convert.ToInt32(lblMinutos.Text);
+                lblmensajeCronometro.Text = $"Error: The date format is incorrect. error: {ex.Message}";
+                lblmensajeCronometro.Visible = true;
+                // Log the exception if necessary
             }
-
-            TrackingEntity Tracking = new TrackingEntity();
-            Tracking.IdTracking = Convert.ToInt32(lblIdTracking.Text);
-            Tracking.IdTask = Convert.ToInt32("0");
-            Tracking.IdEmployee = Convert.ToInt32("0");
-            Tracking.IdStatusTracking = Convert.ToInt32("0");
-            Tracking.Name = "";
-            Tracking.StartDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking.DueDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking.DurationTime = Convert.ToInt32("0");//Se envia desde el PA
-            Tracking.TimeWork = (Minutos);
-            Tracking.TrackingStart = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking.TrackingDue = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking.State = "";
-            Tracking = TrackingBS.TimeWork(Tracking);
-
-            TrackingEntity Tracking2 = new TrackingEntity();
-            Tracking2.IdTracking = Convert.ToInt32(lblIdTracking.Text);
-            Tracking2.IdTask = Convert.ToInt32("0");
-            Tracking2.IdEmployee = Convert.ToInt32("0");
-            Tracking2.IdStatusTracking = Convert.ToInt32("54");// Id Status Completed
-            Tracking2.Name = "";
-            Tracking2.StartDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking2.DueDateTime = Convert.ToDateTime("1/1/1753 12:00:00");
-            Tracking2.DurationTime = Convert.ToInt32("0");//Se envia desde el PA
-            Tracking2.TimeWork = Convert.ToInt32("0");
-
-            Tracking2.TrackingStart = DateTime.Now;
-            Tracking2.TrackingDue = DateTime.Now;
-
-            Tracking2.State = "2";
-            Tracking2 = TrackingBS.TrackingWorking(Tracking2);
-            Timer1.Enabled = false;
-            ListarTrackingTask(Convert.ToInt32(lblCodigoTaskTracking.Text), Convert.ToInt32(IdEmployees));
-            lblCondicion.Text = "Pause";
-            lblmensaje.Text = "";
-
-            lblTimeLogSelect.Visible = false;
-            lblStartedSelect.Visible = false;
-            lblEndedSelect.Visible = false;
-            lblTimeSelect.Visible = false;
-            lblStatusSelect.Visible = false;
-            SiteMaster master = this.Master as SiteMaster;
-            master.ExisteTeacking();
+            catch (SqlException ex)
+            {
+                lblmensajeCronometro.Text = $"Error: Database operation failed. error: {ex.Message}";
+                lblmensajeCronometro.Visible = true;
+                // Log the exception if necessary
+            }
+            catch (Exception ex)
+            {
+                lblmensajeCronometro.Text = $"An unexpected error occurred: {ex.Message}";
+                lblmensajeCronometro.Visible = true;
+                // Log the exception if necessary
+            }
         }
+
+
 
         public void GetFiscalYear()
         {
@@ -2233,7 +2495,6 @@ namespace AyEServicesCRM
                 cboClientAccount.Items.Insert(0, new ListItem("- To Select -", ""));
             }
         }
-        String TiempoHoras, TiempoMinutos;
 
         private void AddText(ref string p_searchText, TextBox p_txtBox, string whichButton)
         {
@@ -2250,6 +2511,18 @@ namespace AyEServicesCRM
             }
 
         }
+
+        private void UpdateTaskStatusAndTracking()
+        {
+            // Obtener el ID de la tarea desde el control lblIdTask
+            int taskId = Convert.ToInt32(lblCodigoTaskTracking.Text);
+            // Definir el ID del nuevo estado (2 para 'Done')
+            int newStatusId = 44;
+
+            // Actualizar el estado de la tarea
+            TrackingBS.UpdateTaskStatus(taskId, newStatusId);
+        }
+
 
         public void ConfirmarTrackingStar()
         {
@@ -2312,24 +2585,50 @@ namespace AyEServicesCRM
             ds = ca.TiempoNuevo(Fecha1, Fecha2);
             dt = ds.Tables[0];
 
+            int totalHoras = 0;
+            int totalMinutos = 0;
+
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 dr = dt.Rows[i];
-                TiempoHoras = Convert.ToString(dr["Horas"]);
-                TiempoMinutos = Convert.ToString(dr["Minutos"]);
-            }
-            if (TiempoHoras != "")
-            {
-                int Horas = Convert.ToInt32(TiempoHoras) + Convert.ToInt32(lblHora.Text);
-                lblHora.Text = Horas.ToString();
-            }
-            if (TiempoMinutos != "")
-            {
-                int Minutos = Convert.ToInt32(TiempoMinutos) + Convert.ToInt32(lblMinutos.Text);
-                lblMinutos.Text = Minutos.ToString();
+                int horas = Convert.ToInt32(dr["Horas"]);
+                int minutos = Convert.ToInt32(dr["Minutos"]);
+
+                totalHoras += horas;
+                totalMinutos += minutos;
             }
 
+            // Obtener las horas y minutos actuales de los Labels
+            int currentHoras = 0;
+            int currentMinutos = 0;
+
+            if (!string.IsNullOrEmpty(lblHora.Text))
+            {
+                currentHoras = Convert.ToInt32(lblHora.Text);
+            }
+            if (!string.IsNullOrEmpty(lblMinutos.Text))
+            {
+                currentMinutos = Convert.ToInt32(lblMinutos.Text);
+            }
+
+            // Sumar los tiempos totales obtenidos de la consulta
+            currentHoras += totalHoras;
+            currentMinutos += totalMinutos;
+
+            // Ajustar los minutos que exceden 60
+            if (currentMinutos >= 60)
+            {
+                currentHoras += currentMinutos / 60;
+                currentMinutos = currentMinutos % 60;
+            }
+
+            // Asignar los valores ajustados a los Labels
+            lblHora.Text = currentHoras.ToString();
+            lblMinutos.Text = currentMinutos.ToString();
         }
+
+
+
 
         public void ListarNumTask()
         {

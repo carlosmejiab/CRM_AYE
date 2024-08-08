@@ -113,3 +113,12 @@ C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServ
 C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\obj\Debug\CapaDAO.csproj.CopyComplete
 C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\obj\Debug\CapaDAO.dll
 C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\obj\Debug\CapaDAO.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\bin\Debug\CapaDAO.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\bin\Debug\CapaDAO.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\bin\Debug\CapaEntity.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\bin\Debug\CapaEntity.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\obj\Debug\CapaDAO.csproj.AssemblyReference.cache
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\obj\Debug\CapaDAO.csproj.CoreCompileInputs.cache
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\obj\Debug\CapaDAO.csproj.CopyComplete
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\obj\Debug\CapaDAO.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Quinta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\CapaDAO\obj\Debug\CapaDAO.pdb

@@ -45,6 +45,7 @@
     <Compile Include="ClientAccountEntity.cs" />
     <Compile Include="ClientEntity.cs" />
     <Compile Include="ContactEntity.cs" />
+    <Compile Include="DailyTrackingEntity.cs" />
     <Compile Include="DocumentEntity.cs" />
     <Compile Include="EmployeesEntity.cs" />
     <Compile Include="EventEntity.cs" />
