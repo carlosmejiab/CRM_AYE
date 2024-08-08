@@ -1,0 +1,435 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AyEServicesCRM.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+            <link href="LoginJsCss/startmin.css" rel="stylesheet">
+        <link href="LoginJsCss/font-awesome.min.css" rel="stylesheet">
+        <link href="Content/sweetalert2.min.css" rel="stylesheet" />
+    <script src="Scripts/sweetalert2.min.js"></script>
+           <!-- DataTables CSS -->
+    <%--    <link href="Datatable/dataTables.bootstrap.css" rel="stylesheet" />
+
+        <!-- DataTables Responsive CSS Ver como afecta--> 
+        <link href="Datatable/dataTables.responsive.css" rel="stylesheet" />--%>
+
+<%--    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>--%>
+
+    
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server" EnablePageMethods="true">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />                
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <style>
+            .navbar-custom {
+                color: #FFFFFF;
+                background-color: #2E8424;
+            }
+        </style>
+       
+     
+                <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom" role="navigation">
+                    <div class="navbar-header">
+                        <a href="Index.aspx">
+                            <img src="fonts/LogoAyE.png" alt="100px" class="img-circle" width="80" height="50"></a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><span class="glyphicon glyphicon-align-justify"></span></a>
+
+                    </div>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <ul class="nav navbar-right navbar-top-links">
+                        <li class="dropdown">
+                         <%--    <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick">
+                                        </asp:Timer>
+                            <asp:UpdatePanel runat="server" ID="time" OnLoad="Page_Load">
+                                <ContentTemplate>                             
+
+                                        <asp:Label ID="lblHora" runat="server">0</asp:Label>H:
+                                        <asp:Label ID="lblMinutos" runat="server">0</asp:Label>M:
+                                        <asp:Label ID="lblSegundos" runat="server">0</asp:Label>S
+                                       
+
+                                        <asp:LinkButton ID="btnPlay" runat="server" CssClass="btn btn-default" OnClick="btnPlay_Click" ClientIDMode="Static">▶️</asp:LinkButton>
+                                        <asp:LinkButton ID="LinkPausa" runat="server" CssClass="btn btn-default" OnClick="LinkPausa_Click" ClientIDMode="Static">⏸️</asp:LinkButton>
+                                        <asp:LinkButton ID="LinkStop" runat="server" CssClass="btn btn-default" OnClick="LinkStop_Click" ClientIDMode="Static">⏹️</asp:LinkButton>
+                           
+
+                                </ContentTemplate>
+                                <Triggers>
+                                      <asp:AsyncPostBackTrigger ControlID="Timer1" />
+                                </Triggers>
+                            </asp:UpdatePanel>--%>
+                        <%--    <asp:Timer runat="server" ID="UpdateTimer" Interval="1000" OnTick="UpdateTimer_Tick" />
+                            <asp:UpdatePanel runat="server" ID="TimedPanel" UpdateMode="Conditional">
+                                <Triggers>
+                                    <asp:AsyncPostBackTrigger ControlID="UpdateTimer" EventName="Tick" />
+                                </Triggers>
+                                <ContentTemplate>
+                                    <asp:Label runat="server" ID="DateStampLabel" />
+                                </ContentTemplate>
+                            </asp:UpdatePanel>--%>
+
+                            <asp:UpdatePanel runat="server" ID="UpTracking" UpdateMode="Conditional">
+                                <ContentTemplate>
+                                    <asp:Label runat="server" ID="lblTrackingPendiente" />
+                                            <asp:Label runat="server" ID="lblIdTracking" Text="SC" Visible="false"/>                                  
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white">
+                                <i class="fa fa-bell fa-fw"></i><b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <i class="fa fa-user fa-fw"></i>
+                                            <asp:Label ID="lblPersonal" runat="server" Text="Id"></asp:Label>
+                                            <span class="pull-right text-muted small">
+                                                <asp:Label ID="lblIdUser" runat="server" Text="Label"></asp:Label></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <i class="fa fa-user fa-fw"></i>
+                                            <asp:Label ID="lblEmpresa" runat="server" Text="Employee"></asp:Label>
+                                            <span class="pull-right text-muted small">
+                                                <asp:Label ID="lblEmployees" runat="server" Text="Label"></asp:Label></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <i class="fa fa-bars"></i>
+                                            <asp:Label ID="Label2" runat="server" Text="Rol"></asp:Label>
+                                            <span class="pull-right text-muted small">
+                                                <asp:Label ID="lblRol" runat="server" Text="Rol"></asp:Label></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a class="text-center" href="#"><i class="fa fa-copyright fa-fw"></i>Copyright 2020</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a style="color: white" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user fa-fw"></i>User <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <asp:LinkButton ID="LinkUpdateData" class="label" Font-Size="Small" runat="server" CommandName="Select" OnClick="LinkUpdateData_Click"> <span aria-hidden="true" class="fa fa-wrench"></span> Update Data</asp:LinkButton>
+
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="LinkRecover" class="label" Font-Size="Small" runat="server" CommandName="Select" OnClick="LinkRecover_Click"> <span aria-hidden="true" class="fa fa-paper-plane-o"></span > Recover Pass</asp:LinkButton>
+
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkCerrar" class="label" Font-Size="Small" runat="server" CommandName="Select" OnClick="LinkCerrar_Click"> <span aria-hidden="true" class="fa fa-sign-out fa-fw"></span> Close</asp:LinkButton>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+     
+
+  <style>
+            #wrapper {
+                padding-left: 0;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+
+                #wrapper.toggled {
+                    padding-left: 250px;
+                }
+
+            #sidebar-wrapper {
+                z-index: 1000;
+                position: fixed;
+                left: 250px;
+                width: 0;
+                height: 100%;
+                margin-left: -250px;
+                overflow-y: auto;
+                background: #f4f4f4;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                width: 250px;
+            }
+
+            #page-content-wrapper {
+                width: 100%;
+                position: absolute;
+                padding: 15px;
+            }
+
+            #wrapper.toggled #page-content-wrapper {
+                position: absolute;
+                margin-right: -250px;
+            }
+
+            /* Sidebar Styles */
+
+            .sidebar-nav {
+                position: absolute;
+                top: 0;
+                width: 250px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+                .sidebar-nav li {
+                    text-indent: 20px;
+                    line-height: 40px;
+                }
+
+                    .sidebar-nav li a {
+                        display: block;
+                        text-decoration: none;
+                        color: #000000;
+                    }
+
+                        .sidebar-nav li a:hover {
+                            text-decoration: none;
+                            color: #fff;
+                            background: rgba(255,255,255,0.2);
+                        }
+
+                        .sidebar-nav li a:active,
+                        .sidebar-nav li a:focus {
+                            text-decoration: none;
+                        }
+
+                .sidebar-nav > .sidebar-brand {
+                    height: 65px;
+                    font-size: 18px;
+                    line-height: 60px;
+                }
+
+                    .sidebar-nav > .sidebar-brand a {
+                        color: #000000;
+                    }
+
+                        .sidebar-nav > .sidebar-brand a:hover {
+                            color: #808080;
+                            background: none;
+                        }
+
+            @media(min-width:768px) {
+                #wrapper {
+                    padding-left: 250px;
+                }
+
+                    #wrapper.toggled {
+                        padding-left: 0;
+                    }
+
+                #sidebar-wrapper {
+                    width: 250px;
+                }
+
+                #wrapper.toggled #sidebar-wrapper {
+                    width: 0;
+                }
+
+                #page-content-wrapper {
+                    padding: 20px;
+                    position: relative;
+                }
+
+                #wrapper.toggled #page-content-wrapper {
+                    position: relative;
+                    margin-right: 0;
+                }
+            }        
+        </style> 
+
+     <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+             
+            <ul class="sidebar-nav">       
+                 <li class="sidebar-brand">          
+                        <%--<img src="fonts/images.jpg" class="img-circle" alt="" width="50" height="50" />--%>   
+                         <asp:Image ID="Image1" runat="server" Height="50px" class="img-circle" Width="50px"  Visible="true"/>
+                        Welcome:
+                        <asp:Label ID="lblUsername" runat="server" Text="Username" Font-Size="Small"></asp:Label>         
+                </li>
+           
+                  <li runat="server" id="UserManagement"> 
+                     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl" data-parent="#menu" >User Management<span class="glyphicon glyphicon-tag pull-right"></span></a>
+                     <div id="sl" class="sublinks collapse">
+                         <a href="M_UsersEmployees.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>User</a>
+                     </div>
+                 </li>
+                   <li runat="server" id="Permissions">
+                       <a href="M_Profiles.aspx" class="list-group-item" data-toggle="collapse" data-target="#" data-parent="#menu">Permissions <span class="glyphicon glyphicon-tag pull-right"></span></a>
+                   </li>
+                <li runat="server" id="CustomerRegistration">
+                     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl2" data-parent="#menu">Customer Registration <span class="glyphicon glyphicon-tag pull-right"></span></a>
+                     <div id="sl2" class="sublinks collapse">
+                         <a href="M_Clients.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Register</a>
+                         <%--<a href="M_Clients.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Consult</a>--%>
+                         <a href="M_Contact.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Contact</a>
+                         <a href="M_ClientAccount.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Client Account</a>
+
+                     </div>
+                 </li>
+                <li runat="server" id="TaskRegister">
+                     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl3" data-parent="#menu">Task Register <span class="glyphicon glyphicon-tag pull-right"></span></a>
+                     <div id="sl3" class="sublinks collapse">
+                         <a href="M_Tasks.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Register</a>
+                         <%--<a href="M_Tasks.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Consult</a>--%>
+                     </div>
+                 </li>
+                <li runat="server" id="Eventlog">
+                      <a href="M_Events.aspx" class="list-group-item" data-toggle="collapse" data-target="#" data-parent="#menu">Event log <span class="glyphicon glyphicon-tag pull-right"></span></a>
+                </li>
+                <li runat="server" id="Tracking">
+                       <a href="M_Tracking.aspx" class="list-group-item" data-toggle="collapse" data-target="#" data-parent="#menu">Tracking <span class="glyphicon glyphicon-tag pull-right"></span></a>              
+                </li>
+                <li runat="server" id="CustomerDocuments">
+                     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl4" data-parent="#menu">Customer Documents <span class="glyphicon glyphicon-tag pull-right"></span></a>
+                     <div id="sl4" class="sublinks collapse">
+                         <a href="M_Documentos.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Register</a>
+                         <%--<a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Consult</a>--%>
+                     </div>
+                 </li>
+                <li runat="server" id="Maintenance">
+                     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#slMante" data-parent="#menu" >Maintenance <span class="glyphicon glyphicon-tag pull-right"></span></a>
+                     <div id="slMante" class="sublinks collapse">
+                         <a href="M_Citys.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>City</a>
+                         <a href="M_Clients.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Clients</a>
+
+                         <a href="M_Contact.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Contact</a>
+                         <a href="M_Employees.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Employees</a>
+                         <a href="M_Extensiones.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Extensions</a>
+                         <a href="M_Locationes.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Locationes</a>
+                         <a href="M_Positiones.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Positiones</a>
+                         <a href="M_Priority.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Priority</a>
+                         <a href="M_ProfilesPermisos.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Prof/Permiss</a>
+                         <a href="M_Services.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Services</a>
+                         <a href="M_State.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>State</a>
+                         <a href="M_SubTask.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>SubTask</a>
+                         <a href="M_Tasks.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Task</a>
+                         <a href="M_TypeClient.aspx" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Type Client</a>
+                     </div>
+                </li>
+                <li runat="server" id="Reports">
+                      <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl5" data-parent="#menu">Reports <span class="glyphicon glyphicon-tag pull-right"></span></a>
+                     <div id="sl5" class="sublinks collapse">
+                         <a href="http://192.168.30.45/Reports/report/Reports/Bookkeeping%20Status%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Bookkeeping Status Report</a>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Tasks%20By%20Client%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Tasks By Client Report</a>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Event%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Event Report</a>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Tasks%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Tasks Report</a>
+                         <%--<a href="http://192.168.30.45/Reports/report/Reports/Tasks%20Report%20Prueba" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Tasks Report</a>--%>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Tracking%20Report" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Tracking Report</a>
+                         <a href="http://192.168.30.45/Reports/report/Reports/Rep%20Billing" target="_blank" class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Billing Report</a>
+                         <a href="http://192.168.30.45/" target="_blank" class="list-group-item small"><span></span></a>
+
+                         
+<%--                     <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report3</a>
+                         <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report4</a>
+                         <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report5</a>
+                         <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span>Report6</a>--%>
+                     </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+         <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">                      
+                        <div class="col-sm-12 main">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+
+                            <hr />
+                            <footer>
+                                <p>&copy; <%: DateTime.Now.Year %></p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+     <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    
+     
+    
+    </form>
+</body>
+</html>

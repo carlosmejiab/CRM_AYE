@@ -1,0 +1,1413 @@
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojAssemblyReference.cache
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CoreCompileInputs.cache
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CopyComplete
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\OVH Tec\Documents\Visual Studio 2017\Project OVH\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 6\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojAssemblyReference.cache
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CoreCompileInputs.cache
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CopyComplete
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 8\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojAssemblyReference.cache
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CoreCompileInputs.cache
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CopyComplete
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\ALESSANDRO\Downloads\Ultimo Carlos\AyEServicesCRM-Carlos\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 10\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojAssemblyReference.cache
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CoreCompileInputs.cache
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CopyComplete
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\OVH Tec\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 11\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 12\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojAssemblyReference.cache
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CoreCompileInputs.cache
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CopyComplete
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\SODA TEC\Downloads\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 13\AyEServicesCRM\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\Version 14\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Desarrollo\Aplicacion\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Segunda Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csprojResolveAssemblyReference.cache
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Users\carlos.mejia\Desktop\PY CRM\Tercera Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.AssemblyReference.cache
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CoreCompileInputs.cache
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CopyComplete
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll.config
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AyEServicesCRM.pdb
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.exe.config
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csc.rsp
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.exe.config
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\csi.rsp
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.AppContext.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Console.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Compression.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.IO.Pipes.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.AccessControl.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Claims.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.ValueTuple.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.exe.config
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\vbc.rsp
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AjaxControlToolkit.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\AspNet.ScriptManager.jQuery.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.Web.Infrastructure.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\WebGrease.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaNEG.pdb
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaEntity.pdb
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\System.Web.Optimization.xml
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Newtonsoft.Json.xml
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Antlr3.Runtime.pdb
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\CapaDAO.pdb
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\es\System.Web.Optimization.resources.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.AssemblyReference.cache
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CoreCompileInputs.cache
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.csproj.CopyComplete
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.dll
+C:\Documentos\OneDrive\Escritorio\para probar\CRM_AYE\AyEServicesCRM\AyEServicesCRM\obj\Debug\AyEServicesCRM.pdb

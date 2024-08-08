@@ -1,0 +1,1568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Documentos\OneDrive\Escritorio\PY CRM\Cuarta Parte\Desarrollo\CRM_AYE\Instalador Aye</_PublishTargetUrl>
+    <History>True|2024-03-09T23:30:01.6140701Z;True|2024-01-16T15:30:23.8910135-05:00;True|2024-01-15T23:43:19.4305874-05:00;True|2024-01-13T13:03:05.8914672-05:00;False|2024-01-13T12:50:24.9985545-05:00;False|2024-01-13T12:18:14.1028799-05:00;True|2024-01-08T20:28:57.4690826-05:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>10/26/2020 21:40:00</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>05/03/2019 20:44:36</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>03/09/2024 18:29:58</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>03/09/2024 18:29:57</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>09/06/2016 10:55:00</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>01/25/2018 10:42:28</publishTime>
+    </File>
+    <File Include="bin/AyEServicesCRM.dll">
+      <publishTime>03/09/2024 18:29:44</publishTime>
+    </File>
+    <File Include="bin/AyEServicesCRM.pdb">
+      <publishTime>03/09/2024 18:29:44</publishTime>
+    </File>
+    <File Include="bin/CapaDAO.dll">
+      <publishTime>01/15/2024 20:05:54</publishTime>
+    </File>
+    <File Include="bin/CapaDAO.pdb">
+      <publishTime>01/15/2024 20:05:54</publishTime>
+    </File>
+    <File Include="bin/CapaEntity.dll">
+      <publishTime>01/15/2024 20:05:54</publishTime>
+    </File>
+    <File Include="bin/CapaEntity.pdb">
+      <publishTime>01/15/2024 20:05:54</publishTime>
+    </File>
+    <File Include="bin/CapaNEG.dll">
+      <publishTime>01/15/2024 20:05:55</publishTime>
+    </File>
+    <File Include="bin/CapaNEG.pdb">
+      <publishTime>01/15/2024 20:05:55</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.AspNet.FriendlyUrls.resources.dll">
+      <publishTime>07/30/2013 17:01:46</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Optimization.resources.dll">
+      <publishTime>02/11/2014 15:28:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>07/30/2013 16:57:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>09/06/2013 11:20:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>09/06/2013 11:20:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 09:44:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>11/06/2020 14:40:24</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/adminlte.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/adminlte.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/adminlte.min.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/adminlte.min.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.components.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.components.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.components.min.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.components.min.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.core.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.core.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.core.min.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.core.min.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.extra-components.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.extra-components.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.extra-components.min.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.extra-components.min.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.pages.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.pages.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.pages.min.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.pages.min.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.plugins.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.plugins.css.map">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.plugins.min.css">
+      <publishTime>12/28/2020 22:53:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/css/alt/adminlte.plugins.min.css.map">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/calendar-clock-icon_34472.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/icons8-calendario-48.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/icons8-lista-48.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-bg_glass_50_3baae3_1x400.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-icons_2694e8_256x240.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-icons_3d80b3_256x240.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-icons_72a7cf_256x240.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/images/ui-icons_ffffff_256x240.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/cupertino/jquery-ui-1.7.3.custom.css">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/AdminLTELogo.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/avatar.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/avatar2.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/avatar3.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/avatar4.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/avatar5.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/boxed-bg.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/boxed-bg.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/credit/american-express.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/credit/cirrus.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/credit/mastercard.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/credit/paypal.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/credit/paypal2.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/credit/visa.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/default-150x150.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/icons.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/photo1.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/photo2.png">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/photo3.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/photo4.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/prod-1.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/prod-2.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/prod-3.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/prod-4.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/prod-5.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/user1-128x128.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/user2-160x160.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/user3-128x128.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/user4-128x128.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/user5-128x128.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/user6-128x128.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/user7-128x128.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/img/user8-128x128.jpg">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/.eslintrc.json">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/adminlte.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/adminlte.js.map">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/adminlte.min.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/adminlte.min.js.map">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/ai.0.22.9-build00167.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/ai.0.22.9-build00167.min.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/calendarscript.js">
+      <publishTime>12/31/2020 00:10:44</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/demo.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/pages/dashboard.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/pages/dashboard2.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/dist/js/pages/dashboard3.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/fullcalendar/fullcalendar.css">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/fullcalendar/fullcalendar.min.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/images/ui-icons_444444_256x240.png">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/images/ui-icons_555555_256x240.png">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/images/ui-icons_777620_256x240.png">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/images/ui-icons_777777_256x240.png">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/images/ui-icons_cc0000_256x240.png">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/images/ui-icons_ffffff_256x240.png">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/jquery-ui.css">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/jquery-ui.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/jquery-ui.min.css">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/jquery-ui.min.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/jquery-ui.structure.css">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/jquery-ui.structure.min.css">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/jquery-ui.theme.css">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/jquery-ui.theme.min.css">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery-ui/LICENSE.txt">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery-1.3.2.min.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery-ui-1.7.3.custom.min.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery-ui-timepicker-addon-0.6.2.min.js">
+      <publishTime>12/28/2020 22:53:46</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery.min.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery.min.map">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery.qtip-1.0.0-rc3.min.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery.slim.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery.slim.min.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/jquery/jquery.slim.min.map">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/bootstrap/js/bootstrap.bundle.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/bootstrap/js/bootstrap.bundle.js.map">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/bootstrap/js/bootstrap.bundle.min.js.map">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/bootstrap/js/bootstrap.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/bootstrap/js/bootstrap.js.map">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/bootstrap/js/bootstrap.min.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/bootstrap/js/bootstrap.min.js.map">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/LICENSE.txt">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales-all.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales-all.min.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/af.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ar-dz.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ar-kw.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ar-ly.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ar-ma.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ar-sa.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ar-tn.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ar.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/az.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/bg.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/bs.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ca.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/cs.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/da.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/de.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/el.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/en-au.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/en-gb.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/en-nz.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/es-us.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/es.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/et.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/eu.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/fa.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/fi.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/fr-ca.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/fr-ch.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/fr.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/gl.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/he.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/hi.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/hr.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/hu.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/id.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/is.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/it.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ja.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ka.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/kk.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ko.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/lb.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/lt.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/lv.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/mk.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ms.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/nb.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ne.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/nl.js">
+      <publishTime>12/28/2020 22:53:48</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/nn.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/pl.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/pt-br.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/pt.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ro.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ru.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/sk.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/sl.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/sq.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/sr-cyrl.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/sr.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/sv.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/th.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/tr.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/ug.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/uk.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/uz.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/vi.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/zh-cn.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/locales/zh-tw.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/main.css">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/main.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/main.min.css">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/fullcalendar/main.min.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/af.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ar-dz.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ar-kw.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ar-ly.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ar-ma.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ar-sa.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ar-tn.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ar.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/az.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/be.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/bg.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/bm.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/bn-bd.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/bn.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/bo.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/br.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/bs.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ca.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/cs.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/cv.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/cy.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/da.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/de-at.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/de-ch.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/de.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/dv.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/el.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/en-au.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/en-ca.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/en-gb.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/en-ie.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/en-il.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/en-in.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/en-nz.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/en-SG.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/eo.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/es-do.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/es-mx.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/es-us.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/es.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/et.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/eu.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/fa.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/fi.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/fil.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/fo.js">
+      <publishTime>12/28/2020 22:53:50</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/fr-ca.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/fr-ch.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/fr.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/fy.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ga.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/gd.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/gl.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/gom-deva.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/gom-latn.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/gu.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/he.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/hi.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/hr.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/hu.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/hy-am.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/id.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/is.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/it-ch.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/it.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ja.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/jv.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ka.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/kk.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/km.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/kn.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ko.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ku.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ky.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/lb.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/lo.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/lt.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/lv.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/me.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/mi.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/mk.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ml.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/mn.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/mr.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ms-my.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ms.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/mt.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/my.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/nb.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ne.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/nl-be.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/nl.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/nn.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/oc-lnc.js">
+      <publishTime>12/28/2020 22:53:52</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/pa-in.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/pl.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/pt-br.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/pt.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ro.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ru.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/sd.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/se.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/si.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/sk.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/sl.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/sq.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/sr-cyrl.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/sr.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ss.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/sv.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/sw.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ta.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/te.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/tet.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/tg.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/th.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/tk.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/tl-ph.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/tlh.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/tr.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/tzl.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/tzm-latn.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/tzm.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ug-cn.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/uk.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/ur.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/uz-latn.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/uz.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/vi.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/x-pseudo.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/yo.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/zh-cn.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/zh-hk.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/zh-mo.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locale/zh-tw.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locales.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locales.min.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/locales.min.js.map">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/moment-with-locales.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/moment-with-locales.min.js">
+      <publishTime>12/28/2020 22:53:54</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/moment-with-locales.min.js.map">
+      <publishTime>12/28/2020 22:53:56</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/moment.min.js">
+      <publishTime>12/28/2020 22:53:56</publishTime>
+    </File>
+    <File Include="Calendar/plugins/moment/moment.min.js.map">
+      <publishTime>12/28/2020 22:53:56</publishTime>
+    </File>
+    <File Include="Contact.aspx">
+      <publishTime>10/26/2020 17:19:30</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>11/27/2020 12:07:20</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>10/27/2020 12:23:16</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Content/jquery.sumoselect.min.js">
+      <publishTime>12/04/2020 21:43:44</publishTime>
+    </File>
+    <File Include="Content/select2.css">
+      <publishTime>06/24/2020 17:33:48</publishTime>
+    </File>
+    <File Include="Content/select2.min.css">
+      <publishTime>10/21/2021 00:01:50</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>11/16/2020 23:06:12</publishTime>
+    </File>
+    <File Include="Content/sumoselect.css">
+      <publishTime>12/04/2020 22:42:02</publishTime>
+    </File>
+    <File Include="Content/sweetalert2.min.css">
+      <publishTime>01/08/2024 17:11:36</publishTime>
+    </File>
+    <File Include="Datatable/dataTables.bootstrap.css">
+      <publishTime>10/27/2020 09:44:04</publishTime>
+    </File>
+    <File Include="Datatable/dataTables.bootstrap.min.js">
+      <publishTime>10/27/2020 09:44:36</publishTime>
+    </File>
+    <File Include="Datatable/dataTables.responsive.css">
+      <publishTime>10/27/2020 09:44:04</publishTime>
+    </File>
+    <File Include="Datatable/jquery.dataTables.min.js">
+      <publishTime>10/27/2020 09:44:36</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>10/27/2020 21:00:52</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>10/26/2020 17:19:30</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="fonts/images.jpg">
+      <publishTime>11/27/2020 11:27:24</publishTime>
+    </File>
+    <File Include="fonts/LogoAyE.png">
+      <publishTime>11/04/2020 20:26:02</publishTime>
+    </File>
+    <File Include="fullcalendar/fullcalendar.css">
+      <publishTime>12/28/2020 22:54:10</publishTime>
+    </File>
+    <File Include="fullcalendar/fullcalendar.min.js">
+      <publishTime>12/28/2020 22:54:10</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>12/21/2020 18:15:40</publishTime>
+    </File>
+    <File Include="js generales/Client.js">
+      <publishTime>01/09/2021 23:31:02</publishTime>
+    </File>
+    <File Include="js generales/Task.js">
+      <publishTime>11/08/2021 16:59:54</publishTime>
+    </File>
+    <File Include="JsonResponse.ashx">
+      <publishTime>01/03/2021 15:24:46</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>09/21/2021 17:54:26</publishTime>
+    </File>
+    <File Include="LoginJsCss/font-awesome.min.css">
+      <publishTime>06/24/2020 17:33:48</publishTime>
+    </File>
+    <File Include="LoginJsCss/metisMenu.min.css">
+      <publishTime>06/24/2020 17:33:48</publishTime>
+    </File>
+    <File Include="LoginJsCss/search.png">
+      <publishTime>10/27/2020 10:50:32</publishTime>
+    </File>
+    <File Include="LoginJsCss/startmin.css">
+      <publishTime>12/12/2020 21:57:54</publishTime>
+    </File>
+    <File Include="M_Calendar_Event.aspx">
+      <publishTime>01/12/2021 22:41:16</publishTime>
+    </File>
+    <File Include="M_Citys.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_ClientAccount.aspx">
+      <publishTime>12/27/2020 19:18:10</publishTime>
+    </File>
+    <File Include="M_Clients.aspx">
+      <publishTime>01/22/2021 13:22:42</publishTime>
+    </File>
+    <File Include="M_Contact.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_Documentos.aspx">
+      <publishTime>01/19/2021 21:56:18</publishTime>
+    </File>
+    <File Include="M_Employees.aspx">
+      <publishTime>12/14/2020 20:12:24</publishTime>
+    </File>
+    <File Include="M_Events.aspx">
+      <publishTime>11/20/2021 19:16:32</publishTime>
+    </File>
+    <File Include="M_Extensiones.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_Locationes.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_Positiones.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_Priority.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_Profiles.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_Services.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_State.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_SubTask.aspx">
+      <publishTime>01/12/2021 22:53:54</publishTime>
+    </File>
+    <File Include="M_Tasks.aspx">
+      <publishTime>01/26/2024 16:24:03</publishTime>
+    </File>
+    <File Include="M_Tracking.aspx">
+      <publishTime>11/18/2021 21:06:58</publishTime>
+    </File>
+    <File Include="M_TypeClient.aspx">
+      <publishTime>01/12/2021 22:53:52</publishTime>
+    </File>
+    <File Include="M_UsersEmployees.aspx">
+      <publishTime>01/12/2021 22:53:52</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>03/09/2024 18:29:45</publishTime>
+    </File>
+    <File Include="ProcesarFoto.ashx">
+      <publishTime>11/03/2020 20:25:40</publishTime>
+    </File>
+    <File Include="RecoverPassword.aspx">
+      <publishTime>11/05/2020 11:36:32</publishTime>
+    </File>
+    <File Include="RecoverPasswordExter.aspx">
+      <publishTime>11/16/2020 23:32:08</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Scripts/MensajeValidacion.js">
+      <publishTime>12/13/2020 17:41:48</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>10/26/2020 17:19:32</publishTime>
+    </File>
+    <File Include="Scripts/select2.js">
+      <publishTime>06/24/2020 17:33:50</publishTime>
+    </File>
+    <File Include="Scripts/select2.min.js">
+      <publishTime>06/24/2020 17:33:50</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert2.min.js">
+      <publishTime>01/08/2024 17:11:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Task.js">
+      <publishTime>09/21/2021 17:45:48</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>01/26/2024 17:01:39</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="U_EmployeesUser.aspx">
+      <publishTime>11/23/2020 18:40:16</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>10/26/2020 17:19:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/09/2024 18:29:44</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>12/12/2020 22:48:16</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
